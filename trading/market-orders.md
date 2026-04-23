@@ -66,15 +66,6 @@ If the book doesn't have enough liquidity to fill your market order completely, 
 * The portion that matched is executed immediately
 * The unfilled portion is cancelled — market orders do not rest on the book
 
-## Input Rules
-
-| Input        | Minimum  | Precision                |
-| ------------ | -------- | ------------------------ |
-| Amount (Buy) | 1 USD    | 2 decimal places (cents) |
-| Size (Sell)  | 5 shares | 2 decimal places         |
-
-Orders below the minimum are rejected before submission.
-
 ## Related
 
 * [Limit Orders](limit-orders.md) — control your execution price
