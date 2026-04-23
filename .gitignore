@@ -1,0 +1,5 @@
+node_modules/
+scripts/
+preview.html
+*.zip
+.DS_Store
