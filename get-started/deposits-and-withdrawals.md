@@ -29,8 +29,8 @@ Always confirm the network before sending. Tokens sent on the wrong chain cannot
 
 | Action        | Minimum |
 | ------------- | ------- |
-| Deposit USDC  | 1 USDC  |
-| Withdraw USDC | 1 USDC  |
+| Deposit USDC  | 10 USDC |
+| Withdraw USDC | 10 USDC |
 
 Standard network gas applies to on-chain transactions.
 

@@ -14,7 +14,7 @@ Getting started on Yes/No takes less than a minute. The same modal handles both 
 
 Yes/No supports **five** sign-in methods, powered by [Privy](https://privy.io/) for identity and embedded wallets.
 
-### Crypto Wallets (4)
+### Crypto Wallets&#x20;
 
 Connect a self-custodied wallet. You hold your own keys and sign every transaction.
 
@@ -23,7 +23,7 @@ Connect a self-custodied wallet. You hold your own keys and sign every transacti
 * **Phantom**
 * **Uniswap Wallet**
 
-### Email Login (1)
+### Email Login&#x20;
 
 Don't have a wallet? Sign in with email. Privy provisions a secure **embedded wallet** on your behalf — no seed phrase to manage, no extension to install.
 
