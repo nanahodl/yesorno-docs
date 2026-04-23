@@ -1,44 +1,35 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 200" width="820" style="max-width: 820px; background: transparent; font-family: -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;">
-  <style>
-    .title  { font-size: 14px; fill: #4C1D95; font-weight: 700; text-anchor: middle; }
-    .pill   { fill: #F5F3FF; stroke: #4C1D95; stroke-width: 1.5; }
-    .pill-a { fill: #DDD6FE; stroke: #4C1D95; stroke-width: 1.8; }
-    .tb { font-size: 15px; fill: #4C1D95; font-weight: 700; text-anchor: middle; }
-    .t  { font-size: 11px; fill: #4C1D95; opacity: 0.75; text-anchor: middle; }
-  </style>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 200" width="820" style="max-width: 820px; background: transparent; font-family: -apple-system, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;">
 
-  <text class="title" x="410" y="26">Expiration options</text>
+  <text x="410" y="26" text-anchor="middle" font-size="14" font-weight="700" fill="#4C1D95">Expiration options</text>
 
-  <!-- pills row -->
-  <g>
-    <rect class="pill" x="30"  y="60" width="110" height="60" rx="30"/>
-    <text class="tb" x="85" y="88">5m</text>
-    <text class="t"  x="85" y="106">5 minutes</text>
+  <!-- pills -->
+  <rect x="30"  y="60" width="110" height="60" rx="30" fill="#F5F3FF" stroke="#4C1D95" stroke-width="1.5"/>
+  <text x="85"  y="88" text-anchor="middle" font-size="15" font-weight="700" fill="#4C1D95">5m</text>
+  <text x="85"  y="106" text-anchor="middle" font-size="11" fill="#4C1D95" opacity="0.75">5 minutes</text>
 
-    <rect class="pill" x="155" y="60" width="110" height="60" rx="30"/>
-    <text class="tb" x="210" y="88">1h</text>
-    <text class="t"  x="210" y="106">1 hour</text>
+  <rect x="155" y="60" width="110" height="60" rx="30" fill="#F5F3FF" stroke="#4C1D95" stroke-width="1.5"/>
+  <text x="210" y="88" text-anchor="middle" font-size="15" font-weight="700" fill="#4C1D95">1h</text>
+  <text x="210" y="106" text-anchor="middle" font-size="11" fill="#4C1D95" opacity="0.75">1 hour</text>
 
-    <rect class="pill" x="280" y="60" width="110" height="60" rx="30"/>
-    <text class="tb" x="335" y="88">12h</text>
-    <text class="t"  x="335" y="106">12 hours</text>
+  <rect x="280" y="60" width="110" height="60" rx="30" fill="#F5F3FF" stroke="#4C1D95" stroke-width="1.5"/>
+  <text x="335" y="88" text-anchor="middle" font-size="15" font-weight="700" fill="#4C1D95">12h</text>
+  <text x="335" y="106" text-anchor="middle" font-size="11" fill="#4C1D95" opacity="0.75">12 hours</text>
 
-    <rect class="pill" x="405" y="60" width="110" height="60" rx="30"/>
-    <text class="tb" x="460" y="88">24h</text>
-    <text class="t"  x="460" y="106">24 hours</text>
+  <rect x="405" y="60" width="110" height="60" rx="30" fill="#F5F3FF" stroke="#4C1D95" stroke-width="1.5"/>
+  <text x="460" y="88" text-anchor="middle" font-size="15" font-weight="700" fill="#4C1D95">24h</text>
+  <text x="460" y="106" text-anchor="middle" font-size="11" fill="#4C1D95" opacity="0.75">24 hours</text>
 
-    <rect class="pill" x="530" y="60" width="130" height="60" rx="30"/>
-    <text class="tb" x="595" y="88">End of day</text>
-    <text class="t"  x="595" y="106">23:59:59 UTC</text>
+  <rect x="530" y="60" width="130" height="60" rx="30" fill="#F5F3FF" stroke="#4C1D95" stroke-width="1.5"/>
+  <text x="595" y="88" text-anchor="middle" font-size="15" font-weight="700" fill="#4C1D95">End of day</text>
+  <text x="595" y="106" text-anchor="middle" font-size="11" fill="#4C1D95" opacity="0.75">23:59:59 UTC</text>
 
-    <rect class="pill-a" x="675" y="60" width="120" height="60" rx="30"/>
-    <text class="tb" x="735" y="88">Custom</text>
-    <text class="t"  x="735" y="106">any date / time</text>
-  </g>
+  <rect x="675" y="60" width="120" height="60" rx="30" fill="#DDD6FE" stroke="#4C1D95" stroke-width="1.8"/>
+  <text x="735" y="88" text-anchor="middle" font-size="15" font-weight="700" fill="#4C1D95">Custom</text>
+  <text x="735" y="106" text-anchor="middle" font-size="11" fill="#4C1D95" opacity="0.75">any date / time</text>
 
   <!-- timeline hint -->
   <line x1="30" y1="155" x2="795" y2="155" stroke="#4C1D95" stroke-width="1" opacity="0.4"/>
-  <text class="t"  x="30"  y="175" text-anchor="start">now</text>
-  <text class="t"  x="795" y="175" text-anchor="end">future</text>
-  <text class="t"  x="410" y="175">→ on expiration, unfilled shares are cancelled and locked balance returned</text>
+  <text x="30"  y="175" text-anchor="start" font-size="11" fill="#4C1D95" opacity="0.75">now</text>
+  <text x="795" y="175" text-anchor="end" font-size="11" fill="#4C1D95" opacity="0.75">future</text>
+  <text x="410" y="175" text-anchor="middle" font-size="11" fill="#4C1D95" opacity="0.75">on expiration, unfilled shares are cancelled and locked balance returned</text>
 </svg>

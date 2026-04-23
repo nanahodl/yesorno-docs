@@ -1,87 +1,75 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 440" width="720" style="max-width: 720px; background: transparent; font-family: -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;">
-  <style>
-    .title { font-size: 15px; fill: #4C1D95; font-weight: 700; text-anchor: middle; }
-    .hdr   { font-size: 12px; fill: #4C1D95; font-weight: 600; opacity: 0.7; text-anchor: middle; letter-spacing: 1px; }
-    .row-a { fill: #EDE9FE; stroke: #4C1D95; stroke-width: 0.8; opacity: 0.55; }
-    .row-b { fill: #DDD6FE; stroke: #4C1D95; stroke-width: 0.8; opacity: 0.75; }
-    .row-best { fill: #C4B5FD; stroke: #4C1D95; stroke-width: 1.5; }
-    .spread-bg { fill: #F5F3FF; stroke: #4C1D95; stroke-width: 1.5; stroke-dasharray: 4 3; }
-    .cell  { font-size: 13px; fill: #4C1D95; text-anchor: middle; }
-    .cell-b{ font-size: 13px; fill: #4C1D95; text-anchor: middle; font-weight: 700; }
-  </style>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 440" width="720" style="max-width: 720px; background: transparent; font-family: -apple-system, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;">
 
-  <text class="title" x="360" y="28">Order Book — YES side</text>
+  <text x="360" y="28" text-anchor="middle" font-size="15" font-weight="700" fill="#4C1D95">Order Book — YES side</text>
 
   <!-- Column headers -->
-  <text class="hdr" x="180" y="58">PRICE</text>
-  <text class="hdr" x="360" y="58">SIZE</text>
-  <text class="hdr" x="540" y="58">TOTAL</text>
+  <text x="180" y="58" text-anchor="middle" font-size="12" font-weight="600" fill="#4C1D95" opacity="0.7" letter-spacing="1">PRICE</text>
+  <text x="360" y="58" text-anchor="middle" font-size="12" font-weight="600" fill="#4C1D95" opacity="0.7" letter-spacing="1">SIZE</text>
+  <text x="540" y="58" text-anchor="middle" font-size="12" font-weight="600" fill="#4C1D95" opacity="0.7" letter-spacing="1">TOTAL</text>
 
-  <!-- Asks (sells) — top, lowest at bottom of asks -->
-  <g>
-    <rect class="row-a" x="80" y="70" width="560" height="28" rx="3"/>
-    <text class="cell" x="180" y="89">0.65</text>
-    <text class="cell" x="360" y="89">800</text>
-    <text class="cell" x="540" y="89">$520</text>
+  <!-- ASKS label -->
+  <text x="40" y="130" text-anchor="middle" font-size="12" font-weight="600" fill="#4C1D95" opacity="0.7" letter-spacing="1" transform="rotate(-90 40 130)">ASKS</text>
 
-    <rect class="row-a" x="80" y="100" width="560" height="28" rx="3"/>
-    <text class="cell" x="180" y="119">0.64</text>
-    <text class="cell" x="360" y="119">500</text>
-    <text class="cell" x="540" y="119">$320</text>
+  <!-- Ask rows (lighter = further from spread) -->
+  <rect x="80" y="70"  width="560" height="28" rx="3" fill="#EDE9FE" stroke="#4C1D95" stroke-width="0.8" opacity="0.55"/>
+  <text x="180" y="89"  text-anchor="middle" font-size="13" fill="#4C1D95">0.65</text>
+  <text x="360" y="89"  text-anchor="middle" font-size="13" fill="#4C1D95">800</text>
+  <text x="540" y="89"  text-anchor="middle" font-size="13" fill="#4C1D95">$520</text>
 
-    <rect class="row-a" x="80" y="130" width="560" height="28" rx="3"/>
-    <text class="cell" x="180" y="149">0.63</text>
-    <text class="cell" x="360" y="149">300</text>
-    <text class="cell" x="540" y="149">$189</text>
+  <rect x="80" y="100" width="560" height="28" rx="3" fill="#EDE9FE" stroke="#4C1D95" stroke-width="0.8" opacity="0.55"/>
+  <text x="180" y="119" text-anchor="middle" font-size="13" fill="#4C1D95">0.64</text>
+  <text x="360" y="119" text-anchor="middle" font-size="13" fill="#4C1D95">500</text>
+  <text x="540" y="119" text-anchor="middle" font-size="13" fill="#4C1D95">$320</text>
 
-    <!-- Best ask -->
-    <rect class="row-best" x="80" y="160" width="560" height="28" rx="3"/>
-    <text class="cell-b" x="180" y="179">0.62</text>
-    <text class="cell-b" x="360" y="179">200</text>
-    <text class="cell-b" x="540" y="179">$124</text>
-  </g>
-  <text class="hdr" x="40" y="130" transform="rotate(-90 40 130)">ASKS</text>
+  <rect x="80" y="130" width="560" height="28" rx="3" fill="#EDE9FE" stroke="#4C1D95" stroke-width="0.8" opacity="0.55"/>
+  <text x="180" y="149" text-anchor="middle" font-size="13" fill="#4C1D95">0.63</text>
+  <text x="360" y="149" text-anchor="middle" font-size="13" fill="#4C1D95">300</text>
+  <text x="540" y="149" text-anchor="middle" font-size="13" fill="#4C1D95">$189</text>
+
+  <!-- Best ask -->
+  <rect x="80" y="160" width="560" height="28" rx="3" fill="#C4B5FD" stroke="#4C1D95" stroke-width="1.5"/>
+  <text x="180" y="179" text-anchor="middle" font-size="13" font-weight="700" fill="#4C1D95">0.62</text>
+  <text x="360" y="179" text-anchor="middle" font-size="13" font-weight="700" fill="#4C1D95">200</text>
+  <text x="540" y="179" text-anchor="middle" font-size="13" font-weight="700" fill="#4C1D95">$124</text>
 
   <!-- Spread band -->
-  <rect class="spread-bg" x="80" y="198" width="560" height="44" rx="4"/>
-  <text class="cell-b" x="200" y="226">Spread 0.02</text>
-  <text class="cell"   x="360" y="215" opacity="0.75">Last trade</text>
-  <text class="cell-b" x="360" y="232">0.61</text>
-  <text class="cell"   x="530" y="226" opacity="0.75">midpoint 0.61</text>
+  <rect x="80" y="198" width="560" height="44" rx="4" fill="#F5F3FF" stroke="#4C1D95" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <text x="200" y="226" text-anchor="middle" font-size="13" font-weight="700" fill="#4C1D95">Spread 0.02</text>
+  <text x="360" y="215" text-anchor="middle" font-size="13" fill="#4C1D95" opacity="0.75">Last trade</text>
+  <text x="360" y="232" text-anchor="middle" font-size="13" font-weight="700" fill="#4C1D95">0.61</text>
+  <text x="530" y="226" text-anchor="middle" font-size="13" fill="#4C1D95" opacity="0.75">midpoint 0.61</text>
 
-  <!-- Bids (buys) — best at top -->
-  <g>
-    <rect class="row-best" x="80" y="252" width="560" height="28" rx="3"/>
-    <text class="cell-b" x="180" y="271">0.60</text>
-    <text class="cell-b" x="360" y="271">250</text>
-    <text class="cell-b" x="540" y="271">$150</text>
+  <!-- BIDS label -->
+  <text x="40" y="315" text-anchor="middle" font-size="12" font-weight="600" fill="#4C1D95" opacity="0.7" letter-spacing="1" transform="rotate(-90 40 315)">BIDS</text>
 
-    <rect class="row-b" x="80" y="282" width="560" height="28" rx="3"/>
-    <text class="cell" x="180" y="301">0.59</text>
-    <text class="cell" x="360" y="301">400</text>
-    <text class="cell" x="540" y="301">$236</text>
+  <!-- Best bid -->
+  <rect x="80" y="252" width="560" height="28" rx="3" fill="#C4B5FD" stroke="#4C1D95" stroke-width="1.5"/>
+  <text x="180" y="271" text-anchor="middle" font-size="13" font-weight="700" fill="#4C1D95">0.60</text>
+  <text x="360" y="271" text-anchor="middle" font-size="13" font-weight="700" fill="#4C1D95">250</text>
+  <text x="540" y="271" text-anchor="middle" font-size="13" font-weight="700" fill="#4C1D95">$150</text>
 
-    <rect class="row-b" x="80" y="312" width="560" height="28" rx="3"/>
-    <text class="cell" x="180" y="331">0.58</text>
-    <text class="cell" x="360" y="331">600</text>
-    <text class="cell" x="540" y="331">$348</text>
+  <rect x="80" y="282" width="560" height="28" rx="3" fill="#DDD6FE" stroke="#4C1D95" stroke-width="0.8" opacity="0.75"/>
+  <text x="180" y="301" text-anchor="middle" font-size="13" fill="#4C1D95">0.59</text>
+  <text x="360" y="301" text-anchor="middle" font-size="13" fill="#4C1D95">400</text>
+  <text x="540" y="301" text-anchor="middle" font-size="13" fill="#4C1D95">$236</text>
 
-    <rect class="row-b" x="80" y="342" width="560" height="28" rx="3"/>
-    <text class="cell" x="180" y="361">0.57</text>
-    <text class="cell" x="360" y="361">900</text>
-    <text class="cell" x="540" y="361">$513</text>
-  </g>
-  <text class="hdr" x="40" y="315" transform="rotate(-90 40 315)">BIDS</text>
+  <rect x="80" y="312" width="560" height="28" rx="3" fill="#DDD6FE" stroke="#4C1D95" stroke-width="0.8" opacity="0.75"/>
+  <text x="180" y="331" text-anchor="middle" font-size="13" fill="#4C1D95">0.58</text>
+  <text x="360" y="331" text-anchor="middle" font-size="13" fill="#4C1D95">600</text>
+  <text x="540" y="331" text-anchor="middle" font-size="13" fill="#4C1D95">$348</text>
+
+  <rect x="80" y="342" width="560" height="28" rx="3" fill="#DDD6FE" stroke="#4C1D95" stroke-width="0.8" opacity="0.75"/>
+  <text x="180" y="361" text-anchor="middle" font-size="13" fill="#4C1D95">0.57</text>
+  <text x="360" y="361" text-anchor="middle" font-size="13" fill="#4C1D95">900</text>
+  <text x="540" y="361" text-anchor="middle" font-size="13" fill="#4C1D95">$513</text>
 
   <!-- Legend -->
-  <g transform="translate(80, 395)">
-    <rect class="row-best" x="0" y="0" width="14" height="14" rx="2"/>
-    <text class="cell" x="88" y="11">Best ask / bid</text>
+  <rect x="80"  y="395" width="14" height="14" rx="2" fill="#C4B5FD" stroke="#4C1D95" stroke-width="1.5"/>
+  <text x="165" y="407" text-anchor="middle" font-size="13" fill="#4C1D95">Best ask / bid</text>
 
-    <rect class="row-a" x="180" y="0" width="14" height="14" rx="2"/>
-    <text class="cell" x="230" y="11">Resting orders</text>
+  <rect x="260" y="395" width="14" height="14" rx="2" fill="#EDE9FE" stroke="#4C1D95" stroke-width="0.8" opacity="0.55"/>
+  <text x="335" y="407" text-anchor="middle" font-size="13" fill="#4C1D95">Resting orders</text>
 
-    <rect class="spread-bg" x="370" y="0" width="14" height="14" rx="2"/>
-    <text class="cell" x="430" y="11">Spread / last trade</text>
-  </g>
+  <rect x="450" y="395" width="14" height="14" rx="2" fill="#F5F3FF" stroke="#4C1D95" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <text x="540" y="407" text-anchor="middle" font-size="13" fill="#4C1D95">Spread / last trade</text>
 </svg>

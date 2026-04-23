@@ -1,72 +1,54 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 360" width="760" style="max-width: 760px; background: transparent; font-family: -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 360" width="760" style="max-width: 760px; background: transparent; font-family: -apple-system, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;">
   <defs>
     <linearGradient id="fee-fill" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0%"  stop-color="#DDD6FE" stop-opacity="0.85"/>
       <stop offset="100%" stop-color="#F5F3FF" stop-opacity="0.2"/>
     </linearGradient>
   </defs>
-  <style>
-    .axis  { stroke: #4C1D95; stroke-width: 1.4; fill: none; }
-    .grid  { stroke: #4C1D95; stroke-width: 0.6; fill: none; opacity: 0.2; stroke-dasharray: 3 3; }
-    .curve { stroke: #4C1D95; stroke-width: 2.4; fill: none; }
-    .label { font-size: 12px; fill: #4C1D95; }
-    .lbl-b { font-size: 13px; fill: #4C1D95; font-weight: 700; text-anchor: middle; }
-    .title { font-size: 14px; fill: #4C1D95; font-weight: 700; text-anchor: middle; }
-    .peak  { fill: #4C1D95; }
-  </style>
 
-  <text class="title" x="380" y="28">Fee shape factor · p × (1 − p)</text>
+  <text x="380" y="28" text-anchor="middle" font-size="14" font-weight="700" fill="#4C1D95">Fee shape factor: p x (1 - p)</text>
 
-  <!-- Gridlines (horizontal) -->
-  <line class="grid" x1="80" y1="80"  x2="700" y2="80"/>
-  <line class="grid" x1="80" y1="140" x2="700" y2="140"/>
-  <line class="grid" x1="80" y1="200" x2="700" y2="200"/>
-  <line class="grid" x1="80" y1="260" x2="700" y2="260"/>
+  <!-- Gridlines -->
+  <line x1="80" y1="80"  x2="700" y2="80"  stroke="#4C1D95" stroke-width="0.6" opacity="0.2" stroke-dasharray="3 3"/>
+  <line x1="80" y1="140" x2="700" y2="140" stroke="#4C1D95" stroke-width="0.6" opacity="0.2" stroke-dasharray="3 3"/>
+  <line x1="80" y1="200" x2="700" y2="200" stroke="#4C1D95" stroke-width="0.6" opacity="0.2" stroke-dasharray="3 3"/>
+  <line x1="80" y1="260" x2="700" y2="260" stroke="#4C1D95" stroke-width="0.6" opacity="0.2" stroke-dasharray="3 3"/>
 
-  <!-- Y axis -->
-  <line class="axis" x1="80" y1="60" x2="80" y2="300"/>
-  <!-- X axis -->
-  <line class="axis" x1="80" y1="300" x2="700" y2="300"/>
+  <!-- Axes -->
+  <line x1="80" y1="60" x2="80" y2="300" stroke="#4C1D95" stroke-width="1.4"/>
+  <line x1="80" y1="300" x2="700" y2="300" stroke="#4C1D95" stroke-width="1.4"/>
 
   <!-- Y labels -->
-  <text class="label" x="72" y="84"  text-anchor="end">0.25</text>
-  <text class="label" x="72" y="144" text-anchor="end">0.19</text>
-  <text class="label" x="72" y="204" text-anchor="end">0.12</text>
-  <text class="label" x="72" y="264" text-anchor="end">0.06</text>
-  <text class="label" x="72" y="304" text-anchor="end">0.00</text>
+  <text x="72" y="84"  text-anchor="end" font-size="12" fill="#4C1D95">0.25</text>
+  <text x="72" y="144" text-anchor="end" font-size="12" fill="#4C1D95">0.19</text>
+  <text x="72" y="204" text-anchor="end" font-size="12" fill="#4C1D95">0.12</text>
+  <text x="72" y="264" text-anchor="end" font-size="12" fill="#4C1D95">0.06</text>
+  <text x="72" y="304" text-anchor="end" font-size="12" fill="#4C1D95">0.00</text>
 
   <!-- X labels -->
-  <text class="label" x="80"  y="320" text-anchor="middle">0</text>
-  <text class="label" x="235" y="320" text-anchor="middle">0.25</text>
-  <text class="label" x="390" y="320" text-anchor="middle">0.50</text>
-  <text class="label" x="545" y="320" text-anchor="middle">0.75</text>
-  <text class="label" x="700" y="320" text-anchor="middle">1.00</text>
+  <text x="80"  y="320" text-anchor="middle" font-size="12" fill="#4C1D95">0</text>
+  <text x="235" y="320" text-anchor="middle" font-size="12" fill="#4C1D95">0.25</text>
+  <text x="390" y="320" text-anchor="middle" font-size="12" fill="#4C1D95">0.50</text>
+  <text x="545" y="320" text-anchor="middle" font-size="12" fill="#4C1D95">0.75</text>
+  <text x="700" y="320" text-anchor="middle" font-size="12" fill="#4C1D95">1.00</text>
 
   <!-- Axis labels -->
-  <text class="label" x="390" y="346" text-anchor="middle" font-weight="600">price  p</text>
-  <text class="label" x="30" y="180" text-anchor="middle" transform="rotate(-90 30 180)" font-weight="600">fee factor</text>
+  <text x="390" y="346" text-anchor="middle" font-size="12" font-weight="600" fill="#4C1D95">price  p</text>
+  <text x="30" y="180" text-anchor="middle" font-size="12" font-weight="600" fill="#4C1D95" transform="rotate(-90 30 180)">fee factor</text>
 
-  <!-- Filled area under curve: p∈[0..1], y = p(1-p), peak 0.25 at 0.5 -->
-  <!-- x mapping: 0->80, 1->700; y mapping: 0->300, 0.25->60 => scale: 240/0.25 = 960 -->
-  <path d="
-    M 80,300
-    Q 235,140 390,60
-    Q 545,140 700,300
-    Z" fill="url(#fee-fill)"/>
+  <!-- Fill under curve -->
+  <path d="M 80,300 Q 235,140 390,60 Q 545,140 700,300 Z" fill="url(#fee-fill)"/>
 
-  <!-- Curve line (quadratic Bezier gives exact p(1-p) parabola because p(1-p) is a quadratic) -->
-  <path class="curve" d="
-    M 80,300
-    Q 235,140 390,60
-    Q 545,140 700,300"/>
+  <!-- Curve -->
+  <path d="M 80,300 Q 235,140 390,60 Q 545,140 700,300" fill="none" stroke="#4C1D95" stroke-width="2.4"/>
 
   <!-- Peak marker -->
-  <circle class="peak" cx="390" cy="60" r="4.5"/>
-  <line class="grid" x1="390" y1="60" x2="390" y2="300" stroke-dasharray="4 3" opacity="0.55"/>
+  <circle cx="390" cy="60" r="4.5" fill="#4C1D95"/>
+  <line x1="390" y1="60" x2="390" y2="300" stroke="#4C1D95" stroke-width="0.6" stroke-dasharray="4 3" opacity="0.55"/>
   <rect x="320" y="34" width="140" height="22" rx="4" fill="#DDD6FE" stroke="#4C1D95" stroke-width="1"/>
-  <text class="lbl-b" x="390" y="50">peak · p = 0.50</text>
+  <text x="390" y="50" text-anchor="middle" font-size="13" font-weight="700" fill="#4C1D95">peak at p = 0.50</text>
 
   <!-- Side notes -->
-  <text class="label" x="95"  y="290">low fee</text>
-  <text class="label" x="650" y="290" text-anchor="end">low fee</text>
+  <text x="95"  y="290" font-size="12" fill="#4C1D95">low fee</text>
+  <text x="650" y="290" font-size="12" fill="#4C1D95" text-anchor="end">low fee</text>
 </svg>
