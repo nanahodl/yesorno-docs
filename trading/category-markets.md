@@ -51,8 +51,6 @@ The order book, matching, and payouts all work identically to binary markets —
 
 Since exactly one outcome wins, the YES prices across all outcomes add up to approximately $1.00.
 
-![](../.gitbook/assets/trading_category-markets_1.svg)
-
 The market is pricing in: Candidate A \~35%, B \~30%, C \~20%, D \~10%, Someone else \~5% → total \~100%.
 
 {% hint style="info" %}
