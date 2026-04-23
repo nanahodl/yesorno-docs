@@ -14,13 +14,22 @@ You buy shares in the outcomes — **YES** or **NO** — of a specific condition
 
 ## How a Share Works
 
-Every market on Yes/No is fully collateralized: **1 YES + 1 NO = $1.00 USDC**.
+Every market asks a yes/no question. A **YES** share is a claim on the "yes" outcome; a **NO** share is a claim on the "no" outcome.
+
+**At resolution, the payout is simple:**
+
+* If the event **happens** → YES pays **$1.00** per share, NO pays **$0**
+* If the event **doesn't happen** → NO pays **$1.00** per share, YES pays **$0**
+
+Because exactly one side will be right, one YES share plus one NO share is **always worth $1.00 together**.
 
 ![](.gitbook/assets/get-started_what-is-yesorno_1.svg)
 
-* **Price = implied probability.** A share priced at **15¢** implies a **15%** chance of that outcome.
-* **Prices sum to $1.** If YES trades at 60¢, NO trades near 40¢ — the two sides always balance.
-* **At resolution:** the winning side pays **$1.00**, the losing side pays **$0**.
+This structure leads to three rules that hold at all times:
+
+* **YES price + NO price ≈ $1.00.** If YES trades at 60¢, NO trades near 40¢.
+* **Price = the market's implied probability.** YES at 60¢ means the market thinks there's a **60% chance** the event happens.
+* **Prices always sit between 1¢ and 99¢.** The closer to 99¢, the more the market expects it to happen; the closer to 1¢, the less.
 
 ![](.gitbook/assets/get-started_what-is-yesorno_2.svg)
 
