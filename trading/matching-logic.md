@@ -17,8 +17,6 @@ Yes/No follows **price-time priority**:
 
 The same rule applies to every order on the book.
 
-![](../.gitbook/assets/trading_matching-logic_1.svg)
-
 ## Makers vs Takers
 
 | Role      | Meaning                                                    |
