@@ -14,12 +14,10 @@ You buy shares in the outcomes — **YES** or **NO** — of a specific condition
 
 ## How a Share Works
 
-Every market asks a yes/no question. A **YES** share is a claim on the "yes" outcome; a **NO** share is a claim on the "no" outcome.
+Every market asks a yes/no question. You can buy two things:
 
-**At resolution, the payout is simple:**
-
-* If the event **happens** → YES pays **$1.00** per share, NO pays **$0**
-* If the event **doesn't happen** → NO pays **$1.00** per share, YES pays **$0**
+* A **YES share** — worth **$1.00** if the event happens, **$0** if it doesn't
+* A **NO share** — worth **$1.00** if the event doesn't happen, **$0** if it does
 
 Because exactly one side will be right, one YES share plus one NO share is **always worth $1.00 together**.
 
