@@ -8,7 +8,7 @@ Yes/No uses **USDC** as the settlement currency for every trade, deposit, and pa
 
 ## Deposit Flow
 
-![](../assets/diagrams/get-started_deposits-and-withdrawals_1.svg)
+![](../.gitbook/assets/get-started_deposits-and-withdrawals_1.svg)
 
 Regardless of how you signed in (crypto wallet or email), you deposit USDC into your Yes/No account before trading.
 
@@ -27,16 +27,16 @@ Always confirm the network before sending. Tokens sent on the wrong chain cannot
 
 ## Minimums
 
-| Action | Minimum |
-| --- | --- |
-| Deposit USDC | 1 USDC |
-| Withdraw USDC | 1 USDC |
+| Action        | Minimum |
+| ------------- | ------- |
+| Deposit USDC  | 1 USDC  |
+| Withdraw USDC | 1 USDC  |
 
 Standard network gas applies to on-chain transactions.
 
 ## Withdrawal Flow
 
-![](../assets/diagrams/get-started_deposits-and-withdrawals_2.svg)
+![](../.gitbook/assets/get-started_deposits-and-withdrawals_2.svg)
 
 ### Steps
 

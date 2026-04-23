@@ -17,13 +17,13 @@ Yes/No follows **price-time priority**:
 
 The same rule applies to every order on the book.
 
-![](../assets/diagrams/trading_matching-logic_1.svg)
+![](../.gitbook/assets/trading_matching-logic_1.svg)
 
 ## Makers vs Takers
 
-| Role | Meaning |
-| --- | --- |
-| **Maker** | Your order **rests on the book**, adding liquidity |
+| Role      | Meaning                                                    |
+| --------- | ---------------------------------------------------------- |
+| **Maker** | Your order **rests on the book**, adding liquidity         |
 | **Taker** | Your order **matches immediately** against a resting order |
 
 A single order can be **both**. If a limit order partially fills on arrival and the rest rests on the book, the filled portion is a taker trade and the remainder becomes a maker order.
@@ -32,12 +32,12 @@ A single order can be **both**. If a limit order partially fills on arrival and 
 
 Suppose the book looks like this for YES:
 
-| Asks | | Bids | |
-| --- | --- | --- | --- |
-| 91¢ | 8,200 shares | 89¢ | 15,400 shares |
+| Asks    |                  | Bids    |                   |
+| ------- | ---------------- | ------- | ----------------- |
+| 91¢     | 8,200 shares     | 89¢     | 15,400 shares     |
 | **90¢** | **5,000 shares** | **88¢** | **22,100 shares** |
 
-*(Bold = top of book — the best ask and best bid.)*
+_(Bold = top of book — the best ask and best bid.)_
 
 ### Case A — Market buy of 1,000 shares
 

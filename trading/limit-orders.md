@@ -12,9 +12,9 @@ A limit order gives you **full control over the execution price**. If no one is 
 
 ## Buy vs Sell
 
-| | What you enter | What you pay / receive |
-| --- | --- | --- |
-| **Buy (Limit)** | Price + shares | Total ≈ price × shares |
+|                  | What you enter | What you pay / receive   |
+| ---------------- | -------------- | ------------------------ |
+| **Buy (Limit)**  | Price + shares | Total ≈ price × shares   |
 | **Sell (Limit)** | Price + shares | Receive ≈ price × shares |
 
 A buy limit order sits on the **Bids** side of the book. A sell limit order sits on the **Asks** side.
@@ -54,11 +54,11 @@ You think YES is worth more than 60¢ but you'd only buy it at 58¢ or lower. Pl
 
 Every limit order panel shows the same trade in three formats:
 
-| Format | Example | Meaning |
-| --- | --- | --- |
-| **Price (¢)** | 60.9¢ | Implied probability = 60.9% |
-| **American** | −155.6 | Bet 155.6 to win 100 |
-| **Decimal** | 1.643 | 1 USDC returns 1.643 USDC |
+| Format        | Example | Meaning                     |
+| ------------- | ------- | --------------------------- |
+| **Price (¢)** | 60.9¢   | Implied probability = 60.9% |
+| **American**  | −155.6  | Bet 155.6 to win 100        |
+| **Decimal**   | 1.643   | 1 USDC returns 1.643 USDC   |
 
 Hover the **ⓘ** icons next to **To Win** and **Total** to see the conversion.
 
@@ -75,16 +75,16 @@ So a single limit order can be **part executed, part resting**.
 
 Limit orders default to **Good 'til Cancelled (GTC)** — they rest on the book until you cancel or they fill. Enable **Set Expiration** to auto-cancel after a specific duration:
 
-| Option | Behavior |
-| --- | --- |
-| **5m** | 5 minutes from order time |
-| **1h** | 1 hour from order time |
-| **12h** | 12 hours from order time |
-| **24h** | 24 hours from order time |
-| **End of day** | 23:59:59 UTC today |
-| **Custom** | Pick any date + time in the future |
+| Option         | Behavior                           |
+| -------------- | ---------------------------------- |
+| **5m**         | 5 minutes from order time          |
+| **1h**         | 1 hour from order time             |
+| **12h**        | 12 hours from order time           |
+| **24h**        | 24 hours from order time           |
+| **End of day** | 23:59:59 UTC today                 |
+| **Custom**     | Pick any date + time in the future |
 
-![](../assets/diagrams/trading_limit-orders_1.svg)
+![](../.gitbook/assets/trading_limit-orders_1.svg)
 
 On expiration, unfilled shares are automatically cancelled and any locked balance is returned to your wallet.
 
@@ -92,13 +92,13 @@ On expiration, unfilled shares are automatically cancelled and any locked balanc
 
 A limit order passes through:
 
-| State | Meaning |
-| --- | --- |
-| **Open** | Resting on the book, not yet matched |
-| **PartiallyFilled** | Some shares filled; the rest still resting |
-| **Filled** | Fully executed |
-| **Cancelled** | You cancelled before a full match |
-| **Expired** | Expiration time passed with open shares remaining |
+| State               | Meaning                                           |
+| ------------------- | ------------------------------------------------- |
+| **Open**            | Resting on the book, not yet matched              |
+| **PartiallyFilled** | Some shares filled; the rest still resting        |
+| **Filled**          | Fully executed                                    |
+| **Cancelled**       | You cancelled before a full match                 |
+| **Expired**         | Expiration time passed with open shares remaining |
 
 Open limit orders can be viewed and cancelled anytime from **Portfolio → Open Orders**, or directly on the market page when an open-order badge appears.
 

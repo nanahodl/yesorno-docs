@@ -33,12 +33,12 @@ Don't have a wallet? Sign in with email. Privy provisions a secure **embedded wa
 
 ## Comparison
 
-|  | Crypto Wallet | Email Login |
-| --- | --- | --- |
-| Onboarding | Connect existing wallet | Verify email |
-| Keys held by | You | Privy (encrypted) |
-| Recovery | Your seed phrase | Email |
-| Gas handling | You pay gas | Handled for you |
+|              | Crypto Wallet           | Email Login       |
+| ------------ | ----------------------- | ----------------- |
+| Onboarding   | Connect existing wallet | Verify email      |
+| Keys held by | You                     | Privy (encrypted) |
+| Recovery     | Your seed phrase        | Email             |
+| Gas handling | You pay gas             | Handled for you   |
 
 ## "Last Used" Memory
 
@@ -57,7 +57,7 @@ The modal remembers the last method you used and shows a **Last used** badge nex
 5. Accept the [Terms of Use](../resources/terms-of-service.md) and [Privacy Policy](../resources/privacy-policy.md)
 6. You're in — deposit USDC to start trading
 
-![](../assets/diagrams/get-started_sign-up-and-wallet_1.svg)
+![](../.gitbook/assets/get-started_sign-up-and-wallet_1.svg)
 
 ## Account Security
 

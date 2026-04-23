@@ -24,7 +24,7 @@ That's because exactly one side will ultimately redeem for $1.00 and the other f
 
 Lock $1 USDC and receive 1 YES share + 1 NO share.
 
-![](../assets/diagrams/trading_merging-and-splitting_1.svg)
+![](../.gitbook/assets/trading_merging-and-splitting_1.svg)
 
 ### When to use
 
@@ -34,11 +34,11 @@ Lock $1 USDC and receive 1 YES share + 1 NO share.
 
 ### How it works
 
-| Field | Description |
-| --- | --- |
-| Operation | Split |
-| Amount | USDC amount to lock |
-| Max | Your available USDC |
+| Field     | Description         |
+| --------- | ------------------- |
+| Operation | Split               |
+| Amount    | USDC amount to lock |
+| Max       | Your available USDC |
 
 **Account changes after Split:**
 
@@ -52,7 +52,7 @@ Your all-in cost is $1 per pair. If you sell one side later, the remaining side'
 
 Return 1 YES + 1 NO and receive $1 USDC back.
 
-![](../assets/diagrams/trading_merging-and-splitting_2.svg)
+![](../.gitbook/assets/trading_merging-and-splitting_2.svg)
 
 ### When to use
 
@@ -62,11 +62,11 @@ Return 1 YES + 1 NO and receive $1 USDC back.
 
 ### How it works
 
-| Field | Description |
-| --- | --- |
-| Operation | Merge |
-| Amount | Number of share-pairs to merge |
-| Max | The smaller of your YES balance and NO balance |
+| Field     | Description                                    |
+| --------- | ---------------------------------------------- |
+| Operation | Merge                                          |
+| Amount    | Number of share-pairs to merge                 |
+| Max       | The smaller of your YES balance and NO balance |
 
 **Account changes after Merge:**
 

@@ -8,7 +8,7 @@ Every market on Yes/No has a defined **resolution condition** and **deadline**. 
 
 ## Market Lifecycle
 
-![](../assets/diagrams/settlement_market-resolution_1.svg)
+![](../.gitbook/assets/settlement_market-resolution_1.svg)
 
 ## Resolution Process
 
@@ -45,14 +45,14 @@ When the deadline passes:
 
 Once resolution is finalized, payouts show up in your portfolio automatically. Every **1 YES + 1 NO pair** was originally collateralized by $1.00 USDC — at resolution that dollar flows entirely to the winning side:
 
-![](../assets/diagrams/settlement_market-resolution_2.svg)
+![](../.gitbook/assets/settlement_market-resolution_2.svg)
 
-| You held | Market resolved | You get |
-| --- | --- | --- |
-| 100 YES | YES | 100 × $1.00 = **$100.00** |
-| 100 YES | NO | $0 |
-| 100 NO | NO | 100 × $1.00 = **$100.00** |
-| 100 NO | YES | $0 |
+| You held | Market resolved | You get                   |
+| -------- | --------------- | ------------------------- |
+| 100 YES  | YES             | 100 × $1.00 = **$100.00** |
+| 100 YES  | NO              | $0                        |
+| 100 NO   | NO              | 100 × $1.00 = **$100.00** |
+| 100 NO   | YES             | $0                        |
 
 For **category markets**, only YES on the winning outcome pays $1.00; every other YES resolves to $0 (NO is the mirror image). See [Category Markets](../trading/category-markets.md).
 

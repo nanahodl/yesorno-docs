@@ -8,7 +8,7 @@ This walkthrough gets you from zero to first trade in about two minutes.
 
 ## The 5-Step Path
 
-![](../assets/diagrams/get-started_first-trade_1.svg)
+![](../.gitbook/assets/get-started_first-trade_1.svg)
 
 ## Step 1 — Sign in
 
@@ -38,7 +38,7 @@ Browse active markets — crypto prices, sports, politics, and more. Each market
 * Current **YES** and **NO** prices (in ¢)
 * Recent activity and volume
 
-> Example: *"Will BTC reach $100k this week?"* might show **YES 32¢ / NO 68¢** — the market's implied probability is **32%**.
+> Example: _"Will BTC reach $100k this week?"_ might show **YES 32¢ / NO 68¢** — the market's implied probability is **32%**.
 
 ## Step 4 — Buy YES or NO
 
@@ -73,19 +73,20 @@ Find your position under **Portfolio → Positions**:
 * **Sell** anytime before the market closes — a market sell at the best bid, or a limit sell at your chosen price
 
 > **Example.** You buy **100 YES** at 60¢:
-> - You pay around **$60** (the exact total shown in the order panel)
-> - If YES wins: you receive **$100**
-> - If YES loses: the shares settle at **$0**
-> - If you sell before resolution: you receive the sale price × shares
+>
+> * You pay around **$60** (the exact total shown in the order panel)
+> * If YES wins: you receive **$100**
+> * If YES loses: the shares settle at **$0**
+> * If you sell before resolution: you receive the sale price × shares
 
 ## What Happens at Resolution?
 
 Once the market resolves (see [Market Resolution](../settlement/market-resolution.md)):
 
-| Outcome | YES shares settle at | NO shares settle at |
-| --- | --- | --- |
-| YES wins | **$1.00** each | **$0** |
-| NO wins | **$0** | **$1.00** each |
+| Outcome  | YES shares settle at | NO shares settle at |
+| -------- | -------------------- | ------------------- |
+| YES wins | **$1.00** each       | **$0**              |
+| NO wins  | **$0**               | **$1.00** each      |
 
 Payouts settle on-chain automatically — no claim step required. If you sold earlier, the payout already happened at the sale price.
 

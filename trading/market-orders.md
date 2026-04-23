@@ -7,17 +7,17 @@ description: How market orders work on Yes/No.
 A **market order** executes immediately against the best available resting orders on the book. Use it when you want instant execution and don't care about shaving a few cents off the price.
 
 {% hint style="info" %}
-A market order always executes at the **best available prices currently on the book**. Because it walks down the book until filled, the average price you get may be worse than the top quote in thin markets — see [Slippage](#slippage) below.
+A market order always executes at the **best available prices currently on the book**. Because it walks down the book until filled, the average price you get may be worse than the top quote in thin markets — see [Slippage](market-orders.md#slippage) below.
 {% endhint %}
 
 ## Buy vs Sell — The Input Differs
 
 This is important:
 
-| | What you enter | What you receive |
-| --- | --- | --- |
-| **Buy (Market)** | **USD amount** (e.g. "$50") | Shares ≈ amount ÷ estimated average price |
-| **Sell (Market)** | **Number of shares** (e.g. "100") | USD ≈ shares × estimated average price |
+|                   | What you enter                    | What you receive                          |
+| ----------------- | --------------------------------- | ----------------------------------------- |
+| **Buy (Market)**  | **USD amount** (e.g. "$50")       | Shares ≈ amount ÷ estimated average price |
+| **Sell (Market)** | **Number of shares** (e.g. "100") | USD ≈ shares × estimated average price    |
 
 The order panel updates the estimated average price in real time based on current order-book depth.
 
@@ -51,7 +51,7 @@ Because a market order walks through the book, if your size is larger than the l
 
 Example — you buy **250 shares** with market orders, but the best ask only has 100 shares resting. Your order walks up the book:
 
-![](../assets/diagrams/trading_market-orders_1.svg)
+![](../.gitbook/assets/trading_market-orders_1.svg)
 
 The deeper your order walks, the higher your average price. This is **slippage**.
 
@@ -68,10 +68,10 @@ If the book doesn't have enough liquidity to fill your market order completely, 
 
 ## Input Rules
 
-| Input | Minimum | Precision |
-| --- | --- | --- |
-| Amount (Buy) | 1 USD | 2 decimal places (cents) |
-| Size (Sell) | 5 shares | 2 decimal places |
+| Input        | Minimum  | Precision                |
+| ------------ | -------- | ------------------------ |
+| Amount (Buy) | 1 USD    | 2 decimal places (cents) |
+| Size (Sell)  | 5 shares | 2 decimal places         |
 
 Orders below the minimum are rejected before submission.
 
