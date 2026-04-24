@@ -1,60 +1,72 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 380" width="680" style="max-width: 680px; background: transparent; font-family: -apple-system, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 340" width="720" style="max-width: 720px; background: transparent; font-family: -apple-system, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;">
   <defs>
-    <marker id="arr-mo" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="9" markerHeight="9" orient="auto">
+    <marker id="arr-mo" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="8" orient="auto">
       <path d="M 0 0 L 10 5 L 0 10 z" fill="#4C1D95"/>
     </marker>
   </defs>
 
   <!-- Title -->
-  <text x="340" y="28" text-anchor="middle" font-size="15" font-weight="700" fill="#4C1D95">You buy 250 YES shares at market price</text>
-  <text x="340" y="48" text-anchor="middle" font-size="12" fill="#4C1D95" opacity="0.7">The order eats through 3 price levels (lowest first)</text>
+  <text x="360" y="24" text-anchor="middle" font-size="14" font-weight="700" fill="#4C1D95">Market order: buy 250 YES shares</text>
 
-  <!-- Headers -->
-  <text x="100" y="80" text-anchor="middle" font-size="12" font-weight="600" fill="#4C1D95" opacity="0.7">PRICE</text>
-  <text x="240" y="80" text-anchor="middle" font-size="12" font-weight="600" fill="#4C1D95" opacity="0.7">AVAILABLE</text>
-  <text x="420" y="80" text-anchor="middle" font-size="12" font-weight="600" fill="#4C1D95" opacity="0.7">YOU TAKE</text>
-  <text x="580" y="80" text-anchor="middle" font-size="12" font-weight="600" fill="#4C1D95" opacity="0.7">REMAINING</text>
+  <!-- Order book (left side) -->
+  <text x="160" y="60" text-anchor="middle" font-size="12" font-weight="600" fill="#4C1D95" opacity="0.6">Order book (asks)</text>
 
-  <!-- Level 1: 0.62 — take all 100 -->
-  <rect x="30" y="96" width="620" height="44" rx="5" fill="#DDD6FE" stroke="#4C1D95" stroke-width="1.5"/>
-  <text x="24" y="122" text-anchor="end" font-size="11" fill="#4C1D95" opacity="0.65">1st</text>
-  <text x="100" y="124" text-anchor="middle" font-size="14" font-weight="700" fill="#4C1D95">62¢</text>
-  <text x="240" y="124" text-anchor="middle" font-size="14" fill="#4C1D95">100 shares</text>
-  <text x="420" y="124" text-anchor="middle" font-size="14" font-weight="700" fill="#4C1D95">100 shares</text>
-  <text x="580" y="124" text-anchor="middle" font-size="14" fill="#4C1D95" opacity="0.6">0</text>
+  <!-- Level 1: cheapest, eaten first -->
+  <rect x="40" y="74" width="240" height="52" rx="6" fill="#F5F3FF" stroke="#4C1D95" stroke-width="1.2"/>
+  <text x="80"  y="96" text-anchor="middle" font-size="16" font-weight="700" fill="#4C1D95">62¢</text>
+  <text x="190" y="96" text-anchor="middle" font-size="13" fill="#4C1D95">100 shares</text>
+  <text x="80"  y="116" text-anchor="middle" font-size="11" fill="#4C1D95" opacity="0.5">cheapest</text>
 
-  <!-- Level 2: 0.63 — take all 100 -->
-  <rect x="30" y="148" width="620" height="44" rx="5" fill="#DDD6FE" stroke="#4C1D95" stroke-width="1.5"/>
-  <text x="24" y="174" text-anchor="end" font-size="11" fill="#4C1D95" opacity="0.65">2nd</text>
-  <text x="100" y="176" text-anchor="middle" font-size="14" font-weight="700" fill="#4C1D95">63¢</text>
-  <text x="240" y="176" text-anchor="middle" font-size="14" fill="#4C1D95">100 shares</text>
-  <text x="420" y="176" text-anchor="middle" font-size="14" font-weight="700" fill="#4C1D95">100 shares</text>
-  <text x="580" y="176" text-anchor="middle" font-size="14" fill="#4C1D95" opacity="0.6">0</text>
+  <!-- Level 2 -->
+  <rect x="40" y="134" width="240" height="52" rx="6" fill="#F5F3FF" stroke="#4C1D95" stroke-width="1.2"/>
+  <text x="80"  y="164" text-anchor="middle" font-size="16" font-weight="700" fill="#4C1D95">63¢</text>
+  <text x="190" y="164" text-anchor="middle" font-size="13" fill="#4C1D95">100 shares</text>
 
-  <!-- Level 3: 0.64 — take 50 of 150 -->
-  <rect x="30" y="200" width="620" height="44" rx="5" fill="#EDE9FE" stroke="#4C1D95" stroke-width="1.2"/>
-  <text x="24" y="226" text-anchor="end" font-size="11" fill="#4C1D95" opacity="0.65">3rd</text>
-  <text x="100" y="228" text-anchor="middle" font-size="14" font-weight="700" fill="#4C1D95">64¢</text>
-  <text x="240" y="228" text-anchor="middle" font-size="14" fill="#4C1D95">150 shares</text>
-  <text x="420" y="228" text-anchor="middle" font-size="14" font-weight="700" fill="#4C1D95">50 shares</text>
-  <text x="580" y="228" text-anchor="middle" font-size="14" fill="#4C1D95">100 left</text>
+  <!-- Level 3 -->
+  <rect x="40" y="194" width="240" height="52" rx="6" fill="#F5F3FF" stroke="#4C1D95" stroke-width="1.2"/>
+  <text x="80"  y="224" text-anchor="middle" font-size="16" font-weight="700" fill="#4C1D95">64¢</text>
+  <text x="190" y="224" text-anchor="middle" font-size="13" fill="#4C1D95">150 shares</text>
 
-  <!-- Arrow showing order of eating -->
-  <line x1="16" y1="100" x2="16" y2="238" stroke="#4C1D95" stroke-width="1.5" marker-end="url(#arr-mo)" opacity="0.5"/>
+  <!-- Your order (right side) -->
+  <text x="540" y="60" text-anchor="middle" font-size="12" font-weight="600" fill="#4C1D95" opacity="0.6">Your fills</text>
 
-  <!-- Result box -->
-  <rect x="30" y="272" width="620" height="90" rx="6" fill="#F5F3FF" stroke="#4C1D95" stroke-width="1.5"/>
-  <text x="340" y="296" text-anchor="middle" font-size="14" font-weight="700" fill="#4C1D95">Result</text>
+  <!-- Fill 1: all 100 @ 62¢ -->
+  <rect x="420" y="74" width="260" height="52" rx="6" fill="#DDD6FE" stroke="#4C1D95" stroke-width="1.5"/>
+  <text x="480" y="104" text-anchor="middle" font-size="14" font-weight="700" fill="#4C1D95">100</text>
+  <text x="540" y="104" text-anchor="middle" font-size="13" fill="#4C1D95">shares @ 62¢</text>
+  <text x="650" y="104" text-anchor="middle" font-size="13" font-weight="700" fill="#4C1D95">= $62</text>
 
-  <text x="50"  y="322" font-size="13" fill="#4C1D95">100 @ 62¢</text>
-  <text x="175" y="322" font-size="13" fill="#4C1D95">+ 100 @ 63¢</text>
-  <text x="320" y="322" font-size="13" fill="#4C1D95">+ 50 @ 64¢</text>
-  <text x="470" y="322" font-size="13" font-weight="700" fill="#4C1D95">= 250 shares</text>
+  <!-- Arrow 1 -->
+  <line x1="282" y1="100" x2="418" y2="100" stroke="#4C1D95" stroke-width="1.5" marker-end="url(#arr-mo)"/>
+  <text x="350" y="92" text-anchor="middle" font-size="11" fill="#4C1D95" opacity="0.5">take all</text>
 
-  <text x="50"  y="348" font-size="13" fill="#4C1D95" opacity="0.8">Avg price</text>
-  <text x="130" y="348" font-size="13" font-weight="700" fill="#4C1D95">62.8¢</text>
-  <text x="260" y="348" font-size="13" fill="#4C1D95" opacity="0.8">Total cost</text>
-  <text x="340" y="348" font-size="13" font-weight="700" fill="#4C1D95">$157.00</text>
-  <text x="460" y="348" font-size="13" fill="#4C1D95" opacity="0.8">Slippage</text>
-  <text x="540" y="348" font-size="13" font-weight="700" fill="#4C1D95">+0.8¢ vs best</text>
+  <!-- Fill 2: all 100 @ 63¢ -->
+  <rect x="420" y="134" width="260" height="52" rx="6" fill="#DDD6FE" stroke="#4C1D95" stroke-width="1.5"/>
+  <text x="480" y="164" text-anchor="middle" font-size="14" font-weight="700" fill="#4C1D95">100</text>
+  <text x="540" y="164" text-anchor="middle" font-size="13" fill="#4C1D95">shares @ 63¢</text>
+  <text x="650" y="164" text-anchor="middle" font-size="13" font-weight="700" fill="#4C1D95">= $63</text>
+
+  <!-- Arrow 2 -->
+  <line x1="282" y1="160" x2="418" y2="160" stroke="#4C1D95" stroke-width="1.5" marker-end="url(#arr-mo)"/>
+  <text x="350" y="152" text-anchor="middle" font-size="11" fill="#4C1D95" opacity="0.5">take all</text>
+
+  <!-- Fill 3: partial 50 of 150 @ 64¢ -->
+  <rect x="420" y="194" width="260" height="52" rx="6" fill="#EDE9FE" stroke="#4C1D95" stroke-width="1.2"/>
+  <text x="480" y="224" text-anchor="middle" font-size="14" font-weight="700" fill="#4C1D95">50</text>
+  <text x="540" y="224" text-anchor="middle" font-size="13" fill="#4C1D95">shares @ 64¢</text>
+  <text x="650" y="224" text-anchor="middle" font-size="13" font-weight="700" fill="#4C1D95">= $32</text>
+
+  <!-- Arrow 3 -->
+  <line x1="282" y1="220" x2="418" y2="220" stroke="#4C1D95" stroke-width="1.5" marker-end="url(#arr-mo)" stroke-dasharray="5 3"/>
+  <text x="350" y="212" text-anchor="middle" font-size="11" fill="#4C1D95" opacity="0.5">take 50</text>
+
+  <!-- Remaining note -->
+  <text x="160" y="268" text-anchor="middle" font-size="12" fill="#4C1D95" opacity="0.5">100 shares still on the book @ 64¢</text>
+
+  <!-- Summary bar -->
+  <rect x="40" y="288" width="640" height="44" rx="6" fill="#DDD6FE" stroke="#4C1D95" stroke-width="1.5"/>
+  <text x="130" y="316" text-anchor="middle" font-size="14" font-weight="700" fill="#4C1D95">250 shares filled</text>
+  <text x="330" y="316" text-anchor="middle" font-size="13" fill="#4C1D95">Total cost $157</text>
+  <text x="500" y="316" text-anchor="middle" font-size="13" fill="#4C1D95">Avg price 62.8¢</text>
+  <text x="640" y="316" text-anchor="middle" font-size="12" fill="#4C1D95" opacity="0.6">slippage +0.8¢</text>
 </svg>
