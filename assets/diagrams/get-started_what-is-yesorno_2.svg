@@ -1,56 +1,58 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 180" width="860" style="max-width: 860px; background: transparent; font-family: -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 180" width="820" style="max-width: 820px; background: transparent; font-family: -apple-system, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;">
   <defs>
-    <linearGradient id="price-grad" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%"  stop-color="#F5F3FF"/>
-      <stop offset="50%" stop-color="#DDD6FE"/>
+    <linearGradient id="prob-grad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"   stop-color="#F5F3FF"/>
+      <stop offset="50%"  stop-color="#C4B5FD"/>
       <stop offset="100%" stop-color="#4C1D95"/>
     </linearGradient>
-    <marker id="arr-ax" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+    <marker id="arr-left" viewBox="0 0 10 10" refX="1" refY="5" markerUnits="strokeWidth" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M 10 0 L 0 5 L 10 10 z" fill="#4C1D95"/>
+    </marker>
+    <marker id="arr-right" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="7" markerHeight="7" orient="auto">
       <path d="M 0 0 L 10 5 L 0 10 z" fill="#4C1D95"/>
     </marker>
   </defs>
 
+  <!-- Direction labels -->
+  <text x="60"  y="24" text-anchor="start" font-size="12" font-weight="600" fill="#4C1D95" opacity="0.7">Less likely</text>
+  <line x1="145" y1="20" x2="60" y2="20" stroke="#4C1D95" stroke-width="1.5" opacity="0.5" marker-end="url(#arr-left)"/>
+
+  <text x="760" y="24" text-anchor="end" font-size="12" font-weight="600" fill="#4C1D95" opacity="0.7">More likely</text>
+  <line x1="675" y1="20" x2="760" y2="20" stroke="#4C1D95" stroke-width="1.5" opacity="0.5" marker-end="url(#arr-right)"/>
+
   <!-- Gradient bar -->
-  <rect x="40" y="58" width="780" height="32" rx="16" ry="16"
-        fill="url(#price-grad)" stroke="#4C1D95" stroke-width="1.5"/>
+  <rect x="50" y="44" width="720" height="30" rx="15" fill="url(#prob-grad)" stroke="#4C1D95" stroke-width="1.2"/>
 
   <!-- Tick marks -->
-  <g stroke="#4C1D95" stroke-width="1.5">
-    <line x1="60"  y1="90" x2="60"  y2="100"/>
-    <line x1="240" y1="90" x2="240" y2="100"/>
-    <line x1="430" y1="90" x2="430" y2="100"/>
-    <line x1="620" y1="90" x2="620" y2="100"/>
-    <line x1="800" y1="90" x2="800" y2="100"/>
-  </g>
+  <line x1="50"  y1="74" x2="50"  y2="86" stroke="#4C1D95" stroke-width="1.5"/>
+  <line x1="230" y1="74" x2="230" y2="86" stroke="#4C1D95" stroke-width="1.5"/>
+  <line x1="410" y1="74" x2="410" y2="86" stroke="#4C1D95" stroke-width="1.5"/>
+  <line x1="590" y1="74" x2="590" y2="86" stroke="#4C1D95" stroke-width="1.5"/>
+  <line x1="770" y1="74" x2="770" y2="86" stroke="#4C1D95" stroke-width="1.5"/>
 
   <!-- Price labels -->
-  <g fill="#4C1D95" font-size="15" font-weight="700" text-anchor="middle">
-    <text x="60"  y="120">1¢</text>
-    <text x="240" y="120">25¢</text>
-    <text x="430" y="120">50¢</text>
-    <text x="620" y="120">75¢</text>
-    <text x="800" y="120">99¢</text>
-  </g>
+  <text x="50"  y="104" text-anchor="middle" font-size="15" font-weight="700" fill="#4C1D95">1¢</text>
+  <text x="230" y="104" text-anchor="middle" font-size="15" font-weight="700" fill="#4C1D95">25¢</text>
+  <text x="410" y="104" text-anchor="middle" font-size="15" font-weight="700" fill="#4C1D95">50¢</text>
+  <text x="590" y="104" text-anchor="middle" font-size="15" font-weight="700" fill="#4C1D95">75¢</text>
+  <text x="770" y="104" text-anchor="middle" font-size="15" font-weight="700" fill="#4C1D95">99¢</text>
 
-  <!-- Secondary labels -->
-  <g fill="#4C1D95" font-size="12" opacity="0.75" text-anchor="middle">
-    <text x="60"  y="140">Almost impossible</text>
-    <text x="240" y="140">Unlikely</text>
-    <text x="430" y="140">Coin flip</text>
-    <text x="620" y="140">Likely</text>
-    <text x="800" y="140">Almost certain</text>
-  </g>
+  <!-- Probability labels -->
+  <text x="50"  y="122" text-anchor="middle" font-size="11" fill="#4C1D95" opacity="0.7">~1%</text>
+  <text x="230" y="122" text-anchor="middle" font-size="11" fill="#4C1D95" opacity="0.7">~25%</text>
+  <text x="410" y="122" text-anchor="middle" font-size="11" fill="#4C1D95" opacity="0.7">~50%</text>
+  <text x="590" y="122" text-anchor="middle" font-size="11" fill="#4C1D95" opacity="0.7">~75%</text>
+  <text x="770" y="122" text-anchor="middle" font-size="11" fill="#4C1D95" opacity="0.7">~99%</text>
 
-  <!-- Top hints -->
-  <g fill="#4C1D95" font-size="13" font-weight="600">
-    <text x="40"  y="38" text-anchor="start">Less likely →</text>
-    <text x="820" y="38" text-anchor="end">← More likely</text>
-  </g>
-  <line x1="135" y1="32" x2="180" y2="32" stroke="#4C1D95" stroke-width="1.5" marker-end="url(#arr-ax)" opacity="0.6"/>
-  <line x1="725" y1="32" x2="680" y2="32" stroke="#4C1D95" stroke-width="1.5" marker-end="url(#arr-ax)" opacity="0.6"/>
+  <!-- Meaning labels -->
+  <text x="50"  y="140" text-anchor="middle" font-size="11" fill="#4C1D95" opacity="0.55">Almost</text>
+  <text x="50"  y="153" text-anchor="middle" font-size="11" fill="#4C1D95" opacity="0.55">impossible</text>
+  <text x="230" y="146" text-anchor="middle" font-size="11" fill="#4C1D95" opacity="0.55">Unlikely</text>
+  <text x="410" y="146" text-anchor="middle" font-size="11" fill="#4C1D95" opacity="0.55">Coin flip</text>
+  <text x="590" y="146" text-anchor="middle" font-size="11" fill="#4C1D95" opacity="0.55">Likely</text>
+  <text x="770" y="140" text-anchor="middle" font-size="11" fill="#4C1D95" opacity="0.55">Almost</text>
+  <text x="770" y="153" text-anchor="middle" font-size="11" fill="#4C1D95" opacity="0.55">certain</text>
 
-  <!-- Bottom caption -->
-  <text x="430" y="168" text-anchor="middle" font-size="12" fill="#4C1D95" opacity="0.75">
-    YES price = market's implied probability the event happens
-  </text>
+  <!-- Caption -->
+  <text x="410" y="178" text-anchor="middle" font-size="12" fill="#4C1D95" opacity="0.65">Share price = the market's implied probability</text>
 </svg>
