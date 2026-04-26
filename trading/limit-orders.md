@@ -88,20 +88,6 @@ Limit orders default to **Good 'til Cancelled (GTC)** — they rest on the book 
 
 On expiration, unfilled shares are automatically cancelled and any locked balance is returned to your wallet.
 
-## Order States
-
-A limit order passes through:
-
-| State               | Meaning                                           |
-| ------------------- | ------------------------------------------------- |
-| **Open**            | Resting on the book, not yet matched              |
-| **PartiallyFilled** | Some shares filled; the rest still resting        |
-| **Filled**          | Fully executed                                    |
-| **Cancelled**       | You cancelled before a full match                 |
-| **Expired**         | Expiration time passed with open shares remaining |
-
-Open limit orders can be viewed and cancelled anytime from **Portfolio → Open Orders**, or directly on the market page when an open-order badge appears.
-
 ## Related
 
 * [Market Orders](market-orders.md) — no price control, but instant

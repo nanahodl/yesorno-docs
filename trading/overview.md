@@ -72,20 +72,6 @@ Use whichever side has better liquidity or is easier to reason about for a given
 
 Orders below the minimum are rejected by the exchange.
 
-## Order States
-
-Every order goes through one of these states:
-
-| State               | Meaning                                           |
-| ------------------- | ------------------------------------------------- |
-| **Open**            | Sitting on the book, not yet matched              |
-| **PartiallyFilled** | Some shares matched, the rest still resting       |
-| **Filled**          | Fully executed                                    |
-| **Cancelled**       | You cancelled before a full match                 |
-| **Expired**         | Expiration time passed with open shares remaining |
-
-Open orders can be viewed and cancelled anytime from **Portfolio → Open Orders**.
-
 ## Where to Next
 
 * [Market Orders](market-orders.md) — instant execution
