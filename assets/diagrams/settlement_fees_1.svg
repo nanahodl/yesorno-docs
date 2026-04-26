@@ -1,4 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 360" width="760" style="max-width: 760px; background: transparent; font-family: -apple-system, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;">
+  <rect data-bg="white" x="0.0" y="0.0" width="760.0" height="360.0" fill="#FFFFFF" rx="8" ry="8"/>
   <defs>
     <linearGradient id="fee-fill" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0%"  stop-color="#DDD6FE" stop-opacity="0.85"/>

@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 440" width="720" style="max-width: 720px; background: transparent; font-family: -apple-system, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;">
-
+  <rect data-bg="white" x="0.0" y="0.0" width="720.0" height="440.0" fill="#FFFFFF" rx="8" ry="8"/>
   <text x="360" y="28" text-anchor="middle" font-size="15" font-weight="700" fill="#4C1D95">Order Book — YES side</text>
 
   <!-- Column headers -->
