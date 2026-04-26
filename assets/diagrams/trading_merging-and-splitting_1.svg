@@ -10,7 +10,7 @@
   <rect x="30" y="50" width="220" height="80" rx="6" ry="6"
         fill="#F5F3FF" stroke="#4C1D95" stroke-width="1.5"/>
   <text x="140" y="85" text-anchor="middle" font-size="18" fill="#4C1D95" font-weight="600">$X USDC</text>
-  <text x="140" y="110" text-anchor="middle" font-size="14" fill="#4C1D95" opacity="0.75">(your balance)</text>
+  <text x="140" y="110" text-anchor="middle" font-size="14" fill="#5B21B6">(your balance)</text>
 
   <!-- Arrow + label -->
   <line x1="255" y1="90" x2="385" y2="90"

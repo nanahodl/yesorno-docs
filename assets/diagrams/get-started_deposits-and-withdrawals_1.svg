@@ -8,23 +8,23 @@
 
   <rect x="20" y="40" width="200" height="56" rx="6" fill="#F5F3FF" stroke="#4C1D95" stroke-width="1.5"/>
   <text x="120" y="62" text-anchor="middle" font-size="13" font-weight="700" fill="#4C1D95">1 · Open Wallet</text>
-  <text x="120" y="80" text-anchor="middle" font-size="12" fill="#4C1D95" opacity="0.75">Wallet → Deposit</text>
+  <text x="120" y="80" text-anchor="middle" font-size="12" fill="#5B21B6">Wallet → Deposit</text>
 
   <line x1="222" y1="68" x2="248" y2="68" stroke="#4C1D95" stroke-width="1.8" marker-end="url(#arr-dp)"/>
 
   <rect x="250" y="40" width="210" height="56" rx="6" fill="#F5F3FF" stroke="#4C1D95" stroke-width="1.5"/>
   <text x="355" y="62" text-anchor="middle" font-size="13" font-weight="700" fill="#4C1D95">2 · Copy address</text>
-  <text x="355" y="80" text-anchor="middle" font-size="12" fill="#4C1D95" opacity="0.75">your Yes/No deposit address</text>
+  <text x="355" y="80" text-anchor="middle" font-size="12" fill="#5B21B6">your Yes/No deposit address</text>
 
   <line x1="462" y1="68" x2="488" y2="68" stroke="#4C1D95" stroke-width="1.8" marker-end="url(#arr-dp)"/>
 
   <rect x="490" y="40" width="230" height="56" rx="6" fill="#F5F3FF" stroke="#4C1D95" stroke-width="1.5"/>
   <text x="605" y="62" text-anchor="middle" font-size="13" font-weight="700" fill="#4C1D95">3 · Send USDC</text>
-  <text x="605" y="80" text-anchor="middle" font-size="12" fill="#4C1D95" opacity="0.75">from external wallet / exchange</text>
+  <text x="605" y="80" text-anchor="middle" font-size="12" fill="#5B21B6">from external wallet / exchange</text>
 
   <line x1="722" y1="68" x2="748" y2="68" stroke="#4C1D95" stroke-width="1.8" marker-end="url(#arr-dp)"/>
 
   <rect x="750" y="40" width="230" height="56" rx="6" fill="#DDD6FE" stroke="#4C1D95" stroke-width="1.8"/>
   <text x="865" y="62" text-anchor="middle" font-size="13" font-weight="700" fill="#4C1D95">4 · Credited</text>
-  <text x="865" y="80" text-anchor="middle" font-size="12" fill="#4C1D95" opacity="0.85">after on-chain confirmation</text>
+  <text x="865" y="80" text-anchor="middle" font-size="12" fill="#5B21B6">after on-chain confirmation</text>
 </svg>

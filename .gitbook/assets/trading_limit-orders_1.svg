@@ -5,31 +5,31 @@
   <!-- pills -->
   <rect x="30"  y="60" width="110" height="60" rx="30" fill="#F5F3FF" stroke="#4C1D95" stroke-width="1.5"/>
   <text x="85"  y="88" text-anchor="middle" font-size="15" font-weight="700" fill="#4C1D95">5m</text>
-  <text x="85"  y="106" text-anchor="middle" font-size="11" fill="#4C1D95" opacity="0.75">5 minutes</text>
+  <text x="85"  y="106" text-anchor="middle" font-size="11" fill="#5B21B6">5 minutes</text>
 
   <rect x="155" y="60" width="110" height="60" rx="30" fill="#F5F3FF" stroke="#4C1D95" stroke-width="1.5"/>
   <text x="210" y="88" text-anchor="middle" font-size="15" font-weight="700" fill="#4C1D95">1h</text>
-  <text x="210" y="106" text-anchor="middle" font-size="11" fill="#4C1D95" opacity="0.75">1 hour</text>
+  <text x="210" y="106" text-anchor="middle" font-size="11" fill="#5B21B6">1 hour</text>
 
   <rect x="280" y="60" width="110" height="60" rx="30" fill="#F5F3FF" stroke="#4C1D95" stroke-width="1.5"/>
   <text x="335" y="88" text-anchor="middle" font-size="15" font-weight="700" fill="#4C1D95">12h</text>
-  <text x="335" y="106" text-anchor="middle" font-size="11" fill="#4C1D95" opacity="0.75">12 hours</text>
+  <text x="335" y="106" text-anchor="middle" font-size="11" fill="#5B21B6">12 hours</text>
 
   <rect x="405" y="60" width="110" height="60" rx="30" fill="#F5F3FF" stroke="#4C1D95" stroke-width="1.5"/>
   <text x="460" y="88" text-anchor="middle" font-size="15" font-weight="700" fill="#4C1D95">24h</text>
-  <text x="460" y="106" text-anchor="middle" font-size="11" fill="#4C1D95" opacity="0.75">24 hours</text>
+  <text x="460" y="106" text-anchor="middle" font-size="11" fill="#5B21B6">24 hours</text>
 
   <rect x="530" y="60" width="130" height="60" rx="30" fill="#F5F3FF" stroke="#4C1D95" stroke-width="1.5"/>
   <text x="595" y="88" text-anchor="middle" font-size="15" font-weight="700" fill="#4C1D95">End of day</text>
-  <text x="595" y="106" text-anchor="middle" font-size="11" fill="#4C1D95" opacity="0.75">23:59:59 UTC</text>
+  <text x="595" y="106" text-anchor="middle" font-size="11" fill="#5B21B6">23:59:59 UTC</text>
 
   <rect x="675" y="60" width="120" height="60" rx="30" fill="#DDD6FE" stroke="#4C1D95" stroke-width="1.8"/>
   <text x="735" y="88" text-anchor="middle" font-size="15" font-weight="700" fill="#4C1D95">Custom</text>
-  <text x="735" y="106" text-anchor="middle" font-size="11" fill="#4C1D95" opacity="0.75">any date / time</text>
+  <text x="735" y="106" text-anchor="middle" font-size="11" fill="#5B21B6">any date / time</text>
 
   <!-- timeline hint -->
   <line x1="30" y1="155" x2="795" y2="155" stroke="#4C1D95" stroke-width="1" opacity="0.4"/>
-  <text x="30"  y="175" text-anchor="start" font-size="11" fill="#4C1D95" opacity="0.75">now</text>
-  <text x="795" y="175" text-anchor="end" font-size="11" fill="#4C1D95" opacity="0.75">future</text>
-  <text x="410" y="175" text-anchor="middle" font-size="11" fill="#4C1D95" opacity="0.75">on expiration, unfilled shares are cancelled and locked balance returned</text>
+  <text x="30"  y="175" text-anchor="start" font-size="11" fill="#5B21B6">now</text>
+  <text x="795" y="175" text-anchor="end" font-size="11" fill="#5B21B6">future</text>
+  <text x="410" y="175" text-anchor="middle" font-size="11" fill="#5B21B6">on expiration, unfilled shares are cancelled and locked balance returned</text>
 </svg>

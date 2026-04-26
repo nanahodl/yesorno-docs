@@ -4,37 +4,37 @@
   <rect x="10"  y="0" width="148" height="8" rx="4" fill="#EDE9FE"/>
   <rect x="10"  y="12" width="148" height="90" rx="6" fill="#F5F3FF" stroke="#4C1D95" stroke-width="0.8"/>
   <text x="84"  y="38" text-anchor="middle" font-size="20" font-weight="700" fill="#4C1D95">1¢</text>
-  <text x="84"  y="58" text-anchor="middle" font-size="12" fill="#4C1D95" opacity="0.55">~1% chance</text>
-  <text x="84"  y="80" text-anchor="middle" font-size="12" fill="#4C1D95" opacity="0.4">Almost impossible</text>
+  <text x="84"  y="58" text-anchor="middle" font-size="12" fill="#7C3AED">~1% chance</text>
+  <text x="84"  y="80" text-anchor="middle" font-size="12" fill="#7C3AED">Almost impossible</text>
 
   <!-- Card 2: 25¢ -->
   <rect x="170" y="0" width="148" height="8" rx="4" fill="#C4B5FD"/>
   <rect x="170" y="12" width="148" height="90" rx="6" fill="#F5F3FF" stroke="#4C1D95" stroke-width="0.8"/>
   <text x="244" y="38" text-anchor="middle" font-size="20" font-weight="700" fill="#4C1D95">25¢</text>
-  <text x="244" y="58" text-anchor="middle" font-size="12" fill="#4C1D95" opacity="0.55">~25% chance</text>
-  <text x="244" y="80" text-anchor="middle" font-size="12" fill="#4C1D95" opacity="0.4">Unlikely</text>
+  <text x="244" y="58" text-anchor="middle" font-size="12" fill="#7C3AED">~25% chance</text>
+  <text x="244" y="80" text-anchor="middle" font-size="12" fill="#7C3AED">Unlikely</text>
 
   <!-- Card 3: 50¢ (emphasized) -->
   <rect x="330" y="0" width="148" height="8" rx="4" fill="#7C3AED"/>
   <rect x="330" y="12" width="148" height="90" rx="6" fill="#EDE9FE" stroke="#4C1D95" stroke-width="1.2"/>
   <text x="404" y="38" text-anchor="middle" font-size="20" font-weight="700" fill="#4C1D95">50¢</text>
-  <text x="404" y="58" text-anchor="middle" font-size="12" fill="#4C1D95" opacity="0.55">~50% chance</text>
-  <text x="404" y="80" text-anchor="middle" font-size="12" fill="#4C1D95" opacity="0.4">Coin flip</text>
+  <text x="404" y="58" text-anchor="middle" font-size="12" fill="#7C3AED">~50% chance</text>
+  <text x="404" y="80" text-anchor="middle" font-size="12" fill="#7C3AED">Coin flip</text>
 
   <!-- Card 4: 75¢ -->
   <rect x="490" y="0" width="148" height="8" rx="4" fill="#5B21B6"/>
   <rect x="490" y="12" width="148" height="90" rx="6" fill="#F5F3FF" stroke="#4C1D95" stroke-width="0.8"/>
   <text x="564" y="38" text-anchor="middle" font-size="20" font-weight="700" fill="#4C1D95">75¢</text>
-  <text x="564" y="58" text-anchor="middle" font-size="12" fill="#4C1D95" opacity="0.55">~75% chance</text>
-  <text x="564" y="80" text-anchor="middle" font-size="12" fill="#4C1D95" opacity="0.4">Likely</text>
+  <text x="564" y="58" text-anchor="middle" font-size="12" fill="#7C3AED">~75% chance</text>
+  <text x="564" y="80" text-anchor="middle" font-size="12" fill="#7C3AED">Likely</text>
 
   <!-- Card 5: 99¢ -->
   <rect x="650" y="0" width="148" height="8" rx="4" fill="#4C1D95"/>
   <rect x="650" y="12" width="148" height="90" rx="6" fill="#F5F3FF" stroke="#4C1D95" stroke-width="0.8"/>
   <text x="724" y="38" text-anchor="middle" font-size="20" font-weight="700" fill="#4C1D95">99¢</text>
-  <text x="724" y="58" text-anchor="middle" font-size="12" fill="#4C1D95" opacity="0.55">~99% chance</text>
-  <text x="724" y="80" text-anchor="middle" font-size="12" fill="#4C1D95" opacity="0.4">Almost certain</text>
+  <text x="724" y="58" text-anchor="middle" font-size="12" fill="#7C3AED">~99% chance</text>
+  <text x="724" y="80" text-anchor="middle" font-size="12" fill="#7C3AED">Almost certain</text>
 
   <!-- Caption -->
-  <text x="410" y="130" text-anchor="middle" font-size="13" fill="#4C1D95" opacity="0.5">Share price = the market's implied probability</text>
+  <text x="410" y="130" text-anchor="middle" font-size="13" fill="#7C3AED">Share price = the market's implied probability</text>
 </svg>

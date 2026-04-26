@@ -7,30 +7,30 @@
   </defs>
 
   <rect x="20" y="40" width="170" height="60" rx="6" fill="#F5F3FF" stroke="#4C1D95" stroke-width="1.5"/>
-  <text x="105" y="62" text-anchor="middle" font-size="11" fill="#4C1D95" opacity="0.75" letter-spacing="1">STEP 1</text>
+  <text x="105" y="62" text-anchor="middle" font-size="11" fill="#5B21B6" letter-spacing="1">STEP 1</text>
   <text x="105" y="84" text-anchor="middle" font-size="13" font-weight="700" fill="#4C1D95">Sign in</text>
 
   <line x1="192" y1="70" x2="218" y2="70" stroke="#4C1D95" stroke-width="1.8" marker-end="url(#arr-ft)"/>
 
   <rect x="220" y="40" width="170" height="60" rx="6" fill="#F5F3FF" stroke="#4C1D95" stroke-width="1.5"/>
-  <text x="305" y="62" text-anchor="middle" font-size="11" fill="#4C1D95" opacity="0.75" letter-spacing="1">STEP 2</text>
+  <text x="305" y="62" text-anchor="middle" font-size="11" fill="#5B21B6" letter-spacing="1">STEP 2</text>
   <text x="305" y="84" text-anchor="middle" font-size="13" font-weight="700" fill="#4C1D95">Deposit USDC</text>
 
   <line x1="392" y1="70" x2="418" y2="70" stroke="#4C1D95" stroke-width="1.8" marker-end="url(#arr-ft)"/>
 
   <rect x="420" y="40" width="170" height="60" rx="6" fill="#F5F3FF" stroke="#4C1D95" stroke-width="1.5"/>
-  <text x="505" y="62" text-anchor="middle" font-size="11" fill="#4C1D95" opacity="0.75" letter-spacing="1">STEP 3</text>
+  <text x="505" y="62" text-anchor="middle" font-size="11" fill="#5B21B6" letter-spacing="1">STEP 3</text>
   <text x="505" y="84" text-anchor="middle" font-size="13" font-weight="700" fill="#4C1D95">Pick a market</text>
 
   <line x1="592" y1="70" x2="618" y2="70" stroke="#4C1D95" stroke-width="1.8" marker-end="url(#arr-ft)"/>
 
   <rect x="620" y="40" width="170" height="60" rx="6" fill="#F5F3FF" stroke="#4C1D95" stroke-width="1.5"/>
-  <text x="705" y="62" text-anchor="middle" font-size="11" fill="#4C1D95" opacity="0.75" letter-spacing="1">STEP 4</text>
+  <text x="705" y="62" text-anchor="middle" font-size="11" fill="#5B21B6" letter-spacing="1">STEP 4</text>
   <text x="705" y="84" text-anchor="middle" font-size="13" font-weight="700" fill="#4C1D95">Buy YES or NO</text>
 
   <line x1="792" y1="70" x2="818" y2="70" stroke="#4C1D95" stroke-width="1.8" marker-end="url(#arr-ft)"/>
 
   <rect x="820" y="40" width="180" height="60" rx="6" fill="#DDD6FE" stroke="#4C1D95" stroke-width="1.8"/>
-  <text x="910" y="62" text-anchor="middle" font-size="11" fill="#4C1D95" opacity="0.75" letter-spacing="1">STEP 5</text>
+  <text x="910" y="62" text-anchor="middle" font-size="11" fill="#5B21B6" letter-spacing="1">STEP 5</text>
   <text x="910" y="84" text-anchor="middle" font-size="13" font-weight="700" fill="#4C1D95">Track or sell</text>
 </svg>
