@@ -76,7 +76,7 @@ Buying **5 shares** at a limit price of 80¢:
 
 You pay **$4.03** and receive exactly **5 shares**.
 
-### Curve factor at key prices
+### Curve Factor at Key Prices
 
 | Price (p) | Curve factor (p × (1 − p)) | Relative fee   |
 | --------- | -------------------------- | -------------- |

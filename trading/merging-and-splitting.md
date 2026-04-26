@@ -26,13 +26,13 @@ Lock $1 USDC and receive 1 YES share + 1 NO share.
 
 ![](../.gitbook/assets/trading_merging-and-splitting_1.svg)
 
-### When to use
+### When to Use
 
 * You want to **short** an outcome you already have a view against — split, then sell the side you don't want
 * You want to **accumulate inventory cheaply** without paying the spread
 * You want to **express a nuanced view** by holding a different ratio of YES/NO than the market implies
 
-### How it works
+### How It Works
 
 | Field     | Description         |
 | --------- | ------------------- |
@@ -54,13 +54,13 @@ Return 1 YES + 1 NO and receive $1 USDC back.
 
 ![](../.gitbook/assets/trading_merging-and-splitting_2.svg)
 
-### When to use
+### When to Use
 
 * You want to **close a hedged position** without dealing with the spread
 * You have matched YES + NO from separate buys and want to lock in the difference
 * You want to **free up USDC** for another market
 
-### How it works
+### How It Works
 
 | Field     | Description                                    |
 | --------- | ---------------------------------------------- |

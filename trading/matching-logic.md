@@ -37,27 +37,27 @@ Suppose the book looks like this for YES:
 
 _(Bold = top of book — the best ask and best bid.)_
 
-### Case A — Market buy of 1,000 shares
+### Case A — Market Buy of 1,000 Shares
 
 1. Order arrives as a taker
 2. Best ask is 90¢ (5,000 shares available)
 3. Match 1,000 shares at 90¢ → fully filled
 4. Avg price = 90¢, done
 
-### Case B — Market buy of 7,000 shares
+### Case B — Market Buy of 7,000 Shares
 
 1. Taker order arrives
 2. Match 5,000 shares at 90¢ → partial
 3. Match remaining 2,000 shares at 91¢ → filled
 4. Avg price = (5000 × 0.90 + 2000 × 0.91) ÷ 7000 ≈ 90.29¢
 
-### Case C — Limit buy at 89.5¢ for 1,000 shares
+### Case C — Limit Buy at 89.5¢ for 1,000 Shares
 
 1. 89.5¢ is **below** the best ask (90¢), so it doesn't cross
 2. Order rests on the bids side at 89.5¢ — it becomes the new best bid
 3. When a seller later hits this price, the order fills as a **maker**
 
-### Case D — Limit buy at 92¢ for 10,000 shares
+### Case D — Limit Buy at 92¢ for 10,000 Shares
 
 1. 92¢ **crosses** the best ask
 2. Match 5,000 at 90¢ (taker), then 8,200 at 91¢ (taker) = 13,200 available, only 10,000 needed

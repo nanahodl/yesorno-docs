@@ -10,7 +10,7 @@ This walkthrough gets you from zero to first trade in about two minutes.
 
 ![](../.gitbook/assets/get-started_first-trade_1.svg)
 
-## Step 1 — Sign in
+## Step 1 — Sign In
 
 Visit [yesorno.trade](https://yesorno.trade) and click **Log In** or **Sign Up**. Choose one of:
 

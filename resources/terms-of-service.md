@@ -138,7 +138,7 @@ Sections that by their nature survive termination (e.g., limitation of liability
 
 These Terms are governed by the **laws of Panama**, without regard to conflict of laws principles.
 
-### Good-faith negotiation
+### Good-Faith Negotiation
 
 Before commencing any legal proceeding, you and Yes/No agree to attempt to resolve any Claim through good-faith negotiation:
 

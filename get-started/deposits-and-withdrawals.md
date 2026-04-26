@@ -49,18 +49,18 @@ Most withdrawals process within a few minutes. Final settlement depends on the n
 
 ## Troubleshooting
 
-### Deposit not showing up
+### Deposit Not Showing Up
 
 1. Confirm the transaction was sent on a **supported network**
 2. Wait for the required on-chain confirmations
 3. Check the transaction on the block explorer using the hash
 4. If missing after 30 minutes, contact **support@yesorno.trade** with the transaction hash
 
-### Withdrawal is pending
+### Withdrawal Is Pending
 
 Large or unusual withdrawals may be held briefly for manual review. You'll receive an email update if any action is needed from your side.
 
-### Sent to wrong network
+### Sent to Wrong Network
 
 Funds sent on an unsupported network are generally **unrecoverable**. Always verify the network indicator on the Deposit page before sending.
 

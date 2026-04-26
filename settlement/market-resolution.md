@@ -12,11 +12,11 @@ Every market on Yes/No has a defined **resolution condition** and **deadline**. 
 
 ## Resolution Process
 
-### 1. Market deadline passes
+### 1. Market Deadline Passes
 
 Each market has a specific deadline (e.g. **Feb 16, 17:00 UTC**). No new trades are accepted after that moment.
 
-### 2. Oracle reports the outcome
+### 2. Oracle Reports the Outcome
 
 The designated oracle source provides the verified result.
 
@@ -27,7 +27,7 @@ The designated oracle source provides the verified result.
 The **exact resolution source and criteria** are published on each market's page. Always read these before trading — they are the rulebook the market is judged by.
 {% endhint %}
 
-### 3. Winning shares pay out
+### 3. Winning Shares Pay Out
 
 * **Winning** shares (YES or NO, depending on outcome) redeem for **$1.00 USDC** each
 * **Losing** shares become worth **$0**

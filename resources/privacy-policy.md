@@ -16,7 +16,7 @@ In this Policy, **"Personal Information"** means information that can be associa
 
 ## 1. Information We Collect
 
-### Information you provide
+### Information You Provide
 
 Personal Information you may provide to us includes:
 
@@ -28,7 +28,7 @@ Personal Information you may provide to us includes:
 
 This is typically provided when you connect your wallet, sign up, or communicate with us.
 
-### Information collected automatically
+### Information Collected Automatically
 
 We also collect information as you navigate the Services, including:
 
@@ -36,7 +36,7 @@ We also collect information as you navigate the Services, including:
 * **IP addresses** and device identifiers
 * Information collected through **cookies and tracking technologies**
 
-### Information from third parties
+### Information from Third Parties
 
 In certain instances, we may receive information from:
 
@@ -73,7 +73,7 @@ We may share your Personal Information with:
 | **Third parties you authorize** | Via account connections (e.g., linking a social media account) |
 | **Acquirers** | In the event of a merger, sale, reorganization, or bankruptcy |
 
-### Public blockchain data
+### Public Blockchain Data
 
 Some information is inherently public due to the nature of the blockchain, including:
 
