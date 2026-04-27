@@ -79,17 +79,6 @@ Find your position under **Portfolio → Positions**:
 > * If YES loses: the shares settle at **$0**
 > * If you sell before resolution: you receive the sale price × shares
 
-## What Happens at Resolution?
-
-Once the market resolves (see [Market Resolution](../settlement/market-resolution.md)):
-
-| Outcome  | YES shares settle at | NO shares settle at |
-| -------- | -------------------- | ------------------- |
-| YES wins | **$1.00** each       | **$0**              |
-| NO wins  | **$0**               | **$1.00** each      |
-
-Payouts settle on-chain automatically — no claim step required. If you sold earlier, the payout already happened at the sale price.
-
 ## Next Steps
 
 * [Market Orders](../trading/market-orders.md) — instant execution
