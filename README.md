@@ -60,6 +60,4 @@ This structure leads to three rules that hold at all times:
 
 Chat with traders and the Yes/No team on [Discord](https://discord.gg/yesorno) or [Twitter](https://twitter.com/yesorno).
 
-{% hint style="info" %}
 Need help? Use the **support** channel in the footer at [yesorno.trade](https://yesorno.trade), or reach out at **support@yesorno.trade**.
-{% endhint %}
