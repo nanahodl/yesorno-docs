@@ -18,14 +18,14 @@ For a deeper walkthrough, see [What is Yes/No?](../#how-a-share-works).
 
 ## The Order Book
 
-Each market has its own book, split into **Asks** (sell orders) and **Bids** (buy orders). The best ask and best bid sit next to each other, with the **spread** and **last trade** in between.
+Each market has its own book, split into **Bids** (buy orders, on the left) and **Asks** (sell orders, on the right). The current **last trade** and **spread** sit just below the two sides.
 
 <figure><picture>
   <source srcset="../.gitbook/assets/trading_overview_1-dark.svg" media="(prefers-color-scheme: dark)">
   <img src="../.gitbook/assets/trading_overview_1.svg" alt="">
 </picture></figure>
 
-Asks show the **lowest ask at the top** of the sell side; bids show the **highest bid at the top** of the buy side — so the best prices on each side meet in the middle.
+Both sides put their **best price at the top row**: the highest bid on the left, the lowest ask on the right. The further down each side you go, the worse the price gets.
 
 | Column     | Meaning                                                              |
 | ---------- | -------------------------------------------------------------------- |
