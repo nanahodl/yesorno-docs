@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 220" width="980" style="max-width: 980px; background: transparent; font-family: -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;">
-  <rect data-bg="white" x="0" y="0" width="980" height="220" fill="#FFFFFF" rx="8" ry="8"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1060 220" width="1060" style="max-width: 1060px; background: transparent; font-family: -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;">
+  <rect data-bg="white" x="0" y="0" width="1060" height="220" fill="#FFFFFF" rx="8" ry="8"/>
 
   <defs>
     <linearGradient id="lcRail" x1="0%" y1="0%" x2="100%" y2="0%">
@@ -13,49 +13,49 @@
   </defs>
 
   <!-- ===== Time rail ===== -->
-  <text x="40"  y="32" font-size="10" font-weight="700" fill="#7C3AED" letter-spacing="1.2">BEFORE DEADLINE</text>
-  <text x="940" y="32" text-anchor="end" font-size="10" font-weight="700" fill="#4C1D95" letter-spacing="1.2">AFTER RESOLUTION</text>
-  <rect x="40" y="42" width="900" height="4" rx="2" fill="url(#lcRail)"/>
+  <text x="40"   y="32" font-size="10" font-weight="700" fill="#7C3AED" letter-spacing="1.2">BEFORE DEADLINE</text>
+  <text x="1020" y="32" text-anchor="end" font-size="10" font-weight="700" fill="#4C1D95" letter-spacing="1.2">AFTER RESOLUTION</text>
+  <rect x="40" y="42" width="980" height="4" rx="2" fill="url(#lcRail)"/>
 
-  <!-- ===== Stage 1: Live Trading ===== -->
-  <rect x="40" y="74" width="210" height="120" rx="12" fill="#F5F3FF" stroke="#7C3AED" stroke-width="1.5"/>
+  <!-- ===== Stage 1: Live Trading (x: 40..270) ===== -->
+  <rect x="40" y="74" width="230" height="120" rx="12" fill="#F5F3FF" stroke="#7C3AED" stroke-width="1.5"/>
   <circle cx="64" cy="70" r="15" fill="#7C3AED"/>
   <text x="64" y="75" text-anchor="middle" font-size="13" font-weight="700" fill="#FFFFFF">1</text>
   <text x="62" y="115" font-size="15" font-weight="700" fill="#4C1D95">Live Trading</text>
-  <text x="62" y="143" font-size="12" fill="#5B21B6">Users buy and sell YES / NO shares</text>
+  <text x="62" y="143" font-size="12" fill="#5B21B6">Buy and sell YES / NO shares</text>
   <rect x="62" y="158" width="58" height="20" rx="10" fill="#FFFFFF" stroke="#C4B5FD" stroke-width="1"/>
   <text x="91" y="172" text-anchor="middle" font-size="10.5" font-weight="600" fill="#7C3AED">Open</text>
 
-  <line x1="252" y1="134" x2="278" y2="134" stroke="#7C3AED" stroke-width="2" marker-end="url(#arr-lc)"/>
+  <line x1="272" y1="134" x2="298" y2="134" stroke="#7C3AED" stroke-width="2" marker-end="url(#arr-lc)"/>
 
-  <!-- ===== Stage 2: Market Closes ===== -->
-  <rect x="282" y="74" width="210" height="120" rx="12" fill="#F5F3FF" stroke="#7C3AED" stroke-width="1.5"/>
-  <circle cx="306" cy="70" r="15" fill="#7C3AED"/>
-  <text x="306" y="75" text-anchor="middle" font-size="13" font-weight="700" fill="#FFFFFF">2</text>
-  <text x="304" y="115" font-size="15" font-weight="700" fill="#4C1D95">Market Closes</text>
-  <text x="304" y="143" font-size="12" fill="#5B21B6">Trading stops at the deadline</text>
-  <rect x="304" y="158" width="124" height="20" rx="10" fill="#FFFFFF" stroke="#C4B5FD" stroke-width="1"/>
-  <text x="366" y="172" text-anchor="middle" font-size="10.5" font-weight="600" fill="#7C3AED">Open orders cancelled</text>
+  <!-- ===== Stage 2: Market Closes (x: 302..532) ===== -->
+  <rect x="302" y="74" width="230" height="120" rx="12" fill="#F5F3FF" stroke="#7C3AED" stroke-width="1.5"/>
+  <circle cx="326" cy="70" r="15" fill="#7C3AED"/>
+  <text x="326" y="75" text-anchor="middle" font-size="13" font-weight="700" fill="#FFFFFF">2</text>
+  <text x="324" y="115" font-size="15" font-weight="700" fill="#4C1D95">Market Closes</text>
+  <text x="324" y="143" font-size="12" fill="#5B21B6">Trading stops at the deadline</text>
+  <rect x="324" y="158" width="124" height="20" rx="10" fill="#FFFFFF" stroke="#C4B5FD" stroke-width="1"/>
+  <text x="386" y="172" text-anchor="middle" font-size="10.5" font-weight="600" fill="#7C3AED">Open orders cancelled</text>
 
-  <line x1="494" y1="134" x2="520" y2="134" stroke="#7C3AED" stroke-width="2" marker-end="url(#arr-lc)"/>
+  <line x1="534" y1="134" x2="560" y2="134" stroke="#7C3AED" stroke-width="2" marker-end="url(#arr-lc)"/>
 
-  <!-- ===== Stage 3: Outcome Confirmed ===== -->
-  <rect x="524" y="74" width="210" height="120" rx="12" fill="#F5F3FF" stroke="#7C3AED" stroke-width="1.5"/>
-  <circle cx="548" cy="70" r="15" fill="#7C3AED"/>
-  <text x="548" y="75" text-anchor="middle" font-size="13" font-weight="700" fill="#FFFFFF">3</text>
-  <text x="546" y="115" font-size="15" font-weight="700" fill="#4C1D95">Outcome Confirmed</text>
-  <text x="546" y="143" font-size="12" fill="#5B21B6">An oracle posts the official result</text>
-  <rect x="546" y="158" width="106" height="20" rx="10" fill="#FFFFFF" stroke="#C4B5FD" stroke-width="1"/>
-  <text x="599" y="172" text-anchor="middle" font-size="10.5" font-weight="600" fill="#7C3AED">Auto · 24–72h</text>
+  <!-- ===== Stage 3: Outcome Confirmed (x: 564..794) ===== -->
+  <rect x="564" y="74" width="230" height="120" rx="12" fill="#F5F3FF" stroke="#7C3AED" stroke-width="1.5"/>
+  <circle cx="588" cy="70" r="15" fill="#7C3AED"/>
+  <text x="588" y="75" text-anchor="middle" font-size="13" font-weight="700" fill="#FFFFFF">3</text>
+  <text x="586" y="115" font-size="15" font-weight="700" fill="#4C1D95">Outcome Confirmed</text>
+  <text x="586" y="143" font-size="12" fill="#5B21B6">Oracle posts the official result</text>
+  <rect x="586" y="158" width="106" height="20" rx="10" fill="#FFFFFF" stroke="#C4B5FD" stroke-width="1"/>
+  <text x="639" y="172" text-anchor="middle" font-size="10.5" font-weight="600" fill="#7C3AED">Auto · 24–72h</text>
 
-  <line x1="736" y1="134" x2="762" y2="134" stroke="#7C3AED" stroke-width="2" marker-end="url(#arr-lc)"/>
+  <line x1="796" y1="134" x2="822" y2="134" stroke="#7C3AED" stroke-width="2" marker-end="url(#arr-lc)"/>
 
-  <!-- ===== Stage 4: Payouts (deep purple endpoint) ===== -->
-  <rect x="766" y="74" width="174" height="120" rx="12" fill="#4C1D95" stroke="#4C1D95" stroke-width="1.5"/>
-  <circle cx="790" cy="70" r="15" fill="#FFFFFF" stroke="#4C1D95" stroke-width="2"/>
-  <text x="790" y="75" text-anchor="middle" font-size="13" font-weight="700" fill="#4C1D95">4</text>
-  <text x="788" y="115" font-size="15" font-weight="700" fill="#FFFFFF">Payouts</text>
-  <text x="788" y="143" font-size="12" fill="#C4B5FD">Winners get $1.00 each</text>
-  <rect x="788" y="158" width="84" height="20" rx="10" fill="#7C3AED" stroke="#7C3AED" stroke-width="1"/>
-  <text x="830" y="172" text-anchor="middle" font-size="10.5" font-weight="600" fill="#FFFFFF">Auto-settled</text>
+  <!-- ===== Stage 4: Payouts (deep purple endpoint, x: 826..1020) ===== -->
+  <rect x="826" y="74" width="194" height="120" rx="12" fill="#4C1D95" stroke="#4C1D95" stroke-width="1.5"/>
+  <circle cx="850" cy="70" r="15" fill="#FFFFFF" stroke="#4C1D95" stroke-width="2"/>
+  <text x="850" y="75" text-anchor="middle" font-size="13" font-weight="700" fill="#4C1D95">4</text>
+  <text x="848" y="115" font-size="15" font-weight="700" fill="#FFFFFF">Payouts</text>
+  <text x="848" y="143" font-size="12" fill="#C4B5FD">Winners get $1.00 each</text>
+  <rect x="848" y="158" width="84" height="20" rx="10" fill="#7C3AED" stroke="#7C3AED" stroke-width="1"/>
+  <text x="890" y="172" text-anchor="middle" font-size="10.5" font-weight="600" fill="#FFFFFF">Auto-settled</text>
 </svg>
