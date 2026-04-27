@@ -1,14 +1,10 @@
 ---
-description: Invite friends to Yes/No and earn a share of their trading fees — for as long as they keep trading.
+description: Earn a share of trading fees from every friend you invite — and from every friend they invite.
 ---
 
 # Referrals
 
-Invite friends to Yes/No and earn a share of the **trading fees** they pay. Anyone *they* invite earns you rewards too.
-
-> ### No cap on what you can earn.
->
-> As long as your invitees keep trading, your rewards keep accruing.
+Share your link, and you'll earn a cut of the **trading fees** paid by anyone who joins through it. Earnings accrue for as long as they keep trading — with **no cap**.
 
 ## How It Works
 
@@ -19,7 +15,7 @@ Invite friends to Yes/No and earn a share of the **trading fees** they pay. Anyo
 | **Direct (L1)**   | Users you invited yourself                | **30%** of their trading fees  |
 | **Indirect (L2)** | Users invited by your direct referrals    | **10%** of their trading fees  |
 
-Rewards are based on the **fees actually paid** by your invitees, calculated on every trade and credited to your account automatically.
+Rewards are calculated on every trade your invitees make and credited to your account automatically.
 
 ## Using the Program
 
