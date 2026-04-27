@@ -4,9 +4,11 @@ description: How trading fees work on Yes/No.
 
 # Fees
 
-Yes/No charges a small **taker fee** on trades that match immediately against the order book. Fees are paid in **USDC** and applied automatically at match time.
+Yes/No charges a small **taker fee** on trades that match immediately against the order book.
 
-**Only takers pay.** Limit orders that rest on the book (makers) are never charged. See [How Orders Match](../trading/matching-logic.md) for how maker vs taker is decided.
+* **Always paid in USDC** — never deducted from your shares. The number of shares you enter is exactly what you receive (or deliver)
+* **Only takers pay** — limit orders that rest on the book (makers) are never charged. See [How Orders Match](../trading/matching-logic.md) for how maker vs taker is decided
+* **Shown separately** in the order panel before you confirm, then applied automatically at match time
 
 ## Fee Formula
 
@@ -40,7 +42,7 @@ In practice:
 
 ## How You're Charged
 
-The fee is shown **separately from the order value** — the number of shares you enter is exactly the number you receive (or deliver). Fees are never deducted from your input.
+Every order panel breaks the trade into the same fields:
 
 | Field                  | What it means                                                     |
 | ---------------------- | ----------------------------------------------------------------- |

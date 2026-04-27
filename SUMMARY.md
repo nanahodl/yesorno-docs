@@ -22,8 +22,9 @@
 * [Market Resolution](settlement/market-resolution.md)
 * [Referrals](settlement/referrals.md)
 
-## Legal
+## Resources
 
+* [FAQ](resources/faq.md)
 * [Refund Policy](resources/refund-policy.md)
 * [Terms of Use](resources/terms-of-service.md)
 * [Privacy Policy](resources/privacy-policy.md)
