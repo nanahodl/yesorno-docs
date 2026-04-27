@@ -5,74 +5,65 @@
   <text x="460" y="32" text-anchor="middle" font-size="15" font-weight="700" fill="#4C1D95">Order Book — YES side</text>
 
   <!-- ===== Section labels ===== -->
-  <text x="240" y="62" text-anchor="middle" font-size="11" font-weight="700" fill="#16A34A" letter-spacing="1.4">BIDS · BUY</text>
-  <text x="680" y="62" text-anchor="middle" font-size="11" font-weight="700" fill="#DC2626" letter-spacing="1.4">ASKS · SELL</text>
+  <text x="240" y="62" text-anchor="middle" font-size="11" font-weight="700" fill="#3F6B52" letter-spacing="1.4">BIDS · BUY</text>
+  <text x="680" y="62" text-anchor="middle" font-size="11" font-weight="700" fill="#8B3A4A" letter-spacing="1.4">ASKS · SELL</text>
 
   <!-- ===== Column headers ===== -->
-  <!-- LEFT (mirrored: TOTAL  SHARES  PRICE) -->
   <text x="80"  y="92" text-anchor="middle" font-size="10" font-weight="700" fill="#5B21B6" letter-spacing="1">TOTAL</text>
   <text x="240" y="92" text-anchor="middle" font-size="10" font-weight="700" fill="#5B21B6" letter-spacing="1">SHARES</text>
   <text x="400" y="92" text-anchor="middle" font-size="10" font-weight="700" fill="#5B21B6" letter-spacing="1">PRICE</text>
-  <!-- RIGHT (PRICE  SHARES  TOTAL) -->
   <text x="520" y="92" text-anchor="middle" font-size="10" font-weight="700" fill="#5B21B6" letter-spacing="1">PRICE</text>
   <text x="680" y="92" text-anchor="middle" font-size="10" font-weight="700" fill="#5B21B6" letter-spacing="1">SHARES</text>
   <text x="840" y="92" text-anchor="middle" font-size="10" font-weight="700" fill="#5B21B6" letter-spacing="1">TOTAL</text>
 
   <!-- ====================================================
-       LEFT SIDE — BIDS (highest price at top)
-       Each row: rect 40..440, height 30, gap 6
-       Row Y centers: 116, 152, 188, 224
+       LEFT — BIDS (best at top)
   ==================================================== -->
+  <rect x="40" y="100" width="400" height="30" rx="4" fill="#E8F1EB" stroke="#7FB89A" stroke-width="1.5"/>
+  <text x="80"  y="120" text-anchor="middle" font-size="13" font-weight="700" fill="#3F6B52">$150</text>
+  <text x="240" y="120" text-anchor="middle" font-size="13" font-weight="700" fill="#3F6B52">250</text>
+  <text x="400" y="120" text-anchor="middle" font-size="13" font-weight="700" fill="#3F6B52">0.60</text>
 
-  <!-- Best bid (highlighted) at 0.60 -->
-  <rect x="40" y="100" width="400" height="30" rx="4" fill="#DCFCE7" stroke="#16A34A" stroke-width="1.5"/>
-  <text x="80"  y="120" text-anchor="middle" font-size="13" font-weight="700" fill="#166534">$150</text>
-  <text x="240" y="120" text-anchor="middle" font-size="13" font-weight="700" fill="#166534">250</text>
-  <text x="400" y="120" text-anchor="middle" font-size="13" font-weight="700" fill="#166534">0.60</text>
+  <rect x="40" y="136" width="400" height="30" rx="4" fill="#F2F7F4" stroke="#B8D4C2" stroke-width="1"/>
+  <text x="80"  y="156" text-anchor="middle" font-size="13" fill="#3F6B52">$236</text>
+  <text x="240" y="156" text-anchor="middle" font-size="13" fill="#3F6B52">400</text>
+  <text x="400" y="156" text-anchor="middle" font-size="13" fill="#3F6B52">0.59</text>
 
-  <rect x="40" y="136" width="400" height="30" rx="4" fill="#F0FDF4" stroke="#86EFAC" stroke-width="1"/>
-  <text x="80"  y="156" text-anchor="middle" font-size="13" fill="#166534">$236</text>
-  <text x="240" y="156" text-anchor="middle" font-size="13" fill="#166534">400</text>
-  <text x="400" y="156" text-anchor="middle" font-size="13" fill="#166534">0.59</text>
+  <rect x="40" y="172" width="400" height="30" rx="4" fill="#F2F7F4" stroke="#B8D4C2" stroke-width="1"/>
+  <text x="80"  y="192" text-anchor="middle" font-size="13" fill="#3F6B52">$348</text>
+  <text x="240" y="192" text-anchor="middle" font-size="13" fill="#3F6B52">600</text>
+  <text x="400" y="192" text-anchor="middle" font-size="13" fill="#3F6B52">0.58</text>
 
-  <rect x="40" y="172" width="400" height="30" rx="4" fill="#F0FDF4" stroke="#86EFAC" stroke-width="1"/>
-  <text x="80"  y="192" text-anchor="middle" font-size="13" fill="#166534">$348</text>
-  <text x="240" y="192" text-anchor="middle" font-size="13" fill="#166534">600</text>
-  <text x="400" y="192" text-anchor="middle" font-size="13" fill="#166534">0.58</text>
-
-  <rect x="40" y="208" width="400" height="30" rx="4" fill="#F0FDF4" stroke="#86EFAC" stroke-width="1"/>
-  <text x="80"  y="228" text-anchor="middle" font-size="13" fill="#166534">$513</text>
-  <text x="240" y="228" text-anchor="middle" font-size="13" fill="#166534">900</text>
-  <text x="400" y="228" text-anchor="middle" font-size="13" fill="#166534">0.57</text>
+  <rect x="40" y="208" width="400" height="30" rx="4" fill="#F2F7F4" stroke="#B8D4C2" stroke-width="1"/>
+  <text x="80"  y="228" text-anchor="middle" font-size="13" fill="#3F6B52">$513</text>
+  <text x="240" y="228" text-anchor="middle" font-size="13" fill="#3F6B52">900</text>
+  <text x="400" y="228" text-anchor="middle" font-size="13" fill="#3F6B52">0.57</text>
 
   <!-- ====================================================
-       RIGHT SIDE — ASKS (lowest price at top)
-       x=480..880
+       RIGHT — ASKS (best at top)
   ==================================================== -->
+  <rect x="480" y="100" width="400" height="30" rx="4" fill="#F7E5E8" stroke="#D67A8A" stroke-width="1.5"/>
+  <text x="520" y="120" text-anchor="middle" font-size="13" font-weight="700" fill="#8B3A4A">0.62</text>
+  <text x="680" y="120" text-anchor="middle" font-size="13" font-weight="700" fill="#8B3A4A">200</text>
+  <text x="840" y="120" text-anchor="middle" font-size="13" font-weight="700" fill="#8B3A4A">$124</text>
 
-  <!-- Best ask (highlighted) at 0.62 -->
-  <rect x="480" y="100" width="400" height="30" rx="4" fill="#FEE2E2" stroke="#DC2626" stroke-width="1.5"/>
-  <text x="520" y="120" text-anchor="middle" font-size="13" font-weight="700" fill="#991B1B">0.62</text>
-  <text x="680" y="120" text-anchor="middle" font-size="13" font-weight="700" fill="#991B1B">200</text>
-  <text x="840" y="120" text-anchor="middle" font-size="13" font-weight="700" fill="#991B1B">$124</text>
+  <rect x="480" y="136" width="400" height="30" rx="4" fill="#FBF2F4" stroke="#E8B8C2" stroke-width="1"/>
+  <text x="520" y="156" text-anchor="middle" font-size="13" fill="#8B3A4A">0.63</text>
+  <text x="680" y="156" text-anchor="middle" font-size="13" fill="#8B3A4A">300</text>
+  <text x="840" y="156" text-anchor="middle" font-size="13" fill="#8B3A4A">$189</text>
 
-  <rect x="480" y="136" width="400" height="30" rx="4" fill="#FEF2F2" stroke="#FCA5A5" stroke-width="1"/>
-  <text x="520" y="156" text-anchor="middle" font-size="13" fill="#991B1B">0.63</text>
-  <text x="680" y="156" text-anchor="middle" font-size="13" fill="#991B1B">300</text>
-  <text x="840" y="156" text-anchor="middle" font-size="13" fill="#991B1B">$189</text>
+  <rect x="480" y="172" width="400" height="30" rx="4" fill="#FBF2F4" stroke="#E8B8C2" stroke-width="1"/>
+  <text x="520" y="192" text-anchor="middle" font-size="13" fill="#8B3A4A">0.64</text>
+  <text x="680" y="192" text-anchor="middle" font-size="13" fill="#8B3A4A">500</text>
+  <text x="840" y="192" text-anchor="middle" font-size="13" fill="#8B3A4A">$320</text>
 
-  <rect x="480" y="172" width="400" height="30" rx="4" fill="#FEF2F2" stroke="#FCA5A5" stroke-width="1"/>
-  <text x="520" y="192" text-anchor="middle" font-size="13" fill="#991B1B">0.64</text>
-  <text x="680" y="192" text-anchor="middle" font-size="13" fill="#991B1B">500</text>
-  <text x="840" y="192" text-anchor="middle" font-size="13" fill="#991B1B">$320</text>
-
-  <rect x="480" y="208" width="400" height="30" rx="4" fill="#FEF2F2" stroke="#FCA5A5" stroke-width="1"/>
-  <text x="520" y="228" text-anchor="middle" font-size="13" fill="#991B1B">0.65</text>
-  <text x="680" y="228" text-anchor="middle" font-size="13" fill="#991B1B">800</text>
-  <text x="840" y="228" text-anchor="middle" font-size="13" fill="#991B1B">$520</text>
+  <rect x="480" y="208" width="400" height="30" rx="4" fill="#FBF2F4" stroke="#E8B8C2" stroke-width="1"/>
+  <text x="520" y="228" text-anchor="middle" font-size="13" fill="#8B3A4A">0.65</text>
+  <text x="680" y="228" text-anchor="middle" font-size="13" fill="#8B3A4A">800</text>
+  <text x="840" y="228" text-anchor="middle" font-size="13" fill="#8B3A4A">$520</text>
 
   <!-- ====================================================
-       BOTTOM — Last / Spread / Midpoint band (full width)
+       BOTTOM band
   ==================================================== -->
   <rect x="40" y="252" width="840" height="40" rx="6" fill="#F5F3FF" stroke="#7C3AED" stroke-width="1.2" stroke-dasharray="4 3"/>
   <text x="180" y="277" text-anchor="middle" font-size="13" fill="#5B21B6">Last trade <tspan font-weight="700" fill="#4C1D95">0.61</tspan></text>
@@ -82,16 +73,16 @@
   <!-- ====================================================
        LEGEND
   ==================================================== -->
-  <rect x="60"  y="320" width="14" height="14" rx="2" fill="#DCFCE7" stroke="#16A34A" stroke-width="1.5"/>
+  <rect x="60"  y="320" width="14" height="14" rx="2" fill="#E8F1EB" stroke="#7FB89A" stroke-width="1.5"/>
   <text x="84"  y="332" font-size="12" fill="#5B21B6">Best bid</text>
 
-  <rect x="170" y="320" width="14" height="14" rx="2" fill="#FEE2E2" stroke="#DC2626" stroke-width="1.5"/>
+  <rect x="170" y="320" width="14" height="14" rx="2" fill="#F7E5E8" stroke="#D67A8A" stroke-width="1.5"/>
   <text x="194" y="332" font-size="12" fill="#5B21B6">Best ask</text>
 
-  <rect x="280" y="320" width="14" height="14" rx="2" fill="#F0FDF4" stroke="#86EFAC" stroke-width="1"/>
+  <rect x="280" y="320" width="14" height="14" rx="2" fill="#F2F7F4" stroke="#B8D4C2" stroke-width="1"/>
   <text x="304" y="332" font-size="12" fill="#5B21B6">Resting bids</text>
 
-  <rect x="410" y="320" width="14" height="14" rx="2" fill="#FEF2F2" stroke="#FCA5A5" stroke-width="1"/>
+  <rect x="410" y="320" width="14" height="14" rx="2" fill="#FBF2F4" stroke="#E8B8C2" stroke-width="1"/>
   <text x="434" y="332" font-size="12" fill="#5B21B6">Resting asks</text>
 
   <rect x="540" y="320" width="14" height="14" rx="2" fill="#F5F3FF" stroke="#7C3AED" stroke-width="1.2" stroke-dasharray="3 2"/>
