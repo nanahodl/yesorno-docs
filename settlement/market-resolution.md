@@ -4,7 +4,7 @@ description: How markets are resolved on Yes/No.
 
 # Market Resolution
 
-Every market on Yes/No has a defined **resolution condition** and **deadline**. When the deadline passes, the market is resolved against an objective data source. Winning shares redeem for **$1.00** each; losing shares go to **$0**.
+Every market has a defined **resolution condition** and **deadline**. When the deadline passes, the market is resolved against an objective data source — winning shares redeem for **$1.00** each, losing shares go to **$0**.
 
 ## Market Lifecycle
 
@@ -12,38 +12,38 @@ Every market on Yes/No has a defined **resolution condition** and **deadline**. 
 
 ## Resolution Process
 
-### 1. Market Deadline Passes
+### 1. Deadline Passes
 
 Each market has a specific deadline (e.g. **Feb 16, 17:00 UTC**). No new trades are accepted after that moment.
 
 ### 2. Oracle Reports the Outcome
 
-The designated oracle source provides the verified result.
+The designated oracle source provides the verified result:
 
-* **Automated price feeds** (crypto, stocks, other numeric data) resolve immediately at the deadline
-* **Manual resolution** (sports, politics, custom events) typically takes **24–72 hours** after the deadline, depending on event complexity and data availability
+* **Automated price feeds** (crypto, stocks, numeric data) resolve immediately at the deadline
+* **Manual resolution** (sports, politics, custom events) typically takes **24–72 hours**, depending on event complexity and data availability
 
 {% hint style="info" %}
-The **exact resolution source and criteria** are published on each market's page. Always read these before trading — they are the rulebook the market is judged by.
+The **exact resolution source and criteria** are published on each market page. Always read them before trading — they are the rulebook the market is judged by.
 {% endhint %}
 
-### 3. Winning Shares Pay Out
+### 3. Payouts Settle
 
-* **Winning** shares (YES or NO, depending on outcome) redeem for **$1.00 USDC** each
-* **Losing** shares become worth **$0**
-* Payouts settle on-chain automatically — no claim step needed
+* **Winning** shares redeem for **$1.00 USDC** each
+* **Losing** shares are worth **$0**
+* Payouts settle on-chain automatically — no claim step
 
-## What Happens to Open Orders
+## Open Orders at the Deadline
 
 When the deadline passes:
 
 * All open limit orders are **cancelled automatically**
-* Locked USDC (for buy orders) is returned to your available balance
-* Locked shares (for sell orders) are returned to your position
+* Locked USDC (buy orders) returns to your available balance
+* Locked shares (sell orders) return to your position
 
-## Payouts
+## Payout Math
 
-Once resolution is finalized, payouts show up in your portfolio automatically. Every **1 YES + 1 NO pair** was originally collateralized by $1.00 USDC — at resolution that dollar flows entirely to the winning side:
+Every **1 YES + 1 NO** pair was collateralized by $1.00 USDC — at resolution that dollar flows entirely to the winning side:
 
 ![](../.gitbook/assets/settlement_market-resolution_2.svg)
 
@@ -56,20 +56,16 @@ Once resolution is finalized, payouts show up in your portfolio automatically. E
 
 For **category markets**, only YES on the winning outcome pays $1.00; every other YES resolves to $0 (NO is the mirror image). See [Category Markets](../trading/category-markets.md).
 
-## Final Resolutions
-
-A market that resolves **consistent with its published rules** is **final**. Disagreeing with the real-world outcome, or missing the deadline, does not qualify a position for a refund.
+## Resolutions Are Final
 
 {% hint style="warning" %}
-Always read the **resolution criteria** on the market page before trading. That's the rulebook the market will be judged by — not the event itself.
+A resolution **consistent with the published rules is final** — disagreeing with the real-world outcome does not qualify a position for a refund. Read the resolution criteria on the market page before trading.
 {% endhint %}
 
-## Exceptional Situations
-
-In rare cases — a resolution source becoming unavailable, an event being cancelled or indefinitely postponed, a materially ambiguous outcome, or a critical setup error — a market may be **voided**. Any void is announced on the affected market page and handled on a case-by-case basis under the [Terms of Use](../resources/terms-of-service.md).
+In rare cases — a resolution source becoming unavailable, an event cancelled or indefinitely postponed, a materially ambiguous outcome, or a critical setup error — a market may be **voided**. See [Refund Policy](../resources/refund-policy.md) for when this applies, and the [Terms of Use](../resources/terms-of-service.md) for the binding dispute procedure.
 
 ## Related
 
 * [Refund Policy](../resources/refund-policy.md) — when markets may be voided
 * [Terms of Use](../resources/terms-of-service.md) — binding rules and dispute procedure
-* [Merging & Splitting Shares](../trading/merging-and-splitting.md) — convert between USDC and share-pairs
+* [Merging & Splitting Shares](../trading/merging-and-splitting.md) — convert between USDC and share pairs

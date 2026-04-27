@@ -4,70 +4,53 @@ description: How to sign up on Yes/No and the wallet options we support.
 
 # Sign Up & Wallet
 
-Getting started on Yes/No takes less than a minute. The same modal handles both signup and login — the first time you use a method, we create your account; after that, the same method logs you in.
+Signing up on Yes/No takes less than a minute. **Log In** and **Sign Up** open the same modal — the first time you use a method we create your account; after that, the same method logs you in.
 
-{% hint style="info" %}
-**One modal, five methods.** Yes/No doesn't separate "Sign up" from "Log in". Click either **Log In** or **Sign Up** in the top bar — you'll see the same five options.
-{% endhint %}
+## Sign-In Methods
 
-## Signup Methods
-
-Yes/No supports **five** sign-in methods, powered by [Privy](https://privy.io/) for identity and embedded wallets.
+Yes/No supports five sign-in methods, powered by [Privy](https://privy.io/) for identity and embedded wallets.
 
 <figure><img src="../.gitbook/assets/image (3).png" alt="" width="340"><figcaption></figcaption></figure>
 
-### Crypto Wallets
+### Crypto Wallet
 
 Connect a self-custodied wallet. You hold your own keys and sign every transaction.
 
-* **MetaMask**
-* **Coinbase Wallet**
-* **Phantom**
-* **Uniswap Wallet**
+* **MetaMask** · **Coinbase Wallet** · **Phantom** · **Uniswap Wallet**
 
-### Email Login
+### Email
 
-Don't have a wallet? Sign in with email. Privy provisions a secure **embedded wallet** on your behalf — no seed phrase to manage, no extension to install.
+No wallet? Sign in with your email — Privy creates a secure **embedded wallet** for you. No seed phrase, no extension.
 
-* Enter your email → get a one-time code
-* A wallet is created and stored with Privy
-* Recovery via your email
+* Enter your email → receive a one-time code
+* A wallet is provisioned and recoverable via your email
 
 ## Comparison
 
-|              | Crypto Wallet           | Email Login       |
+|              | Crypto Wallet           | Email             |
 | ------------ | ----------------------- | ----------------- |
 | Onboarding   | Connect existing wallet | Verify email      |
 | Keys held by | You                     | Privy (encrypted) |
-| Recovery     | Your seed phrase        | Email             |
-| Gas handling | You pay gas             | Handled for you   |
-
-## "Last Used" Memory
-
-The modal remembers the last method you used and shows a **Last used** badge next to it, moving it to the top of the list so you don't have to scroll on your next visit.
-
-* Remembered across sessions via local storage
-* Reset by clearing your browser data
-* Email login also shows the badge if it was last used
+| Recovery     | Seed phrase             | Email             |
+| Gas          | You pay                 | Handled for you   |
 
 ## Creating Your Account
 
 1. Go to [yesorno.trade](https://yesorno.trade)
 2. Click **Log In** or **Sign Up** in the top right
-3. Pick one of the five methods
-4. Sign / verify to confirm
-5. Accept the [Terms of Use](../resources/terms-of-service.md) and [Privacy Policy](../resources/privacy-policy.md)
-6. You're in — deposit USDC to start trading
+3. Pick a sign-in method, then sign or verify to confirm
+4. Accept the [Terms of Use](../resources/terms-of-service.md) and [Privacy Policy](../resources/privacy-policy.md)
+5. Deposit USDC to start trading
 
 ![](../.gitbook/assets/get-started_sign-up-and-wallet_1.svg)
 
 ## Account Security
 
 {% hint style="warning" %}
-**Never share** your seed phrase, private key, or email verification code. Yes/No staff will never ask for them via DM, email, or Discord.
+**Never share** your seed phrase, private key, or email verification code. Yes/No will never ask for them via DM, email, or Discord.
 {% endhint %}
 
-* Keep your email account secure — Yes/No sends one-time verification codes there to log you in
+* Keep your email account secure — we send one-time codes there to log you in
 * For self-custody wallets, back up your seed phrase offline
 * Always verify you're on **yesorno.trade** before connecting your wallet
 * Report suspicious activity to **support@yesorno.trade**

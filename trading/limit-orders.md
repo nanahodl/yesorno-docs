@@ -4,10 +4,10 @@ description: How limit orders work on Yes/No.
 
 # Limit Orders
 
-A **limit order** lets you set the exact price you want to pay (or receive) and rests on the book until a matching order arrives. Use it when you care more about price than speed.
+A **limit order** lets you set the exact price you want to pay (or receive) and rests on the book until a matching order arrives. Use it when price matters more than speed.
 
 {% hint style="info" %}
-A limit order gives you **full control over the execution price**. If no one is willing to trade at that price yet, your order simply sits in the book until someone is — or until you cancel it.
+If no one trades at your price yet, your order simply waits in the book until someone does — or until you cancel it.
 {% endhint %}
 
 ## Buy vs Sell
@@ -17,40 +17,38 @@ A limit order gives you **full control over the execution price**. If no one is 
 | **Buy (Limit)**  | Price + shares | Total ≈ price × shares   |
 | **Sell (Limit)** | Price + shares | Receive ≈ price × shares |
 
-A buy limit order sits on the **Bids** side of the book. A sell limit order sits on the **Asks** side.
+A buy limit sits on the **Bids** side; a sell limit sits on the **Asks** side.
 
 ## Quick Example
 
-You think YES is worth more than 60¢ but you'd only buy it at 58¢ or lower. Place a limit order:
+You think YES is worth more than 60¢, but you'd only buy at 58¢ or lower:
 
-1. Select **YES** → **Buy** → **Limit**
-2. Set **Limit Price** = 58¢
-3. Set **Shares** = 100
-4. Panel shows:
-   * **Order Value** = 0.58 × 100 = $58.00
-   * **Est. Fee** (shown separately — only charged if the order is matched immediately as a taker)
+1. Select **YES → Buy → Limit**
+2. Set **Limit Price** = 58¢, **Shares** = 100
+3. Panel shows:
+   * **Order Value** = 0.58 × 100 = **$58.00**
+   * **Est. Fee** — shown separately, only charged if the order matches immediately as a taker
    * **Total** = Order Value + Est. Fee — the amount locked when you submit
-   * **To Win** = 100 × $1.00 = $100.00 if YES wins (or $0 if YES loses)
-5. Submit → order rests on the book at 58¢ until a seller matches it
+   * **To Win** = 100 × $1.00 = **$100.00** if YES wins (or $0 if it loses)
+4. Submit → the order rests on the book at 58¢ until a seller matches it
 
 ## Price Input
 
-* Range: from the market's minimum tick to **99.9¢**
-* Click ± buttons to step by one tick (usually 1¢)
-* Hover shows the equivalent **American** and **Decimal** odds
+* Range: **1¢ – 99¢** (subject to the market's tick size)
+* Click **±** to step by one tick (usually 1¢)
+* Hover to see equivalent **American** and **Decimal** odds
 
 {% hint style="info" %}
-**Tick size is per-market.** Most markets use 1¢ ticks, but some use finer ticks (e.g. 0.1¢). The Limit Price input enforces the market's tick automatically.
+**Tick size is per-market.** Most markets use 1¢ ticks; some use finer (e.g. 0.1¢). The Limit Price input enforces the correct tick automatically.
 {% endhint %}
 
 ## Shares Input
 
 * Minimum: **5 shares**
 * Precision: up to 2 decimal places (e.g. 5.25)
-* Quick buttons for Buy: **±10 / ±100**
-* Quick buttons for Sell: **25% / 50% / Max**
+* Quick buttons — Buy: **±10 / ±100** · Sell: **25% / 50% / Max**
 
-## To Win & Odds Conversion
+## Odds Conversion
 
 Every limit order panel shows the same trade in three formats:
 
@@ -60,20 +58,20 @@ Every limit order panel shows the same trade in three formats:
 | **American**  | −155.6  | Bet 155.6 to win 100        |
 | **Decimal**   | 1.643   | 1 USDC returns 1.643 USDC   |
 
-Hover the **ⓘ** icons next to **To Win** and **Total** to see the conversion.
+Hover the **ⓘ** icons next to **To Win** and **Total** for the conversion.
 
-## Immediate-Match Hint
+## Immediate Match
 
-If your limit price crosses the spread (e.g. a buy limit at 95¢ when asks are at 91¢), the engine will **immediately match** the portion it can fill at or better than your price:
+If your limit price crosses the spread (e.g. a buy limit at 95¢ while asks are at 91¢), the engine **matches the crossing portion immediately**:
 
-* Panel shows a green **"X matching"** badge for the portion that will fill immediately
-* Any remaining shares rest on the book at your chosen price
+* The panel shows a green **"X matching"** badge for the part that fills now
+* Any remainder rests on the book at your chosen price
 
-So a single limit order can be **part executed, part resting**.
+A single limit order can therefore be **part executed, part resting**.
 
-## Set Expiration
+## Expiration
 
-Limit orders default to **Good 'til Cancelled (GTC)** — they rest on the book until you cancel or they fill. Enable **Set Expiration** to auto-cancel after a specific duration:
+Limit orders default to **Good 'til Cancelled (GTC)** — they rest until you cancel or they fill. Enable **Set Expiration** to auto-cancel after a fixed duration:
 
 | Option         | Behavior                           |
 | -------------- | ---------------------------------- |
@@ -82,11 +80,11 @@ Limit orders default to **Good 'til Cancelled (GTC)** — they rest on the book 
 | **12h**        | 12 hours from order time           |
 | **24h**        | 24 hours from order time           |
 | **End of day** | 23:59:59 UTC today                 |
-| **Custom**     | Pick any date + time in the future |
+| **Custom**     | Pick any date and time in the future |
 
-On expiration, unfilled shares are automatically cancelled and any locked balance is returned to your wallet.
+On expiration, unfilled shares are cancelled and any locked balance is returned to your wallet.
 
 ## Related
 
-* [Market Orders](market-orders.md) — no price control, but instant
+* [Market Orders](market-orders.md) — instant, no price control
 * [How Orders Match](matching-logic.md) — price-time priority explained

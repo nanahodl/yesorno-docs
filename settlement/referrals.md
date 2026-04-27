@@ -4,42 +4,42 @@ description: Earn a share of trading fees from every friend you invite — and f
 
 # Referrals
 
-Share your link, and you'll earn a cut of the **trading fees** paid by anyone who joins through it. Earnings accrue for as long as they keep trading — with **no cap**.
+Share your link and you'll earn a cut of the **trading fees** paid by anyone who joins through it. Earnings accrue for as long as your invitees keep trading — with **no cap**.
 
 ## How It Works
 
 ![](../.gitbook/assets/settlement_referrals_1.svg)
 
-| Level             | Who they are                              | You earn                       |
-| ----------------- | ----------------------------------------- | ------------------------------ |
-| **Direct (L1)**   | Users you invited yourself                | **30%** of their trading fees  |
-| **Indirect (L2)** | Users invited by your direct referrals    | **10%** of their trading fees  |
+| Level             | Who they are                           | You earn                      |
+| ----------------- | -------------------------------------- | ----------------------------- |
+| **Direct (L1)**   | Users you invited yourself             | **30%** of their trading fees |
+| **Indirect (L2)** | Users invited by your direct referrals | **10%** of their trading fees |
 
-Rewards are calculated on every trade your invitees make and credited to your account automatically.
+Rewards are calculated on every trade and credited to your account automatically.
 
 ### A Simple Example
 
-Suppose **Alice** is your direct invitee, and Alice invited **Carol**. Over a week, they pay the following in trading fees:
+Suppose **Alice** is your direct invitee, and Alice invited **Carol**. Over a week, their fees add up like this:
 
-| Trader                  | Fees they paid | Your share | You earn  |
-| ----------------------- | -------------- | ---------- | --------- |
-| **Alice** (Direct, L1)  | $100           | 30%        | **$30**   |
-| **Carol** (Indirect, L2)| $50            | 10%        | **$5**    |
-| **Total this week**     | —              | —          | **$35**   |
+| Trader                   | Fees they paid | Your share | You earn |
+| ------------------------ | -------------- | ---------- | -------- |
+| **Alice** (Direct, L1)   | $100           | 30%        | **$30**  |
+| **Carol** (Indirect, L2) | $50            | 10%        | **$5**   |
+| **Total this week**      | —              | —          | **$35**  |
 
-Earnings scale linearly with your invitees' trading activity, with no cap.
+Earnings scale linearly with your invitees' activity — no cap.
 
 ## Using the Program
 
-The ability to create a referral code unlocks once you reach a **lifetime trading volume threshold**. You can track your progress on the **Refer & Earn** page.
+Creating a referral code unlocks once you reach a **lifetime trading volume threshold**. Track your progress on the **Refer & Earn** page.
 
 Once unlocked:
 
-1. Open **Refer & Earn** from the avatar menu in the top-right
+1. Open **Refer & Earn** from the avatar menu in the top right
 2. Pick a code (3–30 letters or numbers)
 3. Share your link — `yesorno.trade/?r={your-code}`
 
-The dashboard shows your **Sign-ups**, **Active Traders** (last 24h), and cumulative **Earnings** over 7D / 30D / 90D / all-time. Rewards are **settled automatically in USDC** to your account — no claim button.
+The dashboard shows **Sign-ups**, **Active Traders** (last 24h), and cumulative **Earnings** over 7D / 30D / 90D / all-time. Rewards settle in USDC automatically — no claim button.
 
 ## Related
 

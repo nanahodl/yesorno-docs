@@ -4,21 +4,21 @@ description: How trading on Yes/No works — the order book, order types, and mo
 
 # Trading Overview
 
-Trading on Yes/No runs on a **Central Limit Order Book (CLOB)** — the same model used by traditional exchanges. Every buy and sell is matched transparently against a public order book, user-to-user.
+Trading on Yes/No runs on a **Central Limit Order Book (CLOB)** — the same model used by traditional exchanges. Every order is matched transparently against a public, user-to-user order book.
 
 ## How Shares Work
 
-Every market on Yes/No has two outcome shares — **YES** and **NO** — priced between **1¢ and 99¢**.
+Each market has two outcome shares — **YES** and **NO** — priced between **1¢ and 99¢**.
 
-* Price = implied probability (60¢ ⇒ market implies 60%)
-* 1 YES + 1 NO is always collateralized by $1.00 USDC
-* At resolution, the winning side pays $1.00 and the losing side pays $0
+* Price = the market's implied probability (60¢ ⇒ 60% chance)
+* 1 YES + 1 NO is always collateralized by **$1.00** USDC
+* At resolution, the winning side redeems for **$1.00** and the losing side for **$0**
 
 For a deeper walkthrough, see [What is Yes/No?](../#how-a-share-works).
 
 ## The Order Book
 
-Each market has its own order book, split into **Asks** (sell orders) and **Bids** (buy orders). The best (top) ask and best bid sit next to each other, with the spread and last trade in between.
+Each market has its own book, split into **Asks** (sell orders) and **Bids** (buy orders). The best ask and best bid sit next to each other, with the **spread** and **last trade** in between.
 
 ![](../.gitbook/assets/trading_overview_1.svg)
 
@@ -34,17 +34,17 @@ Each market has its own order book, split into **Asks** (sell orders) and **Bids
 | **Bids** | 88¢     | 22,100 | $19,448      |
 |          | 87¢     | 5,000  | $4,350       |
 
-Asks list the **lowest ask at the top** of the sell side; bids list the **highest bid at the top** of the buy side — so the two best prices meet at the middle of the book.
+Asks show the **lowest ask at the top** of the sell side; bids show the **highest bid at the top** of the buy side — so the best prices on each side meet in the middle.
 
-| Column     | Meaning                                                                                   |
-| ---------- | ----------------------------------------------------------------------------------------- |
-| **Price**  | Price per share, in ¢ (0 – 100)                                                           |
-| **Shares** | Number of shares resting at that price                                                    |
-| **Total**  | Price × Shares ÷ 100, in USDC                                                             |
-| **Last**   | The most recent executed trade                                                            |
-| **Spread** | Lowest Ask − Highest Bid. A tighter spread means lower cost to enter and exit a position. |
+| Column     | Meaning                                                              |
+| ---------- | -------------------------------------------------------------------- |
+| **Price**  | Price per share, in ¢ (1 – 99)                                       |
+| **Shares** | Shares resting at that price                                         |
+| **Total**  | Price × Shares ÷ 100, in USDC                                        |
+| **Last**   | The most recent executed trade                                       |
+| **Spread** | Lowest Ask − Highest Bid. A tighter spread means lower cost to trade |
 
-Switch between YES and NO by clicking the other outcome card — the book layout is identical.
+Switch between YES and NO by clicking the other outcome card — the layout is identical.
 
 ## Order Types
 
@@ -53,14 +53,14 @@ Switch between YES and NO by clicking the other outcome card — the book layout
 | [Market Order](market-orders.md) | Executes immediately against the best available resting orders    |
 | [Limit Order](limit-orders.md)   | Rests on the book at your chosen price until matched or cancelled |
 
-## Buying YES vs Buying NO
+## Buying YES vs NO
 
-Buying YES and buying NO are **symmetric**. At any moment:
+Buying YES and buying NO are **symmetric**:
 
-* Price(YES) + Price(NO) ≈ $1.00
+* Price(YES) + Price(NO) ≈ $1.00 at all times
 * Buying YES at **60¢** is equivalent to betting against NO at **40¢**
 
-Use whichever side has better liquidity or is easier to reason about for a given market.
+Use whichever side has better liquidity or is easier to reason about.
 
 ## Minimums & Precision
 

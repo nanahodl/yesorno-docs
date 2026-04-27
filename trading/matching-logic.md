@@ -4,18 +4,18 @@ description: How orders are matched on the Yes/No order book.
 
 # How Orders Match
 
-Yes/No runs a **Central Limit Order Book (CLOB)** — the same matching model used by traditional exchanges. Every order is matched transparently using a consistent set of rules. This page explains how.
+Yes/No runs a **Central Limit Order Book (CLOB)** — the same matching model used by traditional exchanges. Every order is matched against the book using one consistent rule.
 
 ## Price-Time Priority
 
-Yes/No follows **price-time priority**:
+Orders match in two layers:
 
-1. **Price priority** — orders with the better price match first
-   * For buys: the **highest** bid matches first
-   * For sells: the **lowest** ask matches first
-2. **Time priority** — if two orders share the same price, the one that **arrived earlier** matches first
+1. **Price** — better prices match first
+   * Buys: the **highest** bid matches first
+   * Sells: the **lowest** ask matches first
+2. **Time** — at the same price, the **earlier** order matches first
 
-The same rule applies to every order on the book.
+This rule applies to every order on the book.
 
 ## Makers vs Takers
 
@@ -24,64 +24,51 @@ The same rule applies to every order on the book.
 | **Maker** | Your order **rests on the book**, adding liquidity         |
 | **Taker** | Your order **matches immediately** against a resting order |
 
-A single order can be **both**. If a limit order partially fills on arrival and the rest rests on the book, the filled portion is a taker trade and the remainder becomes a maker order.
+A single order can be both: if a limit order partially fills on arrival and the rest rests on the book, the filled portion is a taker trade and the remainder becomes a maker.
 
-## Worked Example
+## Worked Examples
 
-Suppose the book looks like this for YES:
+Suppose the YES book looks like this:
 
 | Asks    |                  | Bids    |                   |
 | ------- | ---------------- | ------- | ----------------- |
 | 91¢     | 8,200 shares     | 89¢     | 15,400 shares     |
 | **90¢** | **5,000 shares** | **88¢** | **22,100 shares** |
 
-_(Bold = top of book — the best ask and best bid.)_
+_(Bold = top of book.)_
 
-### Case A — Market Buy of 1,000 Shares
+### Market Buy of 7,000 Shares (walks the book)
 
-1. Order arrives as a taker
-2. Best ask is 90¢ (5,000 shares available)
-3. Match 1,000 shares at 90¢ → fully filled
-4. Avg price = 90¢, done
+1. Match 5,000 at 90¢ — fills the best ask
+2. Match remaining 2,000 at 91¢
+3. Avg price = (5,000 × 0.90 + 2,000 × 0.91) ÷ 7,000 ≈ **90.29¢**
 
-### Case B — Market Buy of 7,000 Shares
+### Limit Buy at 92¢ for 10,000 Shares (crosses, then rests)
 
-1. Taker order arrives
-2. Match 5,000 shares at 90¢ → partial
-3. Match remaining 2,000 shares at 91¢ → filled
-4. Avg price = (5000 × 0.90 + 2000 × 0.91) ÷ 7000 ≈ 90.29¢
+1. 92¢ crosses the spread → matches as a taker
+2. Match 5,000 at 90¢, then 5,000 at 91¢ — fully filled
+3. If only 7,000 had been available at or below 92¢, the remaining 3,000 would **rest at 92¢** as a maker
 
-### Case C — Limit Buy at 89.5¢ for 1,000 Shares
-
-1. 89.5¢ is **below** the best ask (90¢), so it doesn't cross
-2. Order rests on the bids side at 89.5¢ — it becomes the new best bid
-3. When a seller later hits this price, the order fills as a **maker**
-
-### Case D — Limit Buy at 92¢ for 10,000 Shares
-
-1. 92¢ **crosses** the best ask
-2. Match 5,000 at 90¢ (taker), then 8,200 at 91¢ (taker) = 13,200 available, only 10,000 needed
-3. So: 5,000 at 90¢ + 5,000 at 91¢ → fully filled as taker
-4. If only 7,000 were available at or below 92¢, the remaining 3,000 would **rest at 92¢** as a maker
+A limit order at a price that **doesn't cross** simply rests on the book until a counterparty trades into it.
 
 ## Partial Fills
 
-Orders don't have to fill all at once. If there isn't enough liquidity at your price:
+If there isn't enough liquidity at your price:
 
-* **Limit order** — matched portion fills immediately, remainder rests on the book
-* **Market order** — matched portion fills, remainder is cancelled (market orders never rest)
+* **Limit** — matched portion fills immediately, remainder rests on the book
+* **Market** — matched portion fills, remainder is cancelled (market orders never rest)
 
 Each fill is recorded separately in your order history.
 
 ## What You See on the Market Page
 
-Every market displays in real time:
+In real time, every market shows:
 
-* **Order book** depth for both YES and NO
+* **Order book** depth for YES and NO
 * **Best bid / best ask** — top of book
 * **Spread** — gap between best bid and best ask
 * **Last** — the most recent executed price
-* **Recent trades** — newest at the top, visible to everyone
+* **Recent trades** — newest at the top, visible to all
 
 ## Related
 

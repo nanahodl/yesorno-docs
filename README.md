@@ -6,40 +6,35 @@ description: Before it happens. — An overview of Yes/No and how prediction mar
 
 ## Overview
 
-**Yes/No — before it happens.** Yes/No lets anyone trade on the outcomes of real-world events — a forecasting and risk engine open to everyone.
+**Yes/No — before it happens.** Trade real-world outcomes by buying **YES** or **NO** shares on a question. Prices reflect the market's view of how likely each side is to win.
 
-You buy shares in the outcomes — **YES** or **NO** — of a specific condition. For example:
-
-> Buy **YES** shares on _"Will BTC reach $100k this week?"_ at **15¢** each. The price implies a **15% chance** of the outcome. If it happens, each share redeems for **$1.00** — about a **6.7× return** ($1.00 ÷ $0.15). If it doesn't, the shares are worth **$0** after resolution.
+> Buy **YES** at **15¢** on _"Will BTC reach $100k this week?"_ The price implies a **15% chance**. If it happens, each share redeems for **$1.00** — a **6.7×** return. If not, the shares settle at **$0**.
 
 ## How a Share Works
 
 Every market asks a yes/no question. You can buy two things:
 
-* A **YES share** — worth **$1.00** if the event happens, **$0** if it doesn't
+* A **YES share** — worth **$1.00** if the event happens, **$0** if not
 * A **NO share** — worth **$1.00** if the event doesn't happen, **$0** if it does
 
-Because exactly one side will be right, one YES share plus one NO share is **always worth $1.00 together**.
+Since exactly one side will be right, **1 YES + 1 NO = $1.00** at all times.
 
 ![](.gitbook/assets/get-started_what-is-yesorno_1.svg)
 
-This structure leads to three rules that hold at all times:
+Three rules follow from this:
 
-* **YES price + NO price ≈ $1.00.** If YES trades at 60¢, NO trades near 40¢.
-* **Price = the market's implied probability.** YES at 60¢ means the market thinks there's a **60% chance** the event happens.
-* **Prices always sit between 1¢ and 99¢.** The closer to 99¢, the more the market expects it to happen; the closer to 1¢, the less.
+* **YES price + NO price ≈ $1.00.** YES at 60¢ ⇒ NO ≈ 40¢.
+* **Price = implied probability.** YES at 60¢ ⇒ the market sees a **60% chance**.
+* **Prices stay between 1¢ and 99¢** — closer to 99¢ means more likely; closer to 1¢ means less.
 
 ![](.gitbook/assets/get-started_what-is-yesorno_2.svg)
 
-## How It Works
+## How Trading Works
 
-1. **Pick a market** — Browse live markets on crypto, sports, politics, and more.
-2. **Buy shares** — Buy YES or NO at the current market price.
-3. **Hold or sell early** — Keep until resolution, or sell anytime to lock in profit or cut losses.
-4. **Settled automatically** — When the market resolves:
-   * Winning shares pay **$1.00** each, losing shares go to **$0**
-   * USDC is credited to your account — no claim step needed
-   * Sold earlier? Your payout already happened at the sale price
+1. **Pick a market** — Crypto, sports, politics, and more.
+2. **Buy YES or NO** at the current price.
+3. **Hold or sell early** — Sell anytime before the deadline to lock in profit or cut losses.
+4. **Settle automatically** — At resolution, winning shares pay **$1.00** and losing shares go to **$0**. USDC lands in your account; no claim step needed.
 
 ## At a Glance
 

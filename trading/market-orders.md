@@ -4,67 +4,67 @@ description: How market orders work on Yes/No.
 
 # Market Orders
 
-A **market order** executes immediately against the best available resting orders on the book. Use it when you want instant execution and don't care about shaving a few cents off the price.
+A **market order** executes immediately against the best available resting orders on the book. Use it when you want instant execution and don't mind paying the prevailing price.
 
 {% hint style="info" %}
-A market order always executes at the **best available prices currently on the book**. Because it walks down the book until filled, the average price you get may be worse than the top quote in thin markets — see [Slippage](market-orders.md#slippage) below.
+A market order takes the **best available prices currently on the book**. In thin markets it may walk through several price levels — see [Slippage](#slippage).
 {% endhint %}
 
-## Buy vs Sell — The Input Differs
+## Buy vs Sell
 
-This is important:
+The input differs:
 
 |                   | What you enter                    | What you receive                          |
 | ----------------- | --------------------------------- | ----------------------------------------- |
-| **Buy (Market)**  | **USD amount** (e.g. "$50")       | Shares ≈ amount ÷ estimated average price |
-| **Sell (Market)** | **Number of shares** (e.g. "100") | USD ≈ shares × estimated average price    |
+| **Buy (Market)**  | **USD amount** (e.g. $50)         | Shares ≈ amount ÷ estimated average price |
+| **Sell (Market)** | **Number of shares** (e.g. 100)   | USD ≈ shares × estimated average price    |
 
-The order panel updates the estimated average price in real time based on current order-book depth.
+The order panel updates the estimated average price in real time based on current book depth.
 
 ## Buy Example
 
 You want to bet $50 on YES in a market trading at 60¢:
 
-1. Select **YES**, choose **Buy**, switch to **Market**
-2. Enter **$50** as the amount
+1. Select **YES → Buy → Market**
+2. Enter **$50**
 3. Panel shows:
    * Estimated average price ≈ 60¢
-   * Shares ≈ 50 ÷ 0.60 ≈ 83.33
-   * **To Win** ≈ $83.33 if YES wins (or $0 if YES loses)
-   * **Total** = Order Value + Est. Fee — the exact amount that leaves your wallet
-4. Click **Buy** → order matches against resting asks
+   * Shares ≈ 50 ÷ 0.60 ≈ **83.33**
+   * **To Win** ≈ $83.33 if YES wins (or $0 if it loses)
+   * **Total** = Order Value + Est. Fee — the exact amount leaving your wallet
+4. Click **Buy** → matches against resting asks
 
 ## Sell Example
 
 You want to sell 100 YES shares:
 
-1. Select **YES**, choose **Sell**, switch to **Market**
-2. Enter **100** as the size (or use the **25% / 50% / Max** quick buttons)
+1. Select **YES → Sell → Market**
+2. Enter **100** (or use the **25% / 50% / Max** quick buttons)
 3. Panel shows:
    * Estimated average price
-   * **You receive** — the net USDC credited to your account after the sale
-4. Click **Sell** → shares are sold against resting bids
+   * **You receive** — net USDC credited after the sale
+4. Click **Sell** → matches against resting bids
 
 ## Slippage
 
-Because a market order walks through the book, if your size is larger than the liquidity at the best price, you'll pay (or receive) a worse average than the top of the book. The **estimated average price** shown in the panel accounts for this in real time.
+If your order is larger than the liquidity at the best price, it walks up (or down) the book — you'll get an average price worse than the top quote. The panel estimates this in real time.
 
-Example — you buy **250 shares** with market orders, but the best ask only has 100 shares resting. Your order walks up the book:
+Example — you buy **250 shares**, but the best ask only has 100 resting. Your order walks up the book:
 
 ![](../.gitbook/assets/trading_market-orders_1.svg)
 
-The deeper your order walks, the higher your average price. This is **slippage**.
+The deeper your order walks, the worse your average. This is **slippage**.
 
 {% hint style="warning" %}
-In thin markets a large market order can move the price significantly. If you care about the execution price, use a [Limit Order](limit-orders.md) instead.
+In thin markets a large market order can move the price significantly. If you care about execution price, use a [Limit Order](limit-orders.md) instead.
 {% endhint %}
 
 ## Partial Fills
 
-If the book doesn't have enough liquidity to fill your market order completely, you'll get a **partial fill**:
+If the book can't fully absorb your market order:
 
-* The portion that matched is executed immediately
-* The unfilled portion is cancelled — market orders do not rest on the book
+* The portion that matched executes immediately
+* The unfilled portion is cancelled — market orders never rest on the book
 
 ## Related
 

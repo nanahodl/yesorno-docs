@@ -4,75 +4,51 @@ description: Convert between USDC and YES / NO share pairs directly.
 
 # Merging & Splitting Shares
 
-Prediction markets have two primitives that don't exist in traditional trading: **Merge** and **Split**. They let you convert directly between USDC and a matched pair of YES + NO shares, without going through the order book.
+Prediction markets have two primitives that don't exist in traditional trading: **Split** and **Merge**. They let you convert directly between USDC and matched pairs of YES + NO shares, without going through the order book.
 
 {% hint style="info" %}
-Merge and Split are **executed directly by the protocol**, not against other users. That means no bid-ask spread and no impact on market price — useful when the book is thin or the spread is wide.
+Split and Merge are executed by the protocol, not against other users — no bid-ask spread and no impact on market price. Useful when the book is thin or the spread is wide.
 {% endhint %}
 
 ## The Core Identity
 
-For every market, this is always true:
+For every market:
 
 $$
 \Large 1 \text{ YES share} + 1 \text{ NO share} = \$1.00 \text{ USDC}
 $$
 
-That's because exactly one side will ultimately redeem for $1.00 and the other for $0. Holding both sides guarantees exactly $1.00 at resolution, so the protocol lets you convert between them right now.
+Exactly one side will ultimately redeem for $1.00 and the other for $0, so holding both is guaranteed to be worth $1.00 at resolution. The protocol lets you convert between them right now.
 
 ## Split: USDC → Shares
 
-Lock $1 USDC and receive 1 YES share + 1 NO share.
+Lock **$1 USDC** and receive **1 YES + 1 NO** share.
 
 ![](../.gitbook/assets/trading_merging-and-splitting_1.svg)
 
+**Account changes:** USDC ↓ by the amount split; YES and NO balances both ↑ by the same amount.
+
 ### When to Use
 
-* You want to **short** an outcome you already have a view against — split, then sell the side you don't want
-* You want to **accumulate inventory cheaply** without paying the spread
-* You want to **express a nuanced view** by holding a different ratio of YES/NO than the market implies
+* **Short** an outcome — split, then sell the side you don't want
+* **Accumulate inventory** without paying the spread
+* **Express a nuanced view** by holding a different YES / NO ratio than the market implies
 
-### How It Works
-
-| Field     | Description         |
-| --------- | ------------------- |
-| Operation | Split               |
-| Amount    | USDC amount to lock |
-| Max       | Your available USDC |
-
-**Account changes after Split:**
-
-* USDC → decreases by the amount you split
-* YES shares → increase by the same amount
-* NO shares → increase by the same amount
-
-Your all-in cost is $1 per pair. If you sell one side later, the remaining side's effective cost is whatever you didn't recover — e.g. sell NO for 40¢, and your remaining YES effectively costs 60¢.
+> Your all-in cost is $1 per pair. If you sell one side, the remaining side's effective cost is whatever you didn't recover — e.g. sell NO at 40¢ and your YES effectively costs 60¢.
 
 ## Merge: Shares → USDC
 
-Return 1 YES + 1 NO and receive $1 USDC back.
+Return **1 YES + 1 NO** and receive **$1 USDC** back.
 
 ![](../.gitbook/assets/trading_merging-and-splitting_2.svg)
 
+**Account changes:** YES and NO balances both ↓ by the amount merged; USDC ↑ by the same amount. The amount you can merge is capped by the smaller of your YES and NO balances.
+
 ### When to Use
 
-* You want to **close a hedged position** without dealing with the spread
-* You have matched YES + NO from separate buys and want to lock in the difference
-* You want to **free up USDC** for another market
-
-### How It Works
-
-| Field     | Description                                    |
-| --------- | ---------------------------------------------- |
-| Operation | Merge                                          |
-| Amount    | Number of share-pairs to merge                 |
-| Max       | The smaller of your YES balance and NO balance |
-
-**Account changes after Merge:**
-
-* YES shares → decrease by the amount you merge
-* NO shares → decrease by the same amount
-* USDC → increases by the same amount
+* **Close a hedged position** without paying the spread
+* **Lock in the difference** between YES and NO bought at different prices
+* **Free up USDC** for another market
 
 ## Related
 
