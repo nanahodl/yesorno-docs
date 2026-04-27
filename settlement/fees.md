@@ -103,3 +103,4 @@ You pay **$4.03** and receive exactly **5 shares**.
 * [Market Orders](../trading/market-orders.md) — execute immediately at the best available price
 * [Limit Orders](../trading/limit-orders.md) — rest on the book at your chosen price
 * [Deposits & Withdrawals](../get-started/deposits-and-withdrawals.md) — no platform fee, only network gas
+* [Referrals](referrals.md) — earn a share of fees from users you invite

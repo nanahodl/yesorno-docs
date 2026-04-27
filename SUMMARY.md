@@ -20,6 +20,7 @@
 
 * [Fees](settlement/fees.md)
 * [Market Resolution](settlement/market-resolution.md)
+* [Referrals](settlement/referrals.md)
 
 ## Legal
 
