@@ -84,8 +84,6 @@ Limit orders default to **Good 'til Cancelled (GTC)** — they rest on the book 
 | **End of day** | 23:59:59 UTC today                 |
 | **Custom**     | Pick any date + time in the future |
 
-![](../.gitbook/assets/trading_limit-orders_1.svg)
-
 On expiration, unfilled shares are automatically cancelled and any locked balance is returned to your wallet.
 
 ## Related
