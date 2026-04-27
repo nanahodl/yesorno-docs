@@ -29,23 +29,6 @@ Once unlocked:
 
 The dashboard shows your **Sign-ups**, **Active Traders** (last 24h), and cumulative **Earnings** over 7D / 30D / 90D / all-time. Rewards are **settled automatically in USDC** to your account — no claim button.
 
-## Rules
-
-* Self-referrals, fake accounts, and any attempt to game the program are **not eligible** and may result in forfeited rewards
-* Users in [restricted jurisdictions](../resources/terms-of-service.md) cannot participate
-* Yes/No may adjust reward rates, eligibility, and the volume threshold; material changes will be announced in advance
-
-## FAQ
-
-**When do my rewards start counting?**\
-The moment a new user signs up through your link and places their first trade.
-
-**Do I keep earning if my invitees stop trading?**\
-You earn whenever they trade. Pause when they pause; resume when they resume.
-
-**Is there a maximum I can earn?**\
-No. Earnings scale with your invitees' activity, with no cap.
-
 ## Related
 
 * [Fees](fees.md) — how trading fees are calculated
