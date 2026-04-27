@@ -6,9 +6,9 @@ description: Invite friends to Yes/No and earn a share of their trading fees —
 
 Invite friends to Yes/No and earn a share of the **trading fees** they pay. Anyone *they* invite earns you rewards too.
 
-{% hint style="info" %}
-There's **no cap** on how much you can earn. As long as your invitees keep trading, your rewards keep accruing.
-{% endhint %}
+> ### No cap on what you can earn.
+>
+> As long as your invitees keep trading, your rewards keep accruing.
 
 ## How It Works
 
