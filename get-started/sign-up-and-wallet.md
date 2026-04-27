@@ -14,7 +14,7 @@ Getting started on Yes/No takes less than a minute. The same modal handles both 
 
 Yes/No supports **five** sign-in methods, powered by [Privy](https://privy.io/) for identity and embedded wallets.
 
-<figure><img src="../.gitbook/assets/image.png" alt="" width="353"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2).png" alt="" width="174"><figcaption></figcaption></figure>
 
 ### Crypto Wallets
 
