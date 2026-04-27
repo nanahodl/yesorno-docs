@@ -64,10 +64,10 @@ The modal remembers the last method you used and shows a **Last used** badge nex
 ## Account Security
 
 {% hint style="warning" %}
-**Never share** your password, seed phrase, or private key. Yes/No staff will never ask for them via DM, email, or Discord.
+**Never share** your seed phrase, private key, or email verification code. Yes/No staff will never ask for them via DM, email, or Discord.
 {% endhint %}
 
-* Use strong, unique passwords for your email account
+* Keep your email account secure — Yes/No sends one-time verification codes there to log you in
 * For self-custody wallets, back up your seed phrase offline
 * Always verify you're on **yesorno.trade** before connecting your wallet
 * Report suspicious activity to **support@yesorno.trade**
