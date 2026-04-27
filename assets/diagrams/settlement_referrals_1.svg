@@ -71,7 +71,5 @@
   <text x="705" y="308" text-anchor="middle" font-size="12" fill="#5B21B6" font-weight="700">B's invitee</text>
 
   <!-- ===== Caption ===== -->
-  <text x="410" y="350" text-anchor="middle" font-size="13" fill="#5B21B6" font-weight="500">
-    You earn 30% of fees from direct invitees, and 10% of fees from their invitees  automatically.
-  </text>
+  <text x="410" y="350" text-anchor="middle" font-size="13" fill="#5B21B6" font-weight="500">You earn 30% of fees from direct invitees, and 10% from their invitees, automatically.</text>
 </svg>
