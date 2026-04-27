@@ -31,7 +31,10 @@ takerFee = C × p × takerFeeRate × (p × (1 − p))^exponent
 
 The factor _p × (1 − p)_ shapes the curve — it peaks at _p = 0.50_ and tapers toward both extremes:
 
-![](../.gitbook/assets/settlement_fees_1.svg)
+<figure><picture>
+  <source srcset="../.gitbook/assets/settlement_fees_1-dark.svg" media="(prefers-color-scheme: dark)">
+  <img src="../.gitbook/assets/settlement_fees_1.svg" alt="">
+</picture></figure>
 
 In practice:
 

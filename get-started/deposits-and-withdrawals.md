@@ -8,7 +8,10 @@ Yes/No settles every trade, deposit, and payout in **USDC**. Deposit USDC to sta
 
 ## Deposit Flow
 
-![](../.gitbook/assets/get-started_deposits-and-withdrawals_1.svg)
+<figure><picture>
+  <source srcset="../.gitbook/assets/get-started_deposits-and-withdrawals_1-dark.svg" media="(prefers-color-scheme: dark)">
+  <img src="../.gitbook/assets/get-started_deposits-and-withdrawals_1.svg" alt="">
+</picture></figure>
 
 Whether you signed in with a crypto wallet or with email, you deposit USDC into your Yes/No account before trading.
 
@@ -36,7 +39,10 @@ Standard network gas applies to on-chain transactions.
 
 ## Withdrawal Flow
 
-![](../.gitbook/assets/get-started_deposits-and-withdrawals_2.svg)
+<figure><picture>
+  <source srcset="../.gitbook/assets/get-started_deposits-and-withdrawals_2-dark.svg" media="(prefers-color-scheme: dark)">
+  <img src="../.gitbook/assets/get-started_deposits-and-withdrawals_2.svg" alt="">
+</picture></figure>
 
 1. Open **Wallet → Withdraw**
 2. Enter the destination address and amount

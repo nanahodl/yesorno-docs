@@ -20,7 +20,10 @@ For a deeper walkthrough, see [What is Yes/No?](../#how-a-share-works).
 
 Each market has its own book, split into **Asks** (sell orders) and **Bids** (buy orders). The best ask and best bid sit next to each other, with the **spread** and **last trade** in between.
 
-![](../.gitbook/assets/trading_overview_1.svg)
+<figure><picture>
+  <source srcset="../.gitbook/assets/trading_overview_1-dark.svg" media="(prefers-color-scheme: dark)">
+  <img src="../.gitbook/assets/trading_overview_1.svg" alt="">
+</picture></figure>
 
 **Example — YES side of a market**
 

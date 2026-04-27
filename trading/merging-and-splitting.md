@@ -24,7 +24,10 @@ Exactly one side will ultimately redeem for $1.00 and the other for $0, so holdi
 
 Lock **$1 USDC** and receive **1 YES + 1 NO** share.
 
-![](../.gitbook/assets/trading_merging-and-splitting_1.svg)
+<figure><picture>
+  <source srcset="../.gitbook/assets/trading_merging-and-splitting_1-dark.svg" media="(prefers-color-scheme: dark)">
+  <img src="../.gitbook/assets/trading_merging-and-splitting_1.svg" alt="">
+</picture></figure>
 
 **Account changes:** USDC ↓ by the amount split; YES and NO balances both ↑ by the same amount.
 
@@ -40,7 +43,10 @@ Lock **$1 USDC** and receive **1 YES + 1 NO** share.
 
 Return **1 YES + 1 NO** and receive **$1 USDC** back.
 
-![](../.gitbook/assets/trading_merging-and-splitting_2.svg)
+<figure><picture>
+  <source srcset="../.gitbook/assets/trading_merging-and-splitting_2-dark.svg" media="(prefers-color-scheme: dark)">
+  <img src="../.gitbook/assets/trading_merging-and-splitting_2.svg" alt="">
+</picture></figure>
 
 **Account changes:** YES and NO balances both ↓ by the amount merged; USDC ↑ by the same amount. The amount you can merge is capped by the smaller of your YES and NO balances.
 

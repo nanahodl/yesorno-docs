@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 440" width="720" style="max-width: 720px; background: transparent; font-family: -apple-system, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;">
+  <rect data-bg="dark" x="0.0" y="0.0" width="720.0" height="440.0" fill="#1A1230" rx="8" ry="8"/>
+  <text x="360" y="28" text-anchor="middle" font-size="15" font-weight="700" fill="#DDD6FE">Order Book — YES side</text>
+
+  <!-- Column headers -->
+  <text x="180" y="58" text-anchor="middle" font-size="12" font-weight="600" fill="#C4B5FD" letter-spacing="1">PRICE</text>
+  <text x="360" y="58" text-anchor="middle" font-size="12" font-weight="600" fill="#C4B5FD" letter-spacing="1">SIZE</text>
+  <text x="540" y="58" text-anchor="middle" font-size="12" font-weight="600" fill="#C4B5FD" letter-spacing="1">TOTAL</text>
+
+  <!-- ASKS label -->
+  <text x="40" y="130" text-anchor="middle" font-size="12" font-weight="600" fill="#C4B5FD" letter-spacing="1" transform="rotate(-90 40 130)">ASKS</text>
+
+  <!-- Ask rows (lighter = further from spread) -->
+  <rect x="80" y="70"  width="560" height="28" rx="3" fill="#3D2A6A" stroke="#7C3AED" stroke-width="0.8" opacity="0.55"/>
+  <text x="180" y="89"  text-anchor="middle" font-size="13" fill="#DDD6FE">0.65</text>
+  <text x="360" y="89"  text-anchor="middle" font-size="13" fill="#DDD6FE">800</text>
+  <text x="540" y="89"  text-anchor="middle" font-size="13" fill="#DDD6FE">$520</text>
+
+  <rect x="80" y="100" width="560" height="28" rx="3" fill="#3D2A6A" stroke="#7C3AED" stroke-width="0.8" opacity="0.55"/>
+  <text x="180" y="119" text-anchor="middle" font-size="13" fill="#DDD6FE">0.64</text>
+  <text x="360" y="119" text-anchor="middle" font-size="13" fill="#DDD6FE">500</text>
+  <text x="540" y="119" text-anchor="middle" font-size="13" fill="#DDD6FE">$320</text>
+
+  <rect x="80" y="130" width="560" height="28" rx="3" fill="#3D2A6A" stroke="#7C3AED" stroke-width="0.8" opacity="0.55"/>
+  <text x="180" y="149" text-anchor="middle" font-size="13" fill="#DDD6FE">0.63</text>
+  <text x="360" y="149" text-anchor="middle" font-size="13" fill="#DDD6FE">300</text>
+  <text x="540" y="149" text-anchor="middle" font-size="13" fill="#DDD6FE">$189</text>
+
+  <!-- Best ask -->
+  <rect x="80" y="160" width="560" height="28" rx="3" fill="#7C3AED" stroke="#7C3AED" stroke-width="1.5"/>
+  <text x="180" y="179" text-anchor="middle" font-size="13" font-weight="700" fill="#DDD6FE">0.62</text>
+  <text x="360" y="179" text-anchor="middle" font-size="13" font-weight="700" fill="#DDD6FE">200</text>
+  <text x="540" y="179" text-anchor="middle" font-size="13" font-weight="700" fill="#DDD6FE">$124</text>
+
+  <!-- Spread band -->
+  <rect x="80" y="198" width="560" height="44" rx="4" fill="#2D2150" stroke="#7C3AED" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <text x="200" y="226" text-anchor="middle" font-size="13" font-weight="700" fill="#DDD6FE">Spread 0.02</text>
+  <text x="360" y="215" text-anchor="middle" font-size="13" fill="#C4B5FD">Last trade</text>
+  <text x="360" y="232" text-anchor="middle" font-size="13" font-weight="700" fill="#DDD6FE">0.61</text>
+  <text x="530" y="226" text-anchor="middle" font-size="13" fill="#C4B5FD">midpoint 0.61</text>
+
+  <!-- BIDS label -->
+  <text x="40" y="315" text-anchor="middle" font-size="12" font-weight="600" fill="#C4B5FD" letter-spacing="1" transform="rotate(-90 40 315)">BIDS</text>
+
+  <!-- Best bid -->
+  <rect x="80" y="252" width="560" height="28" rx="3" fill="#7C3AED" stroke="#7C3AED" stroke-width="1.5"/>
+  <text x="180" y="271" text-anchor="middle" font-size="13" font-weight="700" fill="#DDD6FE">0.60</text>
+  <text x="360" y="271" text-anchor="middle" font-size="13" font-weight="700" fill="#DDD6FE">250</text>
+  <text x="540" y="271" text-anchor="middle" font-size="13" font-weight="700" fill="#DDD6FE">$150</text>
+
+  <rect x="80" y="282" width="560" height="28" rx="3" fill="#3D2A6A" stroke="#7C3AED" stroke-width="0.8" opacity="0.75"/>
+  <text x="180" y="301" text-anchor="middle" font-size="13" fill="#DDD6FE">0.59</text>
+  <text x="360" y="301" text-anchor="middle" font-size="13" fill="#DDD6FE">400</text>
+  <text x="540" y="301" text-anchor="middle" font-size="13" fill="#DDD6FE">$236</text>
+
+  <rect x="80" y="312" width="560" height="28" rx="3" fill="#3D2A6A" stroke="#7C3AED" stroke-width="0.8" opacity="0.75"/>
+  <text x="180" y="331" text-anchor="middle" font-size="13" fill="#DDD6FE">0.58</text>
+  <text x="360" y="331" text-anchor="middle" font-size="13" fill="#DDD6FE">600</text>
+  <text x="540" y="331" text-anchor="middle" font-size="13" fill="#DDD6FE">$348</text>
+
+  <rect x="80" y="342" width="560" height="28" rx="3" fill="#3D2A6A" stroke="#7C3AED" stroke-width="0.8" opacity="0.75"/>
+  <text x="180" y="361" text-anchor="middle" font-size="13" fill="#DDD6FE">0.57</text>
+  <text x="360" y="361" text-anchor="middle" font-size="13" fill="#DDD6FE">900</text>
+  <text x="540" y="361" text-anchor="middle" font-size="13" fill="#DDD6FE">$513</text>
+
+  <!-- Legend -->
+  <rect x="80"  y="395" width="14" height="14" rx="2" fill="#7C3AED" stroke="#7C3AED" stroke-width="1.5"/>
+  <text x="165" y="407" text-anchor="middle" font-size="13" fill="#DDD6FE">Best ask / bid</text>
+
+  <rect x="260" y="395" width="14" height="14" rx="2" fill="#3D2A6A" stroke="#7C3AED" stroke-width="0.8" opacity="0.55"/>
+  <text x="335" y="407" text-anchor="middle" font-size="13" fill="#DDD6FE">Resting orders</text>
+
+  <rect x="450" y="395" width="14" height="14" rx="2" fill="#2D2150" stroke="#7C3AED" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <text x="540" y="407" text-anchor="middle" font-size="13" fill="#DDD6FE">Spread / last trade</text>
+</svg>

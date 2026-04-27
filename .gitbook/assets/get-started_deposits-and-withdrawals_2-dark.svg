@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 130" width="1000" style="max-width: 1000px; background: transparent; font-family: -apple-system, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;">
+  <rect data-bg="dark" x="0.0" y="0.0" width="1000.0" height="130.0" fill="#1A1230" rx="8" ry="8"/>
+  <defs>
+    <marker id="arr-wd" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#7C3AED"/>
+    </marker>
+  </defs>
+
+  <rect x="20" y="40" width="200" height="56" rx="6" fill="#2D2150" stroke="#7C3AED" stroke-width="1.5"/>
+  <text x="120" y="62" text-anchor="middle" font-size="13" font-weight="700" fill="#DDD6FE">1 · Open Wallet</text>
+  <text x="120" y="80" text-anchor="middle" font-size="12" fill="#C4B5FD">Wallet → Withdraw</text>
+
+  <line x1="222" y1="68" x2="248" y2="68" stroke="#7C3AED" stroke-width="1.8" marker-end="url(#arr-wd)"/>
+
+  <rect x="250" y="40" width="210" height="56" rx="6" fill="#2D2150" stroke="#7C3AED" stroke-width="1.5"/>
+  <text x="355" y="62" text-anchor="middle" font-size="13" font-weight="700" fill="#DDD6FE">2 · Enter details</text>
+  <text x="355" y="80" text-anchor="middle" font-size="12" fill="#C4B5FD">destination + amount</text>
+
+  <line x1="462" y1="68" x2="488" y2="68" stroke="#7C3AED" stroke-width="1.8" marker-end="url(#arr-wd)"/>
+
+  <rect x="490" y="40" width="230" height="56" rx="6" fill="#2D2150" stroke="#7C3AED" stroke-width="1.5"/>
+  <text x="605" y="62" text-anchor="middle" font-size="13" font-weight="700" fill="#DDD6FE">3 · Confirm network</text>
+  <text x="605" y="80" text-anchor="middle" font-size="12" fill="#C4B5FD">double-check the chain</text>
+
+  <line x1="722" y1="68" x2="748" y2="68" stroke="#7C3AED" stroke-width="1.8" marker-end="url(#arr-wd)"/>
+
+  <rect x="750" y="40" width="230" height="56" rx="6" fill="#3D2A6A" stroke="#7C3AED" stroke-width="1.8"/>
+  <text x="865" y="62" text-anchor="middle" font-size="13" font-weight="700" fill="#DDD6FE">4 · Confirm and send</text>
+  <text x="865" y="80" text-anchor="middle" font-size="12" fill="#C4B5FD">processed in minutes</text>
+</svg>

@@ -19,7 +19,10 @@ Every market asks a yes/no question. You can buy two things:
 
 Since exactly one side will be right, **1 YES + 1 NO = $1.00** at all times.
 
-![](.gitbook/assets/get-started_what-is-yesorno_1.svg)
+<figure><picture>
+  <source srcset=".gitbook/assets/get-started_what-is-yesorno_1-dark.svg" media="(prefers-color-scheme: dark)">
+  <img src=".gitbook/assets/get-started_what-is-yesorno_1.svg" alt="">
+</picture></figure>
 
 Three rules follow from this:
 
@@ -27,7 +30,10 @@ Three rules follow from this:
 * **Price = implied probability.** YES at 60¢ ⇒ the market sees a **60% chance**.
 * **Prices stay between 1¢ and 99¢** — closer to 99¢ means more likely; closer to 1¢ means less.
 
-![](.gitbook/assets/get-started_what-is-yesorno_2.svg)
+<figure><picture>
+  <source srcset=".gitbook/assets/get-started_what-is-yesorno_2-dark.svg" media="(prefers-color-scheme: dark)">
+  <img src=".gitbook/assets/get-started_what-is-yesorno_2.svg" alt="">
+</picture></figure>
 
 ## How Trading Works
 

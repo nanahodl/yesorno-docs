@@ -8,7 +8,10 @@ This walkthrough takes you from zero to first trade in about two minutes.
 
 ## The 5-Step Path
 
-![](../.gitbook/assets/get-started_first-trade_1.svg)
+<figure><picture>
+  <source srcset="../.gitbook/assets/get-started_first-trade_1-dark.svg" media="(prefers-color-scheme: dark)">
+  <img src="../.gitbook/assets/get-started_first-trade_1.svg" alt="">
+</picture></figure>
 
 ## Step 1 — Sign In
 

@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 280" width="760" style="max-width: 760px; background: transparent; font-family: -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;">
+  <rect data-bg="dark" x="0.0" y="0.0" width="760.0" height="280.0" fill="#1A1230" rx="8" ry="8"/>
+  <defs>
+    <marker id="arr-res" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#7C3AED"/>
+    </marker>
+  </defs>
+
+  <!-- =========================  LEFT SCENARIO: YES wins  ========================= -->
+  <g>
+    <!-- Scenario title -->
+    <text x="190" y="28" text-anchor="middle" font-size="15" font-weight="700" fill="#DDD6FE">Scenario A — YES wins</text>
+
+    <!-- Collateral source -->
+    <rect x="40" y="110" width="170" height="70" rx="6" ry="6"
+          fill="#2D2150" stroke="#7C3AED" stroke-width="1.5"/>
+    <text x="125" y="140" text-anchor="middle" font-size="14" fill="#DDD6FE" font-weight="600">$1.00 collateral</text>
+    <text x="125" y="160" text-anchor="middle" font-size="12" fill="#C4B5FD">per YES+NO pair</text>
+
+    <!-- Winner box -->
+    <rect x="230" y="70" width="130" height="50" rx="6" ry="6"
+          fill="#3D2A6A" stroke="#7C3AED" stroke-width="1.8"/>
+    <text x="295" y="100" text-anchor="middle" font-size="14" font-weight="700" fill="#DDD6FE">1 YES → $1.00</text>
+
+    <!-- Loser box -->
+    <rect x="230" y="170" width="130" height="50" rx="6" ry="6"
+          fill="#2D2150" stroke="#7C3AED" stroke-width="1.5" stroke-dasharray="4 3" opacity="0.55"/>
+    <text x="295" y="200" text-anchor="middle" font-size="14" fill="#C4B5FD">1 NO → $0</text>
+
+    <!-- Flow lines -->
+    <line x1="213" y1="135" x2="228" y2="98" stroke="#7C3AED" stroke-width="1.8" marker-end="url(#arr-res)"/>
+    <line x1="213" y1="155" x2="228" y2="192" stroke="#7C3AED" stroke-width="1" opacity="0.4" stroke-dasharray="3 3" marker-end="url(#arr-res)"/>
+
+    <!-- Caption -->
+    <text x="190" y="258" text-anchor="middle" font-size="12" fill="#C4B5FD">
+      The full $1.00 flows to the YES holder.
+    </text>
+  </g>
+
+  <!-- Divider -->
+  <line x1="380" y1="50" x2="380" y2="250" stroke="#7C3AED" stroke-width="1" opacity="0.25"/>
+
+  <!-- =========================  RIGHT SCENARIO: NO wins  ========================= -->
+  <g transform="translate(380, 0)">
+    <text x="190" y="28" text-anchor="middle" font-size="15" font-weight="700" fill="#DDD6FE">Scenario B — NO wins</text>
+
+    <rect x="40" y="110" width="170" height="70" rx="6" ry="6"
+          fill="#2D2150" stroke="#7C3AED" stroke-width="1.5"/>
+    <text x="125" y="140" text-anchor="middle" font-size="14" fill="#DDD6FE" font-weight="600">$1.00 collateral</text>
+    <text x="125" y="160" text-anchor="middle" font-size="12" fill="#C4B5FD">per YES+NO pair</text>
+
+    <!-- Loser box (YES) -->
+    <rect x="230" y="70" width="130" height="50" rx="6" ry="6"
+          fill="#2D2150" stroke="#7C3AED" stroke-width="1.5" stroke-dasharray="4 3" opacity="0.55"/>
+    <text x="295" y="100" text-anchor="middle" font-size="14" fill="#C4B5FD">1 YES → $0</text>
+
+    <!-- Winner box (NO) -->
+    <rect x="230" y="170" width="130" height="50" rx="6" ry="6"
+          fill="#3D2A6A" stroke="#7C3AED" stroke-width="1.8"/>
+    <text x="295" y="200" text-anchor="middle" font-size="14" font-weight="700" fill="#DDD6FE">1 NO → $1.00</text>
+
+    <line x1="213" y1="135" x2="228" y2="98" stroke="#7C3AED" stroke-width="1" opacity="0.4" stroke-dasharray="3 3" marker-end="url(#arr-res)"/>
+    <line x1="213" y1="155" x2="228" y2="192" stroke="#7C3AED" stroke-width="1.8" marker-end="url(#arr-res)"/>
+
+    <text x="190" y="258" text-anchor="middle" font-size="12" fill="#C4B5FD">
+      The full $1.00 flows to the NO holder.
+    </text>
+  </g>
+</svg>

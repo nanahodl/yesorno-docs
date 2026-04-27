@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 260" width="780" style="max-width: 780px; background: transparent; font-family: -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;">
+  <rect data-bg="dark" x="0" y="0" width="780" height="260" fill="#1A1230" rx="8" ry="8"/>
+  <defs>
+    <marker id="arr-wi" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#7C3AED"/>
+    </marker>
+  </defs>
+
+  <!-- Left USDC -->
+  <rect x="30" y="100" width="170" height="60" rx="6" ry="6"
+        fill="#2D2150" stroke="#7C3AED" stroke-width="1.5"/>
+  <text x="115" y="136" text-anchor="middle" font-size="16" fill="#DDD6FE" font-weight="700">$1.00 USDC</text>
+
+  <!-- YES share box -->
+  <rect x="330" y="30" width="150" height="60" rx="6" ry="6"
+        fill="#2D2150" stroke="#7C3AED" stroke-width="1.5"/>
+  <text x="405" y="66" text-anchor="middle" font-size="15" fill="#DDD6FE" font-weight="600">1 YES share</text>
+
+  <!-- NO share box -->
+  <rect x="330" y="170" width="150" height="60" rx="6" ry="6"
+        fill="#2D2150" stroke="#7C3AED" stroke-width="1.5"/>
+  <text x="405" y="206" text-anchor="middle" font-size="15" fill="#DDD6FE" font-weight="600">1 NO share</text>
+
+  <!-- Right USDC -->
+  <rect x="580" y="100" width="170" height="60" rx="6" ry="6"
+        fill="#2D2150" stroke="#7C3AED" stroke-width="1.5"/>
+  <text x="665" y="136" text-anchor="middle" font-size="16" fill="#DDD6FE" font-weight="700">$1.00 USDC</text>
+
+  <!-- USDC -> YES (curve goes up; label sits ABOVE the curve apex) -->
+  <path d="M 200 120 C 255 120, 275 60, 328 60" fill="none" stroke="#7C3AED" stroke-width="1.8" marker-end="url(#arr-wi)"/>
+  <text x="263" y="50" text-anchor="middle" font-size="13" fill="#DDD6FE" font-weight="600">split</text>
+
+  <!-- USDC -> NO (curve goes down; label BELOW the curve apex) -->
+  <path d="M 200 140 C 255 140, 275 200, 328 200" fill="none" stroke="#7C3AED" stroke-width="1.8" marker-end="url(#arr-wi)"/>
+  <text x="263" y="222" text-anchor="middle" font-size="13" fill="#DDD6FE" font-weight="600">split</text>
+
+  <!-- YES -> right USDC (curve goes down to center; label ABOVE) -->
+  <path d="M 480 60 C 533 60, 553 120, 578 120" fill="none" stroke="#7C3AED" stroke-width="1.8" marker-end="url(#arr-wi)"/>
+  <text x="522" y="50" text-anchor="middle" font-size="13" fill="#DDD6FE" font-weight="600">merge</text>
+
+  <!-- NO -> right USDC (curve goes up to center; label BELOW) -->
+  <path d="M 480 200 C 533 200, 553 140, 578 140" fill="none" stroke="#7C3AED" stroke-width="1.8" marker-end="url(#arr-wi)"/>
+  <text x="522" y="222" text-anchor="middle" font-size="13" fill="#DDD6FE" font-weight="600">merge</text>
+</svg>

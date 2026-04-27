@@ -8,7 +8,10 @@ Every market has a defined **resolution condition** and **deadline**. When the d
 
 ## Market Lifecycle
 
-![](../.gitbook/assets/settlement_market-resolution_1.svg)
+<figure><picture>
+  <source srcset="../.gitbook/assets/settlement_market-resolution_1-dark.svg" media="(prefers-color-scheme: dark)">
+  <img src="../.gitbook/assets/settlement_market-resolution_1.svg" alt="">
+</picture></figure>
 
 ## Resolution Process
 
@@ -45,7 +48,10 @@ When the deadline passes:
 
 Every **1 YES + 1 NO** pair was collateralized by $1.00 USDC — at resolution that dollar flows entirely to the winning side:
 
-![](../.gitbook/assets/settlement_market-resolution_2.svg)
+<figure><picture>
+  <source srcset="../.gitbook/assets/settlement_market-resolution_2-dark.svg" media="(prefers-color-scheme: dark)">
+  <img src="../.gitbook/assets/settlement_market-resolution_2.svg" alt="">
+</picture></figure>
 
 | You held | Market resolved | You get                   |
 | -------- | --------------- | ------------------------- |

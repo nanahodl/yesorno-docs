@@ -1,0 +1,129 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 360" width="760" style="max-width: 760px; background: transparent; font-family: -apple-system, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;">
+  <rect data-bg="dark" x="0.0" y="0.0" width="760.0" height="360.0" fill="#1A1230" rx="8" ry="8"/>
+  <defs>
+    <linearGradient id="fee-fill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"  stop-color="#3D2A6A" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#2D2150" stop-opacity="0.15"/>
+    </linearGradient>
+  </defs>
+
+  <text x="380" y="28" text-anchor="middle" font-size="14" font-weight="700" fill="#DDD6FE">Fee shape factor: p x (1 - p)</text>
+
+  <!-- Gridlines -->
+  <line x1="80" y1="80"  x2="700" y2="80"  stroke="#7C3AED" stroke-width="0.6" opacity="0.15" stroke-dasharray="3 3"/>
+  <line x1="80" y1="140" x2="700" y2="140" stroke="#7C3AED" stroke-width="0.6" opacity="0.15" stroke-dasharray="3 3"/>
+  <line x1="80" y1="200" x2="700" y2="200" stroke="#7C3AED" stroke-width="0.6" opacity="0.15" stroke-dasharray="3 3"/>
+  <line x1="80" y1="260" x2="700" y2="260" stroke="#7C3AED" stroke-width="0.6" opacity="0.15" stroke-dasharray="3 3"/>
+
+  <!-- Axes -->
+  <line x1="80" y1="55" x2="80" y2="300" stroke="#7C3AED" stroke-width="1.4"/>
+  <line x1="80" y1="300" x2="710" y2="300" stroke="#7C3AED" stroke-width="1.4"/>
+
+  <!-- Y labels -->
+  <text x="72" y="84"  text-anchor="end" font-size="12" fill="#DDD6FE">0.25</text>
+  <text x="72" y="144" text-anchor="end" font-size="12" fill="#DDD6FE">0.19</text>
+  <text x="72" y="204" text-anchor="end" font-size="12" fill="#DDD6FE">0.12</text>
+  <text x="72" y="264" text-anchor="end" font-size="12" fill="#DDD6FE">0.06</text>
+  <text x="72" y="304" text-anchor="end" font-size="12" fill="#DDD6FE">0</text>
+
+  <!-- X labels -->
+  <text x="80"  y="320" text-anchor="middle" font-size="12" fill="#DDD6FE">0</text>
+  <text x="235" y="320" text-anchor="middle" font-size="12" fill="#DDD6FE">0.25</text>
+  <text x="390" y="320" text-anchor="middle" font-size="12" fill="#DDD6FE">0.50</text>
+  <text x="545" y="320" text-anchor="middle" font-size="12" fill="#DDD6FE">0.75</text>
+  <text x="700" y="320" text-anchor="middle" font-size="12" fill="#DDD6FE">1.00</text>
+
+  <!-- Axis labels -->
+  <text x="390" y="346" text-anchor="middle" font-size="12" font-weight="600" fill="#DDD6FE">price  p</text>
+  <text x="30" y="180" text-anchor="middle" font-size="12" font-weight="600" fill="#DDD6FE" transform="rotate(-90 30 180)">fee factor</text>
+
+  <!--
+    Smooth parabola: p(1-p)
+    x mapping: p=0 → x=80, p=1 → x=700  (620px range)
+    y mapping: f=0 → y=300, f=0.25 → y=60  (960 scale: y = 300 - f*960)
+    
+    Sample points:
+      p=0.00  f=0.0000  → (80, 300)
+      p=0.05  f=0.0475  → (111, 254)
+      p=0.10  f=0.0900  → (142, 214)
+      p=0.15  f=0.1275  → (173, 178)
+      p=0.20  f=0.1600  → (204, 146)
+      p=0.25  f=0.1875  → (235, 120)
+      p=0.30  f=0.2100  → (266, 98)
+      p=0.35  f=0.2275  → (297, 82)
+      p=0.40  f=0.2400  → (328, 70)
+      p=0.45  f=0.2475  → (359, 62)
+      p=0.50  f=0.2500  → (390, 60)
+      p=0.55  f=0.2475  → (421, 62)
+      p=0.60  f=0.2400  → (452, 70)
+      p=0.65  f=0.2275  → (483, 82)
+      p=0.70  f=0.2100  → (514, 98)
+      p=0.75  f=0.1875  → (545, 120)
+      p=0.80  f=0.1600  → (576, 146)
+      p=0.85  f=0.1275  → (607, 178)
+      p=0.90  f=0.0900  → (638, 214)
+      p=0.95  f=0.0475  → (669, 254)
+      p=1.00  f=0.0000  → (700, 300)
+  -->
+
+  <!-- Fill under curve -->
+  <path d="
+    M 80,300
+    L 80,300
+    C 90,280 101,260 111,254
+    C 121,240 132,226 142,214
+    C 152,202 163,190 173,178
+    C 183,166 194,154 204,146
+    C 214,138 225,128 235,120
+    C 245,112 256,104 266,98
+    C 276,92 287,86 297,82
+    C 307,78 318,74 328,70
+    C 338,66 349,63 359,62
+    C 369,61 380,60 390,60
+    C 400,60 411,61 421,62
+    C 431,63 442,66 452,70
+    C 462,74 473,78 483,82
+    C 493,86 504,92 514,98
+    C 524,104 535,112 545,120
+    C 555,128 566,138 576,146
+    C 586,154 597,166 607,178
+    C 617,190 628,202 638,214
+    C 648,226 659,240 669,254
+    C 679,260 690,280 700,300
+    Z" fill="url(#fee-fill)"/>
+
+  <!-- Curve line (smooth polyline through sample points) -->
+  <path d="
+    M 80,300
+    C 90,280 101,260 111,254
+    C 121,240 132,226 142,214
+    C 152,202 163,190 173,178
+    C 183,166 194,154 204,146
+    C 214,138 225,128 235,120
+    C 245,112 256,104 266,98
+    C 276,92 287,86 297,82
+    C 307,78 318,74 328,70
+    C 338,66 349,63 359,62
+    C 369,61 380,60 390,60
+    C 400,60 411,61 421,62
+    C 431,63 442,66 452,70
+    C 462,74 473,78 483,82
+    C 493,86 504,92 514,98
+    C 524,104 535,112 545,120
+    C 555,128 566,138 576,146
+    C 586,154 597,166 607,178
+    C 617,190 628,202 638,214
+    C 648,226 659,240 669,254
+    C 679,260 690,280 700,300
+  " fill="none" stroke="#7C3AED" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/>
+
+  <!-- Peak marker -->
+  <circle cx="390" cy="60" r="4.5" fill="#7C3AED"/>
+  <line x1="390" y1="64" x2="390" y2="300" stroke="#7C3AED" stroke-width="0.6" stroke-dasharray="4 3" opacity="0.4"/>
+  <rect x="325" y="34" width="130" height="22" rx="4" fill="#3D2A6A" stroke="#7C3AED" stroke-width="1"/>
+  <text x="390" y="50" text-anchor="middle" font-size="13" font-weight="700" fill="#DDD6FE">peak at p = 0.50</text>
+
+  <!-- Side notes -->
+  <text x="100" y="293" font-size="12" fill="#C4B5FD">low fee</text>
+  <text x="650" y="293" font-size="12" fill="#C4B5FD" text-anchor="end">low fee</text>
+</svg>

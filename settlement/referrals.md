@@ -8,7 +8,10 @@ Share your link and you'll earn a cut of the **trading fees** paid by anyone who
 
 ## How It Works
 
-![](../.gitbook/assets/settlement_referrals_1.svg)
+<figure><picture>
+  <source srcset="../.gitbook/assets/settlement_referrals_1-dark.svg" media="(prefers-color-scheme: dark)">
+  <img src="../.gitbook/assets/settlement_referrals_1.svg" alt="">
+</picture></figure>
 
 | Level             | Who they are                           | You earn                      |
 | ----------------- | -------------------------------------- | ----------------------------- |

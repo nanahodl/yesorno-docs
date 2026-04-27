@@ -42,7 +42,10 @@ No wallet? Sign in with your email — Privy creates a secure **embedded wallet*
 4. Accept the [Terms of Use](../resources/terms-of-service.md) and [Privacy Policy](../resources/privacy-policy.md)
 5. Deposit USDC to start trading
 
-![](../.gitbook/assets/get-started_sign-up-and-wallet_1.svg)
+<figure><picture>
+  <source srcset="../.gitbook/assets/get-started_sign-up-and-wallet_1-dark.svg" media="(prefers-color-scheme: dark)">
+  <img src="../.gitbook/assets/get-started_sign-up-and-wallet_1.svg" alt="">
+</picture></figure>
 
 ## Account Security
 

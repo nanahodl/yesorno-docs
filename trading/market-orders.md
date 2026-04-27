@@ -51,7 +51,10 @@ If your order is larger than the liquidity at the best price, it walks up (or do
 
 Example — you buy **250 shares**, but the best ask only has 100 resting. Your order walks up the book:
 
-![](../.gitbook/assets/trading_market-orders_1.svg)
+<figure><picture>
+  <source srcset="../.gitbook/assets/trading_market-orders_1-dark.svg" media="(prefers-color-scheme: dark)">
+  <img src="../.gitbook/assets/trading_market-orders_1.svg" alt="">
+</picture></figure>
 
 The deeper your order walks, the worse your average. This is **slippage**.
 

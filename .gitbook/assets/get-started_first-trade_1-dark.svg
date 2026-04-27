@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1020 140" width="1020" style="max-width: 1020px; background: transparent; font-family: -apple-system, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;">
+  <rect data-bg="dark" x="0.0" y="0.0" width="1020.0" height="140.0" fill="#1A1230" rx="8" ry="8"/>
+  <defs>
+    <marker id="arr-ft" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#7C3AED"/>
+    </marker>
+  </defs>
+
+  <rect x="20" y="40" width="170" height="60" rx="6" fill="#2D2150" stroke="#7C3AED" stroke-width="1.5"/>
+  <text x="105" y="62" text-anchor="middle" font-size="11" fill="#C4B5FD" letter-spacing="1">STEP 1</text>
+  <text x="105" y="84" text-anchor="middle" font-size="13" font-weight="700" fill="#DDD6FE">Sign in</text>
+
+  <line x1="192" y1="70" x2="218" y2="70" stroke="#7C3AED" stroke-width="1.8" marker-end="url(#arr-ft)"/>
+
+  <rect x="220" y="40" width="170" height="60" rx="6" fill="#2D2150" stroke="#7C3AED" stroke-width="1.5"/>
+  <text x="305" y="62" text-anchor="middle" font-size="11" fill="#C4B5FD" letter-spacing="1">STEP 2</text>
+  <text x="305" y="84" text-anchor="middle" font-size="13" font-weight="700" fill="#DDD6FE">Deposit USDC</text>
+
+  <line x1="392" y1="70" x2="418" y2="70" stroke="#7C3AED" stroke-width="1.8" marker-end="url(#arr-ft)"/>
+
+  <rect x="420" y="40" width="170" height="60" rx="6" fill="#2D2150" stroke="#7C3AED" stroke-width="1.5"/>
+  <text x="505" y="62" text-anchor="middle" font-size="11" fill="#C4B5FD" letter-spacing="1">STEP 3</text>
+  <text x="505" y="84" text-anchor="middle" font-size="13" font-weight="700" fill="#DDD6FE">Pick a market</text>
+
+  <line x1="592" y1="70" x2="618" y2="70" stroke="#7C3AED" stroke-width="1.8" marker-end="url(#arr-ft)"/>
+
+  <rect x="620" y="40" width="170" height="60" rx="6" fill="#2D2150" stroke="#7C3AED" stroke-width="1.5"/>
+  <text x="705" y="62" text-anchor="middle" font-size="11" fill="#C4B5FD" letter-spacing="1">STEP 4</text>
+  <text x="705" y="84" text-anchor="middle" font-size="13" font-weight="700" fill="#DDD6FE">Buy YES or NO</text>
+
+  <line x1="792" y1="70" x2="818" y2="70" stroke="#7C3AED" stroke-width="1.8" marker-end="url(#arr-ft)"/>
+
+  <rect x="820" y="40" width="180" height="60" rx="6" fill="#3D2A6A" stroke="#7C3AED" stroke-width="1.8"/>
+  <text x="910" y="62" text-anchor="middle" font-size="11" fill="#C4B5FD" letter-spacing="1">STEP 5</text>
+  <text x="910" y="84" text-anchor="middle" font-size="13" font-weight="700" fill="#DDD6FE">Track or sell</text>
+</svg>
