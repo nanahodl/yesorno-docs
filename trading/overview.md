@@ -25,18 +25,6 @@ Each market has its own book, split into **Asks** (sell orders) and **Bids** (bu
   <img src="../.gitbook/assets/trading_overview_1.svg" alt="">
 </picture></figure>
 
-**Example — YES side of a market**
-
-|          | Price   | Shares | Total (USDC) |
-| -------- | ------- | ------ | ------------ |
-| **Asks** | 93¢     | 12,500 | $11,625      |
-|          | 92¢     | 30,000 | $27,600      |
-|          | **91¢** | 8,200  | $7,462       |
-| _Last_   | _90¢_   | _—_    | _Spread 2¢_  |
-|          | **89¢** | 15,400 | $13,706      |
-| **Bids** | 88¢     | 22,100 | $19,448      |
-|          | 87¢     | 5,000  | $4,350       |
-
 Asks show the **lowest ask at the top** of the sell side; bids show the **highest bid at the top** of the buy side — so the best prices on each side meet in the middle.
 
 | Column     | Meaning                                                              |
