@@ -30,7 +30,7 @@ You want to bet $50 on YES in a market trading at 60¢:
 3. Panel shows:
    * Estimated average price ≈ 60¢
    * Shares ≈ 50 ÷ 0.60 ≈ **83.33**
-   * **To Win** ≈ $83.33 if YES wins (or $0 if it loses)
+   * **To Win** ≈ $83.33 if YES wins, or $0 if it loses _(total payout, includes your stake — net profit on win ≈ $83.33 − $50 = $33.33)_
    * **Total** = Order Value + Est. Fee — the exact amount leaving your wallet
 4. Click **Buy** → matches against resting asks
 

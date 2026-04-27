@@ -73,7 +73,7 @@ Buying **5 shares** at a limit price of 80¢:
 | Order Value | 5 × $0.80 = $4.00                  |
 | Est. Fee    | ≈ $0.03                            |
 | **Total**   | **$4.03**                          |
-| To Win      | $5.00 if YES wins ($0 if it loses) |
+| To Win      | $5.00 if YES wins, $0 if it loses (total payout, includes your stake) |
 
 You pay **$4.03** and receive exactly **5 shares**.
 

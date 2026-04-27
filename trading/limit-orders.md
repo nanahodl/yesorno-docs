@@ -29,7 +29,7 @@ You think YES is worth more than 60¢, but you'd only buy at 58¢ or lower:
    * **Order Value** = 0.58 × 100 = **$58.00**
    * **Est. Fee** — shown separately, only charged if the order matches immediately as a taker
    * **Total** = Order Value + Est. Fee — the amount locked when you submit
-   * **To Win** = 100 × $1.00 = **$100.00** if YES wins (or $0 if it loses)
+   * **To Win** = 100 × $1.00 = **$100.00** if YES wins, or $0 if it loses _(total payout, includes your stake — net profit on win ≈ $100 − $58 = $42)_
 4. Submit → the order rests on the book at 58¢ until a seller matches it
 
 ## Price Input
@@ -52,11 +52,11 @@ You think YES is worth more than 60¢, but you'd only buy at 58¢ or lower:
 
 Every limit order panel shows the same trade in three formats:
 
-| Format        | Example | Meaning                     |
-| ------------- | ------- | --------------------------- |
-| **Price (¢)** | 60.9¢   | Implied probability = 60.9% |
-| **American**  | −155.6  | Bet 155.6 to win 100        |
-| **Decimal**   | 1.643   | 1 USDC returns 1.643 USDC   |
+| Format        | Example | Meaning                                      |
+| ------------- | ------- | -------------------------------------------- |
+| **Price (¢)** | 60.9¢   | Implied probability = 60.9%                  |
+| **American**  | −155.6  | Bet 155.6 to win 100                         |
+| **Decimal**   | 1.643   | Total payout per 1 USDC stake (incl. stake)  |
 
 Hover the **ⓘ** icons next to **To Win** and **Total** for the conversion.
 

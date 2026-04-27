@@ -57,7 +57,7 @@ On the market page:
    * **Order Value** — shares × price
    * **Est. Fee** — the taker fee estimate
    * **Total** — Order Value + Est. Fee, the exact amount that leaves your wallet
-   * **To Win** — payout if your side wins (shares × $1.00)
+   * **To Win** — total payout you'd receive if your side wins (shares × $1.00, **includes your stake**)
 5. Click **Buy** or **Sell** to confirm
 
 {% hint style="success" %}

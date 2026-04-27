@@ -8,7 +8,7 @@ description: Before it happens. — An overview of Yes/No and how prediction mar
 
 **Yes/No — before it happens.** Trade real-world outcomes by buying **YES** or **NO** shares on a question. Prices reflect the market's view of how likely each side is to win.
 
-> Buy **YES** at **15¢** on _"Will BTC reach $100k this week?"_ The price implies a **15% chance**. If it happens, each share redeems for **$1.00** — a **6.7×** return. If not, the shares settle at **$0**.
+> Buy **YES** at **15¢** on _"Will BTC reach $100k this week?"_ The price implies a **15% chance**. If it happens, each share redeems for **$1.00** — turning **$0.15** into **$1.00** (**$0.85 profit** per share). If not, the shares settle at **$0**.
 
 ## How a Share Works
 
