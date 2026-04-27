@@ -1,51 +1,72 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 260" width="820" style="max-width: 820px; background: transparent; font-family: -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;">
-  <rect data-bg="white" x="0" y="0" width="820" height="260" fill="#FFFFFF" rx="8" ry="8"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 380" width="820" style="max-width: 820px; background: transparent; font-family: -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;">
+  <rect data-bg="white" x="0" y="0" width="820" height="380" fill="#FAFAFB" rx="12" ry="12"/>
 
   <defs>
-    <marker id="arr-ref-solid" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto">
-      <path d="M 0 0 L 10 5 L 0 10 z" fill="#7C3AED"/>
-    </marker>
-    <marker id="arr-ref-dim" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto">
-      <path d="M 0 0 L 10 5 L 0 10 z" fill="#A78BFA"/>
-    </marker>
+    <linearGradient id="youGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%"  stop-color="#7C3AED"/>
+      <stop offset="100%" stop-color="#4C1D95"/>
+    </linearGradient>
+    <linearGradient id="l1Grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%"  stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#F5F3FF"/>
+    </linearGradient>
   </defs>
 
-  <!-- ===== Connector lines first so circles overlay them ===== -->
-  <!-- YOU -> L1 (solid) -->
-  <line x1="190" y1="130" x2="380" y2="130" stroke="#7C3AED" stroke-width="2.5" marker-end="url(#arr-ref-solid)"/>
-  <!-- L1 -> L2 (dashed lighter) -->
-  <line x1="500" y1="130" x2="690" y2="130" stroke="#A78BFA" stroke-width="2.5" stroke-dasharray="6 5" marker-end="url(#arr-ref-dim)"/>
+  <!-- ===== Connector branches (drawn first, behind nodes) ===== -->
+  <!-- YOU -> Alice (left L1) -->
+  <path d="M 380 100 C 320 145, 250 165, 210 195" fill="none" stroke="#7C3AED" stroke-width="2.5"/>
+  <!-- YOU -> Bob (right L1) -->
+  <path d="M 440 100 C 500 145, 570 165, 610 195" fill="none" stroke="#7C3AED" stroke-width="2.5"/>
 
-  <!-- ===== Reward badges floating above arrows ===== -->
-  <!-- 30% above first arrow -->
-  <g>
-    <rect x="245" y="78" width="80" height="34" rx="17" fill="#4C1D95"/>
-    <text x="285" y="101" text-anchor="middle" font-size="17" fill="#FFFFFF" font-weight="700">30%</text>
-  </g>
-  <text x="285" y="158" text-anchor="middle" font-size="12" fill="#5B21B6" font-weight="500">of their fees</text>
+  <!-- Alice -> Carol -->
+  <path d="M 210 268 C 210 288, 210 295, 210 313" fill="none" stroke="#A78BFA" stroke-width="2" stroke-dasharray="5 4"/>
+  <!-- Bob -> Dan -->
+  <path d="M 610 268 C 610 288, 610 295, 610 313" fill="none" stroke="#A78BFA" stroke-width="2" stroke-dasharray="5 4"/>
 
-  <!-- 10% above second arrow -->
-  <g>
-    <rect x="555" y="84" width="80" height="28" rx="14" fill="#FFFFFF" stroke="#7C3AED" stroke-width="1.5"/>
-    <text x="595" y="104" text-anchor="middle" font-size="15" fill="#5B21B6" font-weight="700">10%</text>
-  </g>
-  <text x="595" y="158" text-anchor="middle" font-size="12" fill="#5B21B6" font-weight="500">of their fees</text>
+  <!-- ===== 30% reward badges on YOU->L1 arms ===== -->
+  <rect x="252" y="138" width="78" height="32" rx="16" fill="#4C1D95"/>
+  <text x="291" y="159" text-anchor="middle" font-size="15" fill="#FFFFFF" font-weight="700">+30%</text>
 
-  <!-- ===== Node 1: YOU ===== -->
-  <circle cx="120" cy="130" r="58" fill="#4C1D95"/>
-  <text x="120" y="124" text-anchor="middle" font-size="13" fill="#C4B5FD" font-weight="500">YOU</text>
-  <text x="120" y="146" text-anchor="middle" font-size="15" fill="#FFFFFF" font-weight="700">earn</text>
+  <rect x="490" y="138" width="78" height="32" rx="16" fill="#4C1D95"/>
+  <text x="529" y="159" text-anchor="middle" font-size="15" fill="#FFFFFF" font-weight="700">+30%</text>
 
-  <!-- ===== Node 2: L1 ===== -->
-  <circle cx="440" cy="130" r="58" fill="#FFFFFF" stroke="#7C3AED" stroke-width="2.5"/>
-  <text x="440" y="124" text-anchor="middle" font-size="11" fill="#7C3AED" font-weight="600">DIRECT (L1)</text>
-  <text x="440" y="146" text-anchor="middle" font-size="14" fill="#4C1D95" font-weight="700">your friend</text>
+  <!-- 10% reward badges on L1->L2 arms -->
+  <rect x="225" y="282" width="60" height="24" rx="12" fill="#FFFFFF" stroke="#7C3AED" stroke-width="1.5"/>
+  <text x="255" y="299" text-anchor="middle" font-size="12" fill="#5B21B6" font-weight="700">+10%</text>
 
-  <!-- ===== Node 3: L2 ===== -->
-  <circle cx="750" cy="130" r="58" fill="#FFFFFF" stroke="#A78BFA" stroke-width="2"/>
-  <text x="750" y="124" text-anchor="middle" font-size="11" fill="#7C3AED" font-weight="600">INDIRECT (L2)</text>
-  <text x="750" y="146" text-anchor="middle" font-size="14" fill="#5B21B6" font-weight="700">their friend</text>
+  <rect x="535" y="282" width="60" height="24" rx="12" fill="#FFFFFF" stroke="#7C3AED" stroke-width="1.5"/>
+  <text x="565" y="299" text-anchor="middle" font-size="12" fill="#5B21B6" font-weight="700">+10%</text>
 
-  <!-- ===== Caption ===== -->
-  <text x="410" y="220" text-anchor="middle" font-size="14" fill="#4C1D95" font-weight="600">Two levels deep, settled automatically in USDC.</text>
+  <!-- ===== YOU node (root, gradient circle, larger) ===== -->
+  <circle cx="410" cy="68" r="48" fill="url(#youGrad)"/>
+  <text x="410" y="62" text-anchor="middle" font-size="11" fill="#C4B5FD" font-weight="500">YOU</text>
+  <text x="410" y="84" text-anchor="middle" font-size="15" fill="#FFFFFF" font-weight="700">earn</text>
+
+  <!-- Decorative dots near YOU for some sparkle -->
+  <circle cx="358" cy="42" r="4" fill="#A78BFA" opacity="0.9"/>
+  <circle cx="468" cy="50" r="3" fill="#C4B5FD"/>
+  <circle cx="475" cy="92" r="3" fill="#A78BFA"/>
+
+  <!-- ===== L1 nodes ===== -->
+  <circle cx="210" cy="232" r="40" fill="url(#l1Grad)" stroke="#7C3AED" stroke-width="2"/>
+  <text x="210" y="226" text-anchor="middle" font-size="10" fill="#7C3AED" font-weight="600">DIRECT (L1)</text>
+  <text x="210" y="246" text-anchor="middle" font-size="14" fill="#4C1D95" font-weight="700">Alice</text>
+
+  <circle cx="610" cy="232" r="40" fill="url(#l1Grad)" stroke="#7C3AED" stroke-width="2"/>
+  <text x="610" y="226" text-anchor="middle" font-size="10" fill="#7C3AED" font-weight="600">DIRECT (L1)</text>
+  <text x="610" y="246" text-anchor="middle" font-size="14" fill="#4C1D95" font-weight="700">Bob</text>
+
+  <!-- ===== L2 nodes ===== -->
+  <circle cx="210" cy="345" r="32" fill="#FFFFFF" stroke="#A78BFA" stroke-width="1.5"/>
+  <text x="210" y="340" text-anchor="middle" font-size="9" fill="#7C3AED" font-weight="600">INDIRECT (L2)</text>
+  <text x="210" y="356" text-anchor="middle" font-size="12" fill="#5B21B6" font-weight="700">Carol</text>
+
+  <circle cx="610" cy="345" r="32" fill="#FFFFFF" stroke="#A78BFA" stroke-width="1.5"/>
+  <text x="610" y="340" text-anchor="middle" font-size="9" fill="#7C3AED" font-weight="600">INDIRECT (L2)</text>
+  <text x="610" y="356" text-anchor="middle" font-size="12" fill="#5B21B6" font-weight="700">Dan</text>
+
+  <!-- ===== Center label between the two L1 branches (clarifies "they invited") ===== -->
+  <text x="410" y="232" text-anchor="middle" font-size="12" fill="#7C3AED" font-weight="500" font-style="italic">friends you invited</text>
+  <text x="410" y="250" text-anchor="middle" font-size="11" fill="#A78BFA" font-weight="500">↓ they invite ↓</text>
+  <text x="410" y="345" text-anchor="middle" font-size="12" fill="#7C3AED" font-weight="500" font-style="italic">friends of friends</text>
 </svg>

@@ -17,6 +17,18 @@ Share your link, and you'll earn a cut of the **trading fees** paid by anyone wh
 
 Rewards are calculated on every trade your invitees make and credited to your account automatically.
 
+### A Simple Example
+
+Suppose **Alice** is your direct invitee, and Alice invited **Carol**. Over a week, they pay the following in trading fees:
+
+| Trader                  | Fees they paid | Your share | You earn  |
+| ----------------------- | -------------- | ---------- | --------- |
+| **Alice** (Direct, L1)  | $100           | 30%        | **$30**   |
+| **Carol** (Indirect, L2)| $50            | 10%        | **$5**    |
+| **Total this week**     | —              | —          | **$35**   |
+
+Earnings scale linearly with your invitees' trading activity, with no cap.
+
 ## Using the Program
 
 The ability to create a referral code unlocks once you reach a **lifetime trading volume threshold**. You can track your progress on the **Refer & Earn** page.
