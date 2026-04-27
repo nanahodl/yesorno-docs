@@ -14,9 +14,7 @@ Split and Merge are executed by the protocol, not against other users — no bid
 
 For every market:
 
-$$
-\Large 1 \text{ YES share} + 1 \text{ NO share} = \$1.00 \text{ USDC}
-$$
+> **1 YES share + 1 NO share = $1.00 USDC**
 
 Exactly one side will ultimately redeem for $1.00 and the other for $0, so holding both is guaranteed to be worth $1.00 at resolution. The protocol lets you convert between them right now.
 
