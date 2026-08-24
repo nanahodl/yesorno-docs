@@ -50,7 +50,7 @@ Always confirm the network before sending. Tokens sent on the wrong chain cannot
 
 #### **One-time Account Transfer Fee**
 
-**Purpose:** As transfers on Txflow are free, this fee is a **security measure** to **prevent spam and Sybil attacks** by introducing a **one-time cost for transfers to new addresses**. It is not a revenue-generating fee.
+**Purpose:** Probly operates on TxFlow L1, where transfers are generally free. To prevent spam and Sybil attacks, a one-time security fee applies only when transferring to a new address. This is a network protection measure, not a revenue-generating fee.
 
 **Charges:**
 
